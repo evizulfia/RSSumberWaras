@@ -32,7 +32,7 @@ namespace RSSumberWaras
             }
             else if (unameBox.Text == "" || passBox.Text == "")
             {
-                MessageBox.Show("Kamu belum mengisi form login");
+                MessageBox.Show("Form masih kosong, silahkan isi form terlebih dahulu!");
             }
             else
             {

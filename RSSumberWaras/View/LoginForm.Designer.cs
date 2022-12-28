@@ -84,6 +84,7 @@
             this.passBox.Name = "passBox";
             this.passBox.Size = new System.Drawing.Size(375, 34);
             this.passBox.TabIndex = 7;
+            this.passBox.TextChanged += new System.EventHandler(this.passBox_TextChanged);
             // 
             // unameBox
             // 

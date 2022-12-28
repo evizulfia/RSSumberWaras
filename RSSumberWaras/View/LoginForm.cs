@@ -15,6 +15,7 @@ namespace RSSumberWaras
     {
         private readonly string Username = "admin";
         private readonly string Password = "12345";
+
         public LoginForm()
         {
             InitializeComponent();
@@ -37,6 +38,11 @@ namespace RSSumberWaras
             {
                 MessageBox.Show("Username atau Password Salah ");
             }
+        }
+
+        private void passBox_TextChanged(object sender, EventArgs e)
+        {
+            passBox.PasswordChar = '*';
         }
     }
 }

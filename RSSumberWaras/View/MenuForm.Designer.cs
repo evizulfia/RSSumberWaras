@@ -29,25 +29,26 @@ namespace RSSumberWaras.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.logoutMenuBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // logoutMenuBtn
             // 
-            this.button1.Location = new System.Drawing.Point(701, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Logout";
-            this.button1.UseVisualStyleBackColor = true;
+            this.logoutMenuBtn.Location = new System.Drawing.Point(701, 68);
+            this.logoutMenuBtn.Name = "logoutMenuBtn";
+            this.logoutMenuBtn.Size = new System.Drawing.Size(213, 63);
+            this.logoutMenuBtn.TabIndex = 0;
+            this.logoutMenuBtn.Text = "Logout";
+            this.logoutMenuBtn.UseVisualStyleBackColor = true;
+            this.logoutMenuBtn.Click += new System.EventHandler(this.logoutMenuBtn_Click);
             // 
-            // FormMenu
+            // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 604);
-            this.Controls.Add(this.button1);
-            this.Name = "FormMenu";
+            this.Controls.Add(this.logoutMenuBtn);
+            this.Name = "MenuForm";
             this.Text = "FormMenu";
             this.ResumeLayout(false);
 
@@ -55,6 +56,6 @@ namespace RSSumberWaras.View
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logoutMenuBtn;
     }
 }

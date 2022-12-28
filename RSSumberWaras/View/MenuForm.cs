@@ -16,5 +16,12 @@ namespace RSSumberWaras.View
         {
             InitializeComponent();
         }
+
+        private void logoutMenuBtn_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
     }
 }

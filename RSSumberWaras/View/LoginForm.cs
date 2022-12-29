@@ -39,6 +39,27 @@ namespace RSSumberWaras
                 MessageBox.Show("Username atau Password Salah ");
             }
         }
+        private void passBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Return))
+            {
+                if (unameBox.Text == Username && passBox.Text == Password)
+                {
+                    MenuForm menuForm = new MenuForm();
+                    menuForm.Show();
+                    this.Hide();
+                    // MessageBox.Show("Kamu berhasil login");
+                }
+                else if (unameBox.Text == "" || passBox.Text == "")
+                {
+                    MessageBox.Show("Form masih kosong, silahkan isi form terlebih dahulu!");
+                }
+                else
+                {
+                    MessageBox.Show("Username atau Password Salah ");
+                }
+            }
+        }
 
         private void passBox_TextChanged(object sender, EventArgs e)
         {

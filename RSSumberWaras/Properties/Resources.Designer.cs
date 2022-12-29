@@ -63,9 +63,69 @@ namespace RSSumberWaras.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dokter {
+            get {
+                object obj = ResourceManager.GetObject("dokter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospital_logo {
+            get {
+                object obj = ResourceManager.GetObject("hospital logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__staff_ {
+            get {
+                object obj = ResourceManager.GetObject("images (staff)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap obat_logo {
+            get {
+                object obj = ResourceManager.GetObject("obat logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pills {
+            get {
+                object obj = ResourceManager.GetObject("pills", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_clipart_hospital_logo_clinic_health_care_physician_business_thumbnail {
             get {
                 object obj = ResourceManager.GetObject("png-clipart-hospital-logo-clinic-health-care-physician-business-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rekam_medis {
+            get {
+                object obj = ResourceManager.GetObject("rekam_medis", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

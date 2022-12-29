@@ -198,5 +198,23 @@
   <ItemGroup>
     <None Include="Resources\png-clipart-hospital-logo-clinic-health-care-physician-business-thumbnail.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %28staff%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obat logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dokter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rekam_medis.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

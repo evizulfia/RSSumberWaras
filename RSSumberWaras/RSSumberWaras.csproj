@@ -121,6 +121,30 @@
     <Compile Include="View\FormEntryResep.Designer.cs">
       <DependentUpon>FormEntryResep.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormObat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormObat.Designer.cs">
+      <DependentUpon>FormObat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPasien.Designer.cs">
+      <DependentUpon>FormPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormRekamMedis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormRekamMedis.Designer.cs">
+      <DependentUpon>FormRekamMedis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormResep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormResep.Designer.cs">
+      <DependentUpon>FormResep.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,9 +220,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\png-clipart-hospital-logo-clinic-health-care-physician-business-thumbnail.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\hospital logo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +236,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rekam_medis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasien.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

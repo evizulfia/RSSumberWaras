@@ -35,13 +35,14 @@
             this.passBox = new System.Windows.Forms.TextBox();
             this.unameBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // loginBtn
             // 
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.Location = new System.Drawing.Point(319, 440);
+            this.loginBtn.Location = new System.Drawing.Point(319, 472);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(217, 54);
             this.loginBtn.TabIndex = 11;
@@ -53,7 +54,7 @@
             // 
             this.login.AutoSize = true;
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login.Location = new System.Drawing.Point(349, 227);
+            this.login.Location = new System.Drawing.Point(349, 259);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(118, 46);
             this.login.TabIndex = 10;
@@ -63,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(118, 367);
+            this.label1.Location = new System.Drawing.Point(118, 399);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 25);
             this.label1.TabIndex = 9;
@@ -73,7 +74,7 @@
             // 
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(114, 305);
+            this.username.Location = new System.Drawing.Point(114, 337);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(102, 25);
             this.username.TabIndex = 8;
@@ -82,7 +83,7 @@
             // passBox
             // 
             this.passBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passBox.Location = new System.Drawing.Point(253, 362);
+            this.passBox.Location = new System.Drawing.Point(253, 394);
             this.passBox.Name = "passBox";
             this.passBox.Size = new System.Drawing.Size(375, 34);
             this.passBox.TabIndex = 7;
@@ -91,7 +92,7 @@
             // unameBox
             // 
             this.unameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.unameBox.Location = new System.Drawing.Point(253, 302);
+            this.unameBox.Location = new System.Drawing.Point(253, 334);
             this.unameBox.Name = "unameBox";
             this.unameBox.Size = new System.Drawing.Size(375, 34);
             this.unameBox.TabIndex = 6;
@@ -106,12 +107,22 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(327, 199);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 17);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Rumah Sakit Sumber Waras";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(844, 557);
+            this.ClientSize = new System.Drawing.Size(863, 611);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.login);
@@ -136,6 +147,7 @@
         private System.Windows.Forms.TextBox passBox;
         private System.Windows.Forms.TextBox unameBox;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

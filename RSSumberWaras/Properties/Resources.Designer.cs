@@ -103,9 +103,9 @@ namespace RSSumberWaras.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pills {
+        internal static System.Drawing.Bitmap pasien {
             get {
-                object obj = ResourceManager.GetObject("pills", resourceCulture);
+                object obj = ResourceManager.GetObject("pasien", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace RSSumberWaras.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap png_clipart_hospital_logo_clinic_health_care_physician_business_thumbnail {
+        internal static System.Drawing.Bitmap pills {
             get {
-                object obj = ResourceManager.GetObject("png-clipart-hospital-logo-clinic-health-care-physician-business-thumbnail", resourceCulture);
+                object obj = ResourceManager.GetObject("pills", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

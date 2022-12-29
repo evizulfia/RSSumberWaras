@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using RSSumberWaras.Model.Entity;
 using RSSumberWaras.Controller;
+using System.Configuration;
 
 namespace RSSumberWaras.View
 {
@@ -28,6 +29,7 @@ namespace RSSumberWaras.View
             //membuat objek controller
             controller = new DokterController();
             InisialisasiListView();
+            LoadDataDokter();
         }
 
         // atur kolom listview
@@ -48,7 +50,7 @@ namespace RSSumberWaras.View
             // kosongkan listview
             listViewDokter.Items.Clear();
             // panggil method ReadAll dan tampung datanya ke dalam collection
-            listViewDokter = controller.ReadAll();
+            listOfDokter = controller.ReadAll();
             // ekstrak objek dok dari collection
             foreach (var dok in listOfDokter)
             {

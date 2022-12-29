@@ -124,19 +124,19 @@
   <data name="obat logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\obat logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rekam_medis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rekam_medis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pills" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pills.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dokter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dokter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="png-clipart-hospital-logo-clinic-health-care-physician-business-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-clipart-hospital-logo-clinic-health-care-physician-business-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images (staff)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (staff).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pasien" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pasien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rekam_medis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rekam_medis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

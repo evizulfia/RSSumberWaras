@@ -28,7 +28,7 @@ namespace RSSumberWaras
             string username = unameBox.Text;
             string password = passBox.Text;
             // Buat koneksi ke database MySQL
-            string connectionString = "server=localhost;user=root;database=rssumberwaras;port=8111;password=ALiebi567MYSQL";
+            string connectionString = "server=localhost;user=root;database=rssumberwaras;port=8111;password=";
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
 
@@ -48,8 +48,10 @@ namespace RSSumberWaras
                 if (dbPassword == password)
                 {
                     // Jika sesuai, tampilkan pesan dan tutup form login
+                    MenuForm menuForm = new MenuForm();
                     MessageBox.Show("Login Berhasil!");
-                    this.Close();
+                    menuForm.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -74,7 +76,7 @@ namespace RSSumberWaras
                 string username = unameBox.Text;
                 string password = passBox.Text;
                 // Buat koneksi ke database MySQL
-                string connectionString = "server=localhost;user=root;database=rssumberwaras;port=8111;password=ALiebi567MYSQL";
+                string connectionString = "server=localhost;user=root;database=rssumberwaras;port=8111;password=";
                 MySqlConnection connection = new MySqlConnection(connectionString);
                 connection.Open();
 
@@ -95,7 +97,10 @@ namespace RSSumberWaras
                     {
                         // Jika sesuai, tampilkan pesan dan tutup form login
                         MessageBox.Show("Login Berhasil!");
-                        this.Close();
+                        MenuForm menuForm = new MenuForm();
+                        MessageBox.Show("Login Berhasil!");
+                        menuForm.Show();
+                        this.Hide();
                     }
                     else
                     {

@@ -28,6 +28,9 @@ namespace RSSumberWaras.View
             //membuat objek controller
             controller = new DokterController();
             InisialisasiListView();
+
+            // fungsi untuk load table dokter
+            LoadDataDokter();
         }
 
         // atur kolom listview
@@ -72,7 +75,32 @@ namespace RSSumberWaras.View
 
         private void tmbhDokterBtn_Click(object sender, EventArgs e)
         {
+            FormEntryDokter formEntryDokter = new FormEntryDokter();
+            formEntryDokter.Show();
+            this.Hide();
+        }
+
+        private void editDokterBtn_Click(object sender, EventArgs e)
+        {
+            FormEntryDokter formEntryDokter = new FormEntryDokter();
+            formEntryDokter.Show();
+            this.Hide();
+        }
+
+        private void hapusDokterBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cariDokterBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listViewDokter_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
+    
 }

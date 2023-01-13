@@ -16,5 +16,13 @@ namespace RSSumberWaras.View
         {
             InitializeComponent();
         }
+
+        private void doktSimpanBtn_Click(object sender, EventArgs e)
+        {
+            FormDokter formDokter = new FormDokter();
+            formDokter.Show();
+            this.Hide();
+        }
     }
+    
 }

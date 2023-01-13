@@ -48,6 +48,7 @@ namespace RSSumberWaras.View
             this.listViewDokter.Size = new System.Drawing.Size(986, 459);
             this.listViewDokter.TabIndex = 0;
             this.listViewDokter.UseCompatibleStateImageBehavior = false;
+            this.listViewDokter.SelectedIndexChanged += new System.EventHandler(this.listViewDokter_SelectedIndexChanged);
             // 
             // cariDokterBox
             // 
@@ -65,6 +66,7 @@ namespace RSSumberWaras.View
             this.cariDokterBtn.TabIndex = 2;
             this.cariDokterBtn.Text = "Cari";
             this.cariDokterBtn.UseVisualStyleBackColor = true;
+            this.cariDokterBtn.Click += new System.EventHandler(this.cariDokterBtn_Click);
             // 
             // tmbhDokterBtn
             // 
@@ -84,6 +86,7 @@ namespace RSSumberWaras.View
             this.editDokterBtn.TabIndex = 4;
             this.editDokterBtn.Text = "Edit";
             this.editDokterBtn.UseVisualStyleBackColor = true;
+            this.editDokterBtn.Click += new System.EventHandler(this.editDokterBtn_Click);
             // 
             // hapusDokterBtn
             // 
@@ -93,6 +96,7 @@ namespace RSSumberWaras.View
             this.hapusDokterBtn.TabIndex = 5;
             this.hapusDokterBtn.Text = "Hapus";
             this.hapusDokterBtn.UseVisualStyleBackColor = true;
+            this.hapusDokterBtn.Click += new System.EventHandler(this.hapusDokterBtn_Click);
             // 
             // label1
             // 

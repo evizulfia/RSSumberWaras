@@ -121,6 +121,7 @@ namespace RSSumberWaras.View
             this.doktSimpanBtn.TabIndex = 8;
             this.doktSimpanBtn.Text = "Simpan";
             this.doktSimpanBtn.UseVisualStyleBackColor = true;
+            this.doktSimpanBtn.Click += new System.EventHandler(this.doktSimpanBtn_Click);
             // 
             // FormEntryDokter
             // 

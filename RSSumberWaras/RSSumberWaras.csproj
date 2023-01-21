@@ -203,6 +203,30 @@
     <EmbeddedResource Include="View\FormEntryDokter.resx">
       <DependentUpon>FormEntryDokter.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormEntryObat.resx">
+      <DependentUpon>FormEntryObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormEntryPasien.resx">
+      <DependentUpon>FormEntryPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormEntryRekamMedis.resx">
+      <DependentUpon>FormEntryRekamMedis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormEntryResep.resx">
+      <DependentUpon>FormEntryResep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormObat.resx">
+      <DependentUpon>FormObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPasien.resx">
+      <DependentUpon>FormPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormRekamMedis.resx">
+      <DependentUpon>FormRekamMedis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormResep.resx">
+      <DependentUpon>FormResep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>

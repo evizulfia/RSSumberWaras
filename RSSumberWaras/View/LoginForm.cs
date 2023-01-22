@@ -1,4 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
+using RestSharp;
+using RSSumberWaras.Controller;
+using RSSumberWaras.Model.Repository;
 using RSSumberWaras.View;
 using System;
 using System.Collections.Generic;
@@ -9,13 +12,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ServiceStack.Text;
+using Newtonsoft.Json.Linq;
 
 namespace RSSumberWaras
 {
     public partial class LoginForm : Form
     {
-        //private readonly string Username = "admin";
-        //private readonly string Password = "12345";
+        //private UserController controller;
 
         public LoginForm()
         {
@@ -27,46 +31,39 @@ namespace RSSumberWaras
             
             string username = unameBox.Text;
             string password = passBox.Text;
-            // Buat koneksi ke database MySQL
-            string connectionString = "server=localhost;user=root;database=rssumberwaras;port=8111;password=";
-            MySqlConnection connection = new MySqlConnection(connectionString);
-            connection.Open();
 
-            // Buat perintah SQL untuk mengambil data pengguna dengan username yang dimasukkan
-            string sql = "SELECT * FROM users WHERE username = @username";
-            MySqlCommand command = new MySqlCommand(sql, connection);
-            command.Parameters.AddWithValue("@username", username);
+            string baseUrl = "http://rssumberwaras.evizulfia.com/";
+            string endpoint = "api/auth-login";
 
-            // Eksekusi perintah SQL dan simpan hasilnya di dalam objek reader
-            MySqlDataReader reader = command.ExecuteReader();
+            //membuat objek rest client
+            var client = new RestClient(baseUrl);
 
-            // Cek apakah ada data yang ditemukan
-            if (reader.Read())
+            var request = new RestRequest(endpoint, Method.POST);
+
+            request.AddParameter("username", username);
+            request.AddParameter("password", password);
+
+            var response = client.Execute(request);
+            Console.WriteLine(response.Content);
+
+            dynamic result = JObject.Parse(response.Content);
+
+            if (result.status == "200")
             {
-                // Jika ada, cek apakah password yang dimasukkan sesuai dengan password yang tersimpan di database
-                string dbPassword = reader["password"].ToString();
-                if (dbPassword == password)
-                {
-                    // Jika sesuai, tampilkan pesan dan tutup form login
-                    MenuForm menuForm = new MenuForm();
-                    MessageBox.Show("Login Berhasil!");
-                    menuForm.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    // Jika password tidak sesuai, tampilkan pesan kesalahan
-                    MessageBox.Show("Password salah. Silakan coba lagi.");
-                }
+
+                MenuForm menuForm = new MenuForm();
+                menuForm.Show();
+                this.Close();
             }
             else
             {
-                // Jika tidak ada data yang ditemukan, tampilkan pesan kesalahan
-                MessageBox.Show("Username tidak ditemukan. Silakan coba lagi.");
+                string message = result.message;
+                string title = "Login Failed";
+                MessageBox.Show(message, title);
             }
 
-            // Tutup koneksi ke database
-            connection.Close();
+
+
         }
 
         private void passBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -75,47 +72,37 @@ namespace RSSumberWaras
             {
                 string username = unameBox.Text;
                 string password = passBox.Text;
-                // Buat koneksi ke database MySQL
-                string connectionString = "server=localhost;user=root;database=rssumberwaras;port=8111;password=";
-                MySqlConnection connection = new MySqlConnection(connectionString);
-                connection.Open();
 
-                // Buat perintah SQL untuk mengambil data pengguna dengan username yang dimasukkan
-                string sql = "SELECT * FROM users WHERE username = @username";
-                MySqlCommand command = new MySqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@username", username);
+                string baseUrl = "http://rssumberwaras.evizulfia.com/";
+                string endpoint = "api/auth-login";
 
-                // Eksekusi perintah SQL dan simpan hasilnya di dalam objek reader
-                MySqlDataReader reader = command.ExecuteReader();
+                //membuat objek rest client
+                var client = new RestClient(baseUrl);
 
-                // Cek apakah ada data yang ditemukan
-                if (reader.Read())
+                var request = new RestRequest(endpoint, Method.POST);
+
+                request.AddParameter("username", username);
+                request.AddParameter("password", password);
+
+                var response = client.Execute(request);
+                Console.WriteLine(response.Content);
+
+                dynamic result = JObject.Parse(response.Content);
+
+                if (result.status == "200")
                 {
-                    // Jika ada, cek apakah password yang dimasukkan sesuai dengan password yang tersimpan di database
-                    string dbPassword = reader["password"].ToString();
-                    if (dbPassword == password)
-                    {
-                        // Jika sesuai, tampilkan pesan dan tutup form login
-                        MessageBox.Show("Login Berhasil!");
-                        MenuForm menuForm = new MenuForm();
-                        MessageBox.Show("Login Berhasil!");
-                        menuForm.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        // Jika password tidak sesuai, tampilkan pesan kesalahan
-                        MessageBox.Show("Password salah. Silakan coba lagi.");
-                    }
+
+                    MenuForm menuForm = new MenuForm();
+                    menuForm.Show();
+                    this.Hide();
                 }
                 else
                 {
-                    // Jika tidak ada data yang ditemukan, tampilkan pesan kesalahan
-                    MessageBox.Show("Username tidak ditemukan. Silakan coba lagi.");
+                    string message = result.message;
+                    string title = "Login Failed";
+                    MessageBox.Show(message, title);
                 }
 
-                // Tutup koneksi ke database
-                connection.Close();
             }
         }
 

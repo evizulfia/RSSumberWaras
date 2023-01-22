@@ -93,6 +93,16 @@ namespace RSSumberWaras.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medical_team {
+            get {
+                object obj = ResourceManager.GetObject("medical-team", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap obat_logo {
             get {
                 object obj = ResourceManager.GetObject("obat logo", resourceCulture);
@@ -113,6 +123,16 @@ namespace RSSumberWaras.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pasien1 {
+            get {
+                object obj = ResourceManager.GetObject("pasien1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pills {
             get {
                 object obj = ResourceManager.GetObject("pills", resourceCulture);
@@ -123,9 +143,49 @@ namespace RSSumberWaras.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pills__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pills (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap prescription {
+            get {
+                object obj = ResourceManager.GetObject("prescription", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rekam_medis {
             get {
                 object obj = ResourceManager.GetObject("rekam_medis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap time_management {
+            get {
+                object obj = ResourceManager.GetObject("time-management", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trade {
+            get {
+                object obj = ResourceManager.GetObject("trade", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

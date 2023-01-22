@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RSSumberWaras.Model.Repository
+namespace RSSumberWaras.Model.Entity
 {
-    class PasienRepository
+    public class User
     {
+        string Username { set; get; }
+        string Password { set; get; }
     }
 }

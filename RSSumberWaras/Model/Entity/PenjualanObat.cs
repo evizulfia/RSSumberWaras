@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RSSumberWaras.Model.Repository
+namespace RSSumberWaras.Model.Entity
 {
-    class ResepRepository
+    class PenjualanObat
     {
     }
 }

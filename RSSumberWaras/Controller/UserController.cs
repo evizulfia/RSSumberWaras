@@ -8,15 +8,16 @@ using System.Threading.Tasks;
 
 namespace RSSumberWaras.Controller
 {
-    public class ObatController
+    public class UserController
     {
-        public List<Obat> ReadAll()
+        public int Create(User user)
         {
             // membuat objek collection
-            List<Obat> list = new List<Obat>();
-            var repo = new ObatRestApiRepository();
-            list = repo.ReadAll();
-            return list;
+
+            int result = 0;
+            var repo = new UserRestApiRepository();
+            result = repo.Create(user);
+            return result;
         }
     }
 }

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace RSSumberWaras.Model.Repository
 {
-    class ObatRepository
+    class PasienRestApiRepository
     {
-
     }
 }

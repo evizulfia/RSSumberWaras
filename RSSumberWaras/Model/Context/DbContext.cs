@@ -29,7 +29,7 @@ namespace RSSumberWaras.Model.Context
                 // lokasi database perpustakaan Anda
                 string dbName = @"D:\Database\DbPerpustakaan.db";
             // deklarasi variabel connectionString, ref:
-            https://www.connectionstrings.com/
+            //https://www.connectionstrings.com/
                 string connectionString = string.Format("Data Source ={ 0}; FailIfMissing = True", dbName);
             conn = new MySqlConnection(connectionString); // buat objek connection
             conn.Open(); // buka koneksi ke database

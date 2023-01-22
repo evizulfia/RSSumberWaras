@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RSSumberWaras.Model.Repository
+namespace RSSumberWaras.Controller
 {
-    class RekamMedisRepository
+    public class LaporanController
     {
     }
 }

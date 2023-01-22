@@ -29,12 +29,182 @@ namespace RSSumberWaras.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pasienSimpanBtn = new System.Windows.Forms.Button();
+            this.noHpPasienBox = new System.Windows.Forms.TextBox();
+            this.alamatPasienBox = new System.Windows.Forms.TextBox();
+            this.idPasienBox = new System.Windows.Forms.TextBox();
+            this.noHp = new System.Windows.Forms.Label();
+            this.spesialisasi = new System.Windows.Forms.Label();
+            this.idDokter = new System.Windows.Forms.Label();
+            this.namaDokter = new System.Windows.Forms.Label();
+            this.namaPasienBox = new System.Windows.Forms.TextBox();
+            this.tglLahirPasien = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.genderPasienDropDown = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // pasienSimpanBtn
+            // 
+            this.pasienSimpanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasienSimpanBtn.Location = new System.Drawing.Point(746, 459);
+            this.pasienSimpanBtn.Name = "pasienSimpanBtn";
+            this.pasienSimpanBtn.Size = new System.Drawing.Size(195, 53);
+            this.pasienSimpanBtn.TabIndex = 17;
+            this.pasienSimpanBtn.Text = "Simpan";
+            this.pasienSimpanBtn.UseVisualStyleBackColor = true;
+            // 
+            // noHpPasienBox
+            // 
+            this.noHpPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noHpPasienBox.Location = new System.Drawing.Point(403, 360);
+            this.noHpPasienBox.Name = "noHpPasienBox";
+            this.noHpPasienBox.Size = new System.Drawing.Size(538, 38);
+            this.noHpPasienBox.TabIndex = 16;
+            // 
+            // alamatPasienBox
+            // 
+            this.alamatPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alamatPasienBox.Location = new System.Drawing.Point(403, 188);
+            this.alamatPasienBox.Name = "alamatPasienBox";
+            this.alamatPasienBox.Size = new System.Drawing.Size(538, 38);
+            this.alamatPasienBox.TabIndex = 15;
+            // 
+            // idPasienBox
+            // 
+            this.idPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idPasienBox.Location = new System.Drawing.Point(403, 73);
+            this.idPasienBox.Name = "idPasienBox";
+            this.idPasienBox.Size = new System.Drawing.Size(538, 38);
+            this.idPasienBox.TabIndex = 14;
+            // 
+            // noHp
+            // 
+            this.noHp.AutoSize = true;
+            this.noHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noHp.Location = new System.Drawing.Point(157, 360);
+            this.noHp.Name = "noHp";
+            this.noHp.Size = new System.Drawing.Size(218, 29);
+            this.noHp.TabIndex = 13;
+            this.noHp.Text = "Nomor Handphone";
+            // 
+            // spesialisasi
+            // 
+            this.spesialisasi.AutoSize = true;
+            this.spesialisasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spesialisasi.Location = new System.Drawing.Point(157, 188);
+            this.spesialisasi.Name = "spesialisasi";
+            this.spesialisasi.Size = new System.Drawing.Size(86, 29);
+            this.spesialisasi.TabIndex = 12;
+            this.spesialisasi.Text = "Alamat";
+            // 
+            // idDokter
+            // 
+            this.idDokter.AutoSize = true;
+            this.idDokter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idDokter.Location = new System.Drawing.Point(157, 79);
+            this.idDokter.Name = "idDokter";
+            this.idDokter.Size = new System.Drawing.Size(116, 29);
+            this.idDokter.TabIndex = 11;
+            this.idDokter.Text = "ID Pasien";
+            // 
+            // namaDokter
+            // 
+            this.namaDokter.AutoSize = true;
+            this.namaDokter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namaDokter.Location = new System.Drawing.Point(157, 135);
+            this.namaDokter.Name = "namaDokter";
+            this.namaDokter.Size = new System.Drawing.Size(157, 29);
+            this.namaDokter.TabIndex = 10;
+            this.namaDokter.Text = "Nama Pasien";
+            // 
+            // namaPasienBox
+            // 
+            this.namaPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namaPasienBox.Location = new System.Drawing.Point(403, 126);
+            this.namaPasienBox.Name = "namaPasienBox";
+            this.namaPasienBox.Size = new System.Drawing.Size(538, 38);
+            this.namaPasienBox.TabIndex = 9;
+            // 
+            // tglLahirPasien
+            // 
+            this.tglLahirPasien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tglLahirPasien.Location = new System.Drawing.Point(403, 246);
+            this.tglLahirPasien.Name = "tglLahirPasien";
+            this.tglLahirPasien.Size = new System.Drawing.Size(538, 38);
+            this.tglLahirPasien.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(157, 252);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(161, 29);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Tanggal Lahir";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(157, 305);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 29);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Jenis Kelamin";
+            // 
+            // genderPasienDropDown
+            // 
+            this.genderPasienDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.genderPasienDropDown.FormattingEnabled = true;
+            this.genderPasienDropDown.Items.AddRange(new object[] {
+            "Perempuan",
+            "Laki-laki"});
+            this.genderPasienDropDown.Location = new System.Drawing.Point(403, 305);
+            this.genderPasienDropDown.Name = "genderPasienDropDown";
+            this.genderPasienDropDown.Size = new System.Drawing.Size(538, 39);
+            this.genderPasienDropDown.TabIndex = 22;
+            // 
+            // FormEntryPasien
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1099, 596);
+            this.Controls.Add(this.genderPasienDropDown);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tglLahirPasien);
+            this.Controls.Add(this.pasienSimpanBtn);
+            this.Controls.Add(this.noHpPasienBox);
+            this.Controls.Add(this.alamatPasienBox);
+            this.Controls.Add(this.idPasienBox);
+            this.Controls.Add(this.noHp);
+            this.Controls.Add(this.spesialisasi);
+            this.Controls.Add(this.idDokter);
+            this.Controls.Add(this.namaDokter);
+            this.Controls.Add(this.namaPasienBox);
+            this.Name = "FormEntryPasien";
             this.Text = "FormEntryPasien";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button pasienSimpanBtn;
+        private System.Windows.Forms.TextBox noHpPasienBox;
+        private System.Windows.Forms.TextBox alamatPasienBox;
+        private System.Windows.Forms.TextBox idPasienBox;
+        private System.Windows.Forms.Label noHp;
+        private System.Windows.Forms.Label spesialisasi;
+        private System.Windows.Forms.Label idDokter;
+        private System.Windows.Forms.Label namaDokter;
+        private System.Windows.Forms.TextBox namaPasienBox;
+        private System.Windows.Forms.TextBox tglLahirPasien;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox genderPasienDropDown;
     }
 }

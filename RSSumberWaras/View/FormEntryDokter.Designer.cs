@@ -38,6 +38,7 @@ namespace RSSumberWaras.View
             this.spesialisasiBox = new System.Windows.Forms.TextBox();
             this.noHpDokBox = new System.Windows.Forms.TextBox();
             this.doktSimpanBtn = new System.Windows.Forms.Button();
+            this.EntryFormDokterSelesaiBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // namaDokterBox
@@ -115,7 +116,7 @@ namespace RSSumberWaras.View
             // doktSimpanBtn
             // 
             this.doktSimpanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doktSimpanBtn.Location = new System.Drawing.Point(623, 330);
+            this.doktSimpanBtn.Location = new System.Drawing.Point(388, 326);
             this.doktSimpanBtn.Name = "doktSimpanBtn";
             this.doktSimpanBtn.Size = new System.Drawing.Size(195, 53);
             this.doktSimpanBtn.TabIndex = 8;
@@ -123,11 +124,23 @@ namespace RSSumberWaras.View
             this.doktSimpanBtn.UseVisualStyleBackColor = true;
             this.doktSimpanBtn.Click += new System.EventHandler(this.doktSimpanBtn_Click);
             // 
+            // EntryFormDokterSelesaiBtn
+            // 
+            this.EntryFormDokterSelesaiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EntryFormDokterSelesaiBtn.Location = new System.Drawing.Point(623, 326);
+            this.EntryFormDokterSelesaiBtn.Name = "EntryFormDokterSelesaiBtn";
+            this.EntryFormDokterSelesaiBtn.Size = new System.Drawing.Size(195, 53);
+            this.EntryFormDokterSelesaiBtn.TabIndex = 9;
+            this.EntryFormDokterSelesaiBtn.Text = "Selesai";
+            this.EntryFormDokterSelesaiBtn.UseVisualStyleBackColor = true;
+            this.EntryFormDokterSelesaiBtn.Click += new System.EventHandler(this.EntryFormDokterSelesaiBtn_Click);
+            // 
             // FormEntryDokter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 421);
+            this.Controls.Add(this.EntryFormDokterSelesaiBtn);
             this.Controls.Add(this.doktSimpanBtn);
             this.Controls.Add(this.noHpDokBox);
             this.Controls.Add(this.spesialisasiBox);
@@ -155,5 +168,6 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.TextBox spesialisasiBox;
         private System.Windows.Forms.TextBox noHpDokBox;
         private System.Windows.Forms.Button doktSimpanBtn;
+        private System.Windows.Forms.Button EntryFormDokterSelesaiBtn;
     }
 }

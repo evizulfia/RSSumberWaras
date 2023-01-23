@@ -42,7 +42,7 @@ namespace RSSumberWaras.View
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tglPeriksaRekamMedis = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // EntryFormObatSelesaiBtn
@@ -166,20 +166,20 @@ namespace RSSumberWaras.View
             this.label2.TabIndex = 31;
             this.label2.Text = "Tindakan";
             // 
-            // dateTimePicker1
+            // tglPeriksaRekamMedis
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(463, 289);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(536, 38);
-            this.dateTimePicker1.TabIndex = 33;
+            this.tglPeriksaRekamMedis.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.tglPeriksaRekamMedis.Location = new System.Drawing.Point(463, 289);
+            this.tglPeriksaRekamMedis.Name = "tglPeriksaRekamMedis";
+            this.tglPeriksaRekamMedis.Size = new System.Drawing.Size(536, 38);
+            this.tglPeriksaRekamMedis.TabIndex = 33;
             // 
             // FormEntryRekamMedis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1216, 777);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.tglPeriksaRekamMedis);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -215,6 +215,6 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker tglPeriksaRekamMedis;
     }
 }

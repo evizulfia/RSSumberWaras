@@ -11,6 +11,11 @@ namespace RSSumberWaras.Controller
     public class ObatController
     {
         private ObatRestApiRepository _repository;
+
+        public ObatController()
+        {
+            _repository = new ObatRestApiRepository();
+        }
         public List<Obat> ReadAll()
         {
             // membuat objek collection
@@ -22,22 +27,15 @@ namespace RSSumberWaras.Controller
 
         public List<Obat> Search(string keyword)
         {
-            // membuat objek collection
-            List<Obat> list = new List<Obat>();
-            var repo = new ObatRestApiRepository();
-            list = repo.Search(keyword);
-            return list;
-        }
 
-        public List<Obat> ReadByProductName(string productName)
-        {
             List<Obat> list = new List<Obat>();
             try
             {
-                list = _repository.ReadByProductName(productName);
+                list = _repository.Search(keyword);
             }
             catch { }
             return list;
         }
+
     }
 }

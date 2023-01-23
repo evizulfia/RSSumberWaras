@@ -28,7 +28,7 @@ namespace RSSumberWaras
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            
+
             string username = unameBox.Text;
             string password = passBox.Text;
 
@@ -53,7 +53,7 @@ namespace RSSumberWaras
 
                 MenuForm menuForm = new MenuForm();
                 menuForm.Show();
-                this.Close();
+                this.Hide();
             }
             else
             {

@@ -38,11 +38,11 @@ namespace RSSumberWaras.View
             this.idDokter = new System.Windows.Forms.Label();
             this.namaDokter = new System.Windows.Forms.Label();
             this.namaPasienBox = new System.Windows.Forms.TextBox();
-            this.tglLahirPasien = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.genderPasienDropDown = new System.Windows.Forms.ComboBox();
             this.EntryFormPasienSelesaiBtn = new System.Windows.Forms.Button();
+            this.tglLahirPasienPicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // pasienSimpanBtn
@@ -128,14 +128,6 @@ namespace RSSumberWaras.View
             this.namaPasienBox.Size = new System.Drawing.Size(538, 38);
             this.namaPasienBox.TabIndex = 9;
             // 
-            // tglLahirPasien
-            // 
-            this.tglLahirPasien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tglLahirPasien.Location = new System.Drawing.Point(482, 334);
-            this.tglLahirPasien.Name = "tglLahirPasien";
-            this.tglLahirPasien.Size = new System.Drawing.Size(538, 38);
-            this.tglLahirPasien.TabIndex = 18;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -161,8 +153,8 @@ namespace RSSumberWaras.View
             this.genderPasienDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.genderPasienDropDown.FormattingEnabled = true;
             this.genderPasienDropDown.Items.AddRange(new object[] {
-            "Perempuan",
-            "Laki-laki"});
+            "P",
+            "L"});
             this.genderPasienDropDown.Location = new System.Drawing.Point(482, 393);
             this.genderPasienDropDown.Name = "genderPasienDropDown";
             this.genderPasienDropDown.Size = new System.Drawing.Size(538, 39);
@@ -179,16 +171,24 @@ namespace RSSumberWaras.View
             this.EntryFormPasienSelesaiBtn.UseVisualStyleBackColor = true;
             this.EntryFormPasienSelesaiBtn.Click += new System.EventHandler(this.EntryFormPasienSelesaiBtn_Click);
             // 
+            // tglLahirPasienPicker
+            // 
+            this.tglLahirPasienPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.tglLahirPasienPicker.Location = new System.Drawing.Point(482, 340);
+            this.tglLahirPasienPicker.Name = "tglLahirPasienPicker";
+            this.tglLahirPasienPicker.Size = new System.Drawing.Size(536, 38);
+            this.tglLahirPasienPicker.TabIndex = 34;
+            // 
             // FormEntryPasien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 748);
+            this.Controls.Add(this.tglLahirPasienPicker);
             this.Controls.Add(this.EntryFormPasienSelesaiBtn);
             this.Controls.Add(this.genderPasienDropDown);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tglLahirPasien);
             this.Controls.Add(this.pasienSimpanBtn);
             this.Controls.Add(this.noHpPasienBox);
             this.Controls.Add(this.alamatPasienBox);
@@ -216,10 +216,10 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.Label idDokter;
         private System.Windows.Forms.Label namaDokter;
         private System.Windows.Forms.TextBox namaPasienBox;
-        private System.Windows.Forms.TextBox tglLahirPasien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox genderPasienDropDown;
         private System.Windows.Forms.Button EntryFormPasienSelesaiBtn;
+        private System.Windows.Forms.DateTimePicker tglLahirPasienPicker;
     }
 }

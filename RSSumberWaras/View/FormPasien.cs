@@ -22,6 +22,8 @@ namespace RSSumberWaras.View
         //deklarasi objek controller
         private PasienController controller;
 
+        private PasienController pasienController = new PasienController();
+
         public FormPasien()
         {
             InitializeComponent();
@@ -31,7 +33,7 @@ namespace RSSumberWaras.View
             InisialisasiListView();
 
             // fungsi untuk load table dokter
-            LoadDataDokter();
+            LoadDataPasien();
         }
 
         // atur kolom listview
@@ -43,13 +45,13 @@ namespace RSSumberWaras.View
             //listViewPasien.Columns.Add("No Urut", 50, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("ID", 100, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("Nama", 600, HorizontalAlignment.Center);
-            listViewPasien.Columns.Add("Spesialisasi", 300, HorizontalAlignment.Left);
-            listViewPasien.Columns.Add("No. HP", 300, HorizontalAlignment.Center);
-            listViewPasien.Columns.Add("Status", 100, HorizontalAlignment.Center);
+            listViewPasien.Columns.Add("Alamat", 300, HorizontalAlignment.Left);
+            listViewPasien.Columns.Add("Tanggal Lahir", 300, HorizontalAlignment.Center);
+            listViewPasien.Columns.Add("No HP", 100, HorizontalAlignment.Center);
         }
 
         // method untuk menampilkan semua data mahasiswa
-        private void LoadDataDokter()
+        private void LoadDataPasien()
         {
             // kosongkan listview
             listViewPasien.Items.Clear();
@@ -64,7 +66,7 @@ namespace RSSumberWaras.View
                 //item.SubItems.Add(dok.IdDokter.ToString());
                 item.SubItems.Add(pasien.NamaPasien);
                 item.SubItems.Add(pasien.Alamat);
-                item.SubItems.Add(pasien.TglLahir.ToString());
+                item.SubItems.Add(pasien.TanggalLahir.ToShortDateString());
                 item.SubItems.Add(pasien.JenisKelamin);
                 item.SubItems.Add(pasien.NoTelepon);
                 // tampilkan data dok ke listview
@@ -76,16 +78,14 @@ namespace RSSumberWaras.View
         {
             // tambahkan objek mhs yang baru ke dalam collection
             listOfPasien.Add(pasien);
-
-            var noUrut = listViewPasien.Items.Count + 1;
+           
             var item = new ListViewItem(pasien.IdPasien.ToString());
-            //item.SubItems.Add(noUrut.ToString());
-            //item.SubItems.Add(dok.IdDokter.ToString());
             item.SubItems.Add(pasien.NamaPasien);
             item.SubItems.Add(pasien.Alamat);
-            item.SubItems.Add(pasien.TglLahir.ToString());
+            item.SubItems.Add(pasien.TanggalLahir.ToShortDateString());
             item.SubItems.Add(pasien.JenisKelamin);
             item.SubItems.Add(pasien.NoTelepon);
+
             // tampilkan data dok ke listview
             listViewPasien.Items.Add(item);
         }
@@ -100,9 +100,9 @@ namespace RSSumberWaras.View
             itemRow.SubItems[1].Text = pasien.IdPasien.ToString();
             itemRow.SubItems[2].Text = pasien.NamaPasien;
             itemRow.SubItems[3].Text = pasien.Alamat;
-            itemRow.SubItems[4].Text = pasien.TglLahir.ToString();
-            itemRow.SubItems[5].Text = pasien.JenisKelamin.ToString();
-            itemRow.SubItems[6].Text = pasien.NoTelepon.ToString();
+            itemRow.SubItems[4].Text = pasien.TanggalLahir.ToShortDateString();
+            itemRow.SubItems[5].Text = pasien.JenisKelamin;
+            itemRow.SubItems[6].Text = pasien.NoTelepon;
         }
 
         private void selesaiPasienBtn_Click(object sender, EventArgs e)
@@ -159,7 +159,7 @@ namespace RSSumberWaras.View
 
 
                 string baseUrl = "http://rssumberwaras.evizulfia.com/";
-                string endpoint = "api/dokter-destroy/" + pasien.IdPasien;
+                string endpoint = "api/pasien-destroy/" + pasien.IdPasien;
 
                 Console.WriteLine(endpoint);
 
@@ -177,8 +177,8 @@ namespace RSSumberWaras.View
                 if (result.status == "200")
                 {
 
-                    MenuForm menuForm = new MenuForm();
-                    menuForm.Show();
+                    FormPasien form = new FormPasien();
+                    form.Show();
                     this.Hide();
                 }
                 else
@@ -199,7 +199,30 @@ namespace RSSumberWaras.View
 
         private void cariPasienBtn_Click(object sender, EventArgs e)
         {
+            listViewPasien.Items.Clear();
+            List<Pasien> listOfPasien = new List<Pasien>();
+            if (cariPasienBox.Text == "")
+            {
+                listOfPasien = pasienController.ReadAll();
+            }
+            else
+            {
+                listOfPasien = pasienController.Search(cariPasienBox.Text);
+            }
 
+            foreach (var pasien in listOfPasien)
+            {
+                var item = new ListViewItem(pasien.IdPasien.ToString());
+                //item.SubItems.Add(noUrut.ToString());
+                //item.SubItems.Add(dok.IdDokter.ToString());
+                item.SubItems.Add(pasien.NamaPasien);
+                item.SubItems.Add(pasien.Alamat);
+                item.SubItems.Add(pasien.TanggalLahir.ToShortDateString());
+                item.SubItems.Add(pasien.JenisKelamin);
+                item.SubItems.Add(pasien.NoTelepon);
+                // tampilkan data dok ke listview
+                listViewPasien.Items.Add(item);
+            }
         }
     }
 }

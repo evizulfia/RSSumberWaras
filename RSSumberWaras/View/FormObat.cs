@@ -21,6 +21,10 @@ namespace RSSumberWaras.View
         //deklarasi objek controller
         private ObatController controller;
 
+        private ObatController obatController = new ObatController();
+
+
+
         public FormObat()
         {
             InitializeComponent();
@@ -182,10 +186,27 @@ namespace RSSumberWaras.View
 
         private void cariObatBtn_Click(object sender, EventArgs e)
         {
-            // kosongkan listview
             listViewObat.Items.Clear();
-            // panggil method ReadAll dan tampung datanya ke dalam collection
-            listOfObat = controller.ReadByProductName(cariObatBox.Text);
+            List<Obat> listOfObat = new List<Obat>();
+            if (cariObatBox.Text == "")
+            {
+                listOfObat = obatController.ReadAll();
+            }
+            else
+            {
+                listOfObat = obatController.Search(cariObatBox.Text);
+            }
+
+            foreach (var obj in listOfObat)
+            {
+                var item = new ListViewItem(obj.IdObat.ToString());
+                item.SubItems.Add(obj.NamaObat);
+                item.SubItems.Add(obj.Harga.ToString());
+                item.SubItems.Add(obj.Satuan);
+
+                // tampilkan data dok ke listview
+                listViewObat.Items.Add(item);
+            }
         }
 
         private void selesaiObatBtn_Click(object sender, EventArgs e)

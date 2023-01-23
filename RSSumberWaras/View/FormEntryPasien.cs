@@ -63,11 +63,11 @@ namespace RSSumberWaras.View
             idPasienBox.Text = pas.IdPasien.ToString();
             namaPasienBox.Text = pas.NamaPasien;
             alamatPasienBox.Text = pas.Alamat;
-            tglLahirPasien.Text = pas.TglLahir.ToString();
+           // tglLahirPasienPicker.Value.Date = pas.TglLahir;
+            tglLahirPasienPicker.Format = DateTimePickerFormat.Short;
             genderPasienDropDown.Text = pas.JenisKelamin;
             noHpPasienBox.Text = pas.NoTelepon;
         }
-
 
         private void EntryFormPasienSelesaiBtn_Click(object sender, EventArgs e)
         {
@@ -80,7 +80,7 @@ namespace RSSumberWaras.View
         private void pasienSimpanBtn_Click(object sender, EventArgs e)
         {
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
-            string endpoint = "api/dokter-store";
+            string endpoint = "api/pasien-store";
 
             //int result = 0;
 
@@ -90,23 +90,19 @@ namespace RSSumberWaras.View
             var request = new RestRequest(endpoint, Method.POST);
 
 
-            request.AddParameter("id_pasienr", idPasienBox.Text);
+            request.AddParameter("id_pasien", idPasienBox.Text.ToString());
             request.AddParameter("nama_pasien", namaPasienBox.Text);
             request.AddParameter("alamat", alamatPasienBox.Text);
-            request.AddParameter("tanggal_lahir", tglLahirPasien.Text);
+            request.AddParameter("tanggal_lahir", tglLahirPasienPicker.Value.Date.ToString("yyyy-MM-dd"));
             request.AddParameter("jenis_kelamin", genderPasienDropDown.Text);
             request.AddParameter("no_telepon", noHpPasienBox.Text);
 
             var response = client.Execute(request);
 
-            Console.WriteLine(response.Content);
-            Console.WriteLine(response.Content);
-
             dynamic resp = JObject.Parse(response.Content);
 
             if (resp.status == "200")
             {
-
                 string message = resp.message;
                 string title = "Proses berhasil";
                 MessageBox.Show(message, title);

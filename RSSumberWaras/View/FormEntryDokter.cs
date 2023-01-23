@@ -87,9 +87,6 @@ namespace RSSumberWaras.View
 
             var response = client.Execute(request);
 
-            Console.WriteLine(response.Content);
-            Console.WriteLine(response.Content);
-
             dynamic resp = JObject.Parse(response.Content);
 
             if (resp.status == "200")

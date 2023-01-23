@@ -47,6 +47,7 @@ namespace RSSumberWaras.View
             this.selesaiPasienBtn.TabIndex = 23;
             this.selesaiPasienBtn.Text = "Selesai";
             this.selesaiPasienBtn.UseVisualStyleBackColor = true;
+            this.selesaiPasienBtn.Click += new System.EventHandler(this.selesaiPasienBtn_Click);
             // 
             // label1
             // 

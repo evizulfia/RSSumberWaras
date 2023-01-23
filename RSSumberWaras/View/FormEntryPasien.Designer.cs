@@ -48,7 +48,7 @@ namespace RSSumberWaras.View
             // pasienSimpanBtn
             // 
             this.pasienSimpanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pasienSimpanBtn.Location = new System.Drawing.Point(473, 458);
+            this.pasienSimpanBtn.Location = new System.Drawing.Point(552, 546);
             this.pasienSimpanBtn.Name = "pasienSimpanBtn";
             this.pasienSimpanBtn.Size = new System.Drawing.Size(195, 53);
             this.pasienSimpanBtn.TabIndex = 17;
@@ -59,7 +59,7 @@ namespace RSSumberWaras.View
             // noHpPasienBox
             // 
             this.noHpPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noHpPasienBox.Location = new System.Drawing.Point(403, 360);
+            this.noHpPasienBox.Location = new System.Drawing.Point(482, 448);
             this.noHpPasienBox.Name = "noHpPasienBox";
             this.noHpPasienBox.Size = new System.Drawing.Size(538, 38);
             this.noHpPasienBox.TabIndex = 16;
@@ -67,7 +67,7 @@ namespace RSSumberWaras.View
             // alamatPasienBox
             // 
             this.alamatPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alamatPasienBox.Location = new System.Drawing.Point(403, 188);
+            this.alamatPasienBox.Location = new System.Drawing.Point(482, 276);
             this.alamatPasienBox.Name = "alamatPasienBox";
             this.alamatPasienBox.Size = new System.Drawing.Size(538, 38);
             this.alamatPasienBox.TabIndex = 15;
@@ -75,7 +75,7 @@ namespace RSSumberWaras.View
             // idPasienBox
             // 
             this.idPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idPasienBox.Location = new System.Drawing.Point(403, 73);
+            this.idPasienBox.Location = new System.Drawing.Point(482, 161);
             this.idPasienBox.Name = "idPasienBox";
             this.idPasienBox.Size = new System.Drawing.Size(538, 38);
             this.idPasienBox.TabIndex = 14;
@@ -84,7 +84,7 @@ namespace RSSumberWaras.View
             // 
             this.noHp.AutoSize = true;
             this.noHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noHp.Location = new System.Drawing.Point(157, 360);
+            this.noHp.Location = new System.Drawing.Point(236, 448);
             this.noHp.Name = "noHp";
             this.noHp.Size = new System.Drawing.Size(218, 29);
             this.noHp.TabIndex = 13;
@@ -94,7 +94,7 @@ namespace RSSumberWaras.View
             // 
             this.spesialisasi.AutoSize = true;
             this.spesialisasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spesialisasi.Location = new System.Drawing.Point(157, 188);
+            this.spesialisasi.Location = new System.Drawing.Point(236, 276);
             this.spesialisasi.Name = "spesialisasi";
             this.spesialisasi.Size = new System.Drawing.Size(86, 29);
             this.spesialisasi.TabIndex = 12;
@@ -104,7 +104,7 @@ namespace RSSumberWaras.View
             // 
             this.idDokter.AutoSize = true;
             this.idDokter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idDokter.Location = new System.Drawing.Point(157, 79);
+            this.idDokter.Location = new System.Drawing.Point(236, 167);
             this.idDokter.Name = "idDokter";
             this.idDokter.Size = new System.Drawing.Size(116, 29);
             this.idDokter.TabIndex = 11;
@@ -114,7 +114,7 @@ namespace RSSumberWaras.View
             // 
             this.namaDokter.AutoSize = true;
             this.namaDokter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namaDokter.Location = new System.Drawing.Point(157, 135);
+            this.namaDokter.Location = new System.Drawing.Point(236, 223);
             this.namaDokter.Name = "namaDokter";
             this.namaDokter.Size = new System.Drawing.Size(157, 29);
             this.namaDokter.TabIndex = 10;
@@ -123,7 +123,7 @@ namespace RSSumberWaras.View
             // namaPasienBox
             // 
             this.namaPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namaPasienBox.Location = new System.Drawing.Point(403, 126);
+            this.namaPasienBox.Location = new System.Drawing.Point(482, 214);
             this.namaPasienBox.Name = "namaPasienBox";
             this.namaPasienBox.Size = new System.Drawing.Size(538, 38);
             this.namaPasienBox.TabIndex = 9;
@@ -131,7 +131,7 @@ namespace RSSumberWaras.View
             // tglLahirPasien
             // 
             this.tglLahirPasien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tglLahirPasien.Location = new System.Drawing.Point(403, 246);
+            this.tglLahirPasien.Location = new System.Drawing.Point(482, 334);
             this.tglLahirPasien.Name = "tglLahirPasien";
             this.tglLahirPasien.Size = new System.Drawing.Size(538, 38);
             this.tglLahirPasien.TabIndex = 18;
@@ -140,7 +140,7 @@ namespace RSSumberWaras.View
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(157, 252);
+            this.label1.Location = new System.Drawing.Point(236, 340);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 29);
             this.label1.TabIndex = 19;
@@ -150,7 +150,7 @@ namespace RSSumberWaras.View
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(157, 305);
+            this.label2.Location = new System.Drawing.Point(236, 393);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 29);
             this.label2.TabIndex = 21;
@@ -163,7 +163,7 @@ namespace RSSumberWaras.View
             this.genderPasienDropDown.Items.AddRange(new object[] {
             "Perempuan",
             "Laki-laki"});
-            this.genderPasienDropDown.Location = new System.Drawing.Point(403, 305);
+            this.genderPasienDropDown.Location = new System.Drawing.Point(482, 393);
             this.genderPasienDropDown.Name = "genderPasienDropDown";
             this.genderPasienDropDown.Size = new System.Drawing.Size(538, 39);
             this.genderPasienDropDown.TabIndex = 22;
@@ -171,7 +171,7 @@ namespace RSSumberWaras.View
             // EntryFormPasienSelesaiBtn
             // 
             this.EntryFormPasienSelesaiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EntryFormPasienSelesaiBtn.Location = new System.Drawing.Point(746, 458);
+            this.EntryFormPasienSelesaiBtn.Location = new System.Drawing.Point(825, 546);
             this.EntryFormPasienSelesaiBtn.Name = "EntryFormPasienSelesaiBtn";
             this.EntryFormPasienSelesaiBtn.Size = new System.Drawing.Size(195, 53);
             this.EntryFormPasienSelesaiBtn.TabIndex = 23;
@@ -183,7 +183,7 @@ namespace RSSumberWaras.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 596);
+            this.ClientSize = new System.Drawing.Size(1311, 748);
             this.Controls.Add(this.EntryFormPasienSelesaiBtn);
             this.Controls.Add(this.genderPasienDropDown);
             this.Controls.Add(this.label2);

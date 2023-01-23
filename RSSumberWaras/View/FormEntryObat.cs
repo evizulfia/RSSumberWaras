@@ -65,7 +65,7 @@ namespace RSSumberWaras.View
         private void obatSimpanBtn_Click(object sender, EventArgs e)
         {
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
-            string endpoint = "api/dokter-store";
+            string endpoint = "api/obat-store";
 
             int result = 0;
 
@@ -75,10 +75,10 @@ namespace RSSumberWaras.View
             var request = new RestRequest(endpoint, Method.POST);
 
 
-            request.AddParameter("id_dokter", idObatBox.Text);
-            request.AddParameter("nama_dokter", namaObatBox.Text);
-            request.AddParameter("spesialisasi", hargaObatBox.Text);
-            request.AddParameter("no_telepon", satuanObatBox.Text);
+            request.AddParameter("id_obat", idObatBox.Text);
+            request.AddParameter("nama_obat", namaObatBox.Text);
+            request.AddParameter("harga", hargaObatBox.Text);
+            request.AddParameter("satuan", satuanObatBox.Text);
 
             var response = client.Execute(request);
 
@@ -89,8 +89,6 @@ namespace RSSumberWaras.View
 
             if (resp.status == "200")
             {
-
-
 
                 string message = resp.message;
                 string title = "Proses berhasil";

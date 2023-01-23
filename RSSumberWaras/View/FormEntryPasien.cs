@@ -21,10 +21,10 @@ namespace RSSumberWaras.View
         public delegate void CreateUpdateEventHandler(Pasien pas);
 
         // deklarasi event ketika terjadi proses input data baru
-        //public event CreateUpdateEventHandler OnCreate;
+        public event CreateUpdateEventHandler OnCreate;
 
         // deklarasi event ketika terjadi proses update data
-        //public event CreateUpdateEventHandler OnUpdate;
+        public event CreateUpdateEventHandler OnUpdate;
 
         // deklarasi objek controller
         private PasienController controller;
@@ -57,7 +57,7 @@ namespace RSSumberWaras.View
             this.controller = controller;
 
             isNewData = false; // set status edit data
-            pas = obj; // set objek dok yang akan diedit
+            pas = obj; // set objek pas yang akan diedit
 
             // untuk edit data, tampilkan data lama
             idPasienBox.Text = pas.IdPasien.ToString();
@@ -113,7 +113,6 @@ namespace RSSumberWaras.View
                 this.Hide();
                 FormPasien form = new FormPasien();
                 form.Show();
-
             }
             else
             {

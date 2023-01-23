@@ -23,6 +23,8 @@ namespace RSSumberWaras.View
         //deklarasi objek controller
         private DokterController controller;
 
+        private DokterController dokterController = new DokterController();
+
         public FormDokter()
         {
             InitializeComponent();
@@ -46,7 +48,7 @@ namespace RSSumberWaras.View
             listViewDokter.Columns.Add("Nama", 600, HorizontalAlignment.Center);
             listViewDokter.Columns.Add("Spesialisasi", 300, HorizontalAlignment.Left);
             listViewDokter.Columns.Add("No. HP", 300, HorizontalAlignment.Center);
-            listViewDokter.Columns.Add("Status", 100, HorizontalAlignment.Center);
+            //listViewDokter.Columns.Add("Status", 100, HorizontalAlignment.Center);
         }
 
         // method untuk menampilkan semua data mahasiswa
@@ -66,7 +68,7 @@ namespace RSSumberWaras.View
                 item.SubItems.Add(dok.NamaDokter);
                 item.SubItems.Add(dok.Spesialisasi);
                 item.SubItems.Add(dok.NoTelepon);
-                item.SubItems.Add(dok.status.ToString());
+                //item.SubItems.Add(dok.status.ToString());
                 // tampilkan data dok ke listview
                 listViewDokter.Items.Add(item);
             }
@@ -84,7 +86,7 @@ namespace RSSumberWaras.View
             item.SubItems.Add(dok.NamaDokter);
             item.SubItems.Add(dok.Spesialisasi);
             item.SubItems.Add(dok.NoTelepon);
-            item.SubItems.Add(dok.status.ToString());
+            //item.SubItems.Add(dok.status.ToString());
 
             listViewDokter.Items.Add(item);
         }
@@ -99,7 +101,7 @@ namespace RSSumberWaras.View
             itemRow.SubItems[1].Text = dok.IdDokter.ToString();
             itemRow.SubItems[2].Text = dok.Spesialisasi;
             itemRow.SubItems[3].Text = dok.NoTelepon;
-            itemRow.SubItems[4].Text = dok.status.ToString();
+            //itemRow.SubItems[4].Text = dok.status.ToString();
         }
 
         private void selesaiDokterBtn_Click(object sender, EventArgs e)
@@ -133,7 +135,7 @@ namespace RSSumberWaras.View
 
                 // tampilkan form entry mahasiswa
                 formEntry.ShowDialog();
-                this.Close();
+                this.Hide();
             }
             else // data belum dipilih
             {
@@ -143,7 +145,6 @@ namespace RSSumberWaras.View
                 formDokter.Show();
                 this.Hide();
             }
-
             //FormEntryDokter formEntryDokter = new FormEntryDokter();
             //formEntryDokter.Show();
             //this.Hide();
@@ -174,11 +175,15 @@ namespace RSSumberWaras.View
 
                 dynamic result = JObject.Parse(response.Content);
 
+                
+
                 if (result.status == "200")
                 {
-
-                    MenuForm menuForm = new MenuForm();
-                    menuForm.Show();
+                    string message = result.message;
+                    string title = "Data berhasil dihapus!";
+                    MessageBox.Show(message, title);
+                    FormDokter form = new FormDokter();
+                    form.Show();
                     this.Hide();
                 }
                 else
@@ -194,40 +199,42 @@ namespace RSSumberWaras.View
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
             }
-
-
-           
-
         }
 
         private void cariDokterBtn_Click(object sender, EventArgs e)
         {
-            ListView findListView = new ListView();
-            /*
-            // kosongkan listview
             listViewDokter.Items.Clear();
-            // panggil method ReadAll dan tampung datanya ke dalam collection
-            listOfDokter = controller.Read();
-            // ekstrak objek dok dari collection
-            foreach (var dok in listOfDokter)
+            List<Dokter> listOfDokter = new List<Dokter>();
+
+            switch (filterDokterDropDown.SelectedIndex)
+            {
+                case 0:
+                    listOfDokter = dokterController.ReadAll();
+                    break;
+                case 1:
+                    listOfDokter = dokterController.ReadByNamaDokter(cariDokterBox.Text);
+                    break;
+                case 2:
+                    listOfDokter = dokterController.ReadBySpesialisasi(cariDokterBox.Text);
+                    break;
+                    //case 3:
+                    //    listOfDokter = DokterController.ReadByCategory(txtKeyword.Text);
+                    //    break;
+            }
+
+            foreach (var obj in listOfDokter)
             {
                 var noUrut = listViewDokter.Items.Count + 1;
-                var item = new ListViewItem(dok.IdDokter.ToString());
+
+                var item = new ListViewItem(obj.IdDokter.ToString());
                 //item.SubItems.Add(noUrut.ToString());
                 //item.SubItems.Add(dok.IdDokter.ToString());
-                item.SubItems.Add(dok.NamaDokter);
-                item.SubItems.Add(dok.Spesialisasi);
-                item.SubItems.Add(dok.NoTelepon);
-                item.SubItems.Add(dok.status.ToString());
+                item.SubItems.Add(obj.NamaDokter);
+                item.SubItems.Add(obj.Spesialisasi);
+                item.SubItems.Add(obj.NoTelepon);
+                //item.SubItems.Add(dok.status.ToString());
                 // tampilkan data dok ke listview
                 listViewDokter.Items.Add(item);
-            }
-            */
-            ListViewItem foundItem = findListView.FindItemWithText(cariDokterBox.Text.ToLower());
-            if (foundItem != null)
-            {
-                foundItem.BackColor = Color.Yellow;
-                foundItem.Selected = true;
             }
         }
 

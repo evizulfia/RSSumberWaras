@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RSSumberWaras.Model.Entity
 {
-    public class RekamMadis
+    public class RekamMedis
     {
         public int IdRekamMedis { get; set; }
         public DateTime TglPeriksa { get; set; }

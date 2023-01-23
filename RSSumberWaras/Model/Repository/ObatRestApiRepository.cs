@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 
 namespace RSSumberWaras.Model.Repository
 {
+
     public class ObatRestApiRepository
     {
+       
         public int Create(Obat obt)
         {
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
-            string endpoint = "api/dokter-insert";
+            string endpoint = "api/obat-store";
 
             //membuat objek rest client
             var client = new RestClient(baseUrl);
@@ -34,7 +36,7 @@ namespace RSSumberWaras.Model.Repository
         public int Update(Obat obt)
         {
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
-            string endpoint = "api/dokter-insert";
+            string endpoint = "api/obat-store";
 
             //membuat objek rest client
             var client = new RestClient(baseUrl);
@@ -58,7 +60,7 @@ namespace RSSumberWaras.Model.Repository
         public List<Obat> ReadAll()
         {
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
-            string endpoint = "api/dokter";
+            string endpoint = "api/obat";
 
             //membuat objek rest client
             var client = new RestClient(baseUrl);
@@ -72,10 +74,11 @@ namespace RSSumberWaras.Model.Repository
 
             throw new NotImplementedException();
         }
-        public List<Obat> Read()
+        public List<Obat> Search(string keyword)
         {
+            //string keyword = cariObatBox.Text;
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
-            string endpoint = "api/dokter-search";
+            string endpoint = "api/obat-search?search=" + keyword;
 
             //membuat objek rest client
             var client = new RestClient(baseUrl);
@@ -88,6 +91,23 @@ namespace RSSumberWaras.Model.Repository
 
 
             throw new NotImplementedException();
+        }
+
+        public List<Obat> ReadByProductName(string namaObat)
+        {
+            string baseUrl = "http://rssumberwaras.evizulfia.com/";
+            string endpoint = "api/obat-search?search=" + namaObat;
+            Console.WriteLine(namaObat);
+            // membuat objek rest client
+            var client = new RestClient(baseUrl);
+
+            // membuat objek request
+            var request = new RestRequest(endpoint, Method.GET);
+
+            // kirim request ke server
+            var response = client.Execute<List<Obat>>(request) ?? null;
+
+            return response.Data;
         }
     }
 }

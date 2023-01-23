@@ -72,7 +72,7 @@ namespace RSSumberWaras.View
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
             string endpoint = "api/dokter-store";
 
-            int result = 0;
+            //int result = 0;
 
             //membuat objek rest client
             var client = new RestClient(baseUrl);
@@ -95,14 +95,11 @@ namespace RSSumberWaras.View
             if (resp.status == "200")
             {
 
-                
-                
                 string message = resp.message;
                 string title = "Proses berhasil";
                 MessageBox.Show(message, title);
                 this.Hide();
-                FormDokter formDokter = new FormDokter();
-                formDokter.Show();
+                
 
             }
             else
@@ -111,6 +108,8 @@ namespace RSSumberWaras.View
                 string title = "process Failed";
                 MessageBox.Show(message, title);
             }
+            FormDokter formDokter = new FormDokter();
+            formDokter.ShowDialog();
 
         }
 

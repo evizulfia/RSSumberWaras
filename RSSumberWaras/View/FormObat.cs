@@ -128,8 +128,8 @@ namespace RSSumberWaras.View
                 this.Hide();
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
-                FormDokter formDokter = new FormDokter();
-                formDokter.Show();
+                FormObat form = new FormObat();
+                form.Show();
                 
             }
         }
@@ -143,7 +143,7 @@ namespace RSSumberWaras.View
 
 
                 string baseUrl = "http://rssumberwaras.evizulfia.com/";
-                string endpoint = "api/dokter-destroy/" + obt.IdObat;
+                string endpoint = "api/obat-destroy/" + obt.IdObat;
 
                 Console.WriteLine(endpoint);
 
@@ -182,7 +182,10 @@ namespace RSSumberWaras.View
 
         private void cariObatBtn_Click(object sender, EventArgs e)
         {
-
+            // kosongkan listview
+            listViewObat.Items.Clear();
+            // panggil method ReadAll dan tampung datanya ke dalam collection
+            listOfObat = controller.ReadByProductName(cariObatBox.Text);
         }
 
         private void selesaiObatBtn_Click(object sender, EventArgs e)

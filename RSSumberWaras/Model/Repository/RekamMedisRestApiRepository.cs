@@ -1,4 +1,5 @@
 ﻿using RestSharp;
+using RSSumberWaras.Model.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

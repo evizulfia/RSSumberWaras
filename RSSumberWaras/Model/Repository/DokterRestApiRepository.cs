@@ -86,9 +86,41 @@ namespace RSSumberWaras.Model.Repository
             Console.WriteLine(response.Data);
             return response.Data;
 
+            throw new NotImplementedException();
+        }
 
-            throw new NotImplementedException();
-            throw new NotImplementedException();
+        public List<Dokter> ReadByNamaDokter(string namaDokter)
+        {
+            string baseUrl = "http://rssumberwaras.evizulfia.com/";
+            string endpoint = "api/dokter-search?search=" + namaDokter;
+
+            // membuat objek rest client
+            var client = new RestClient(baseUrl);
+
+            // membuat objek request
+            var request = new RestRequest(endpoint, Method.GET);
+
+            // kirim request ke server
+            var response = client.Execute<List<Dokter>>(request);
+
+            return response.Data;
+        }
+
+        public List<Dokter> ReadBySpesialisasi(string spesialisasi)
+        {
+            string baseUrl = "http://rssumberwaras.evizulfia.com/";
+            string endpoint = "api/dokter-search?search=" + spesialisasi;
+
+            // membuat objek rest client
+            var client = new RestClient(baseUrl);
+
+            // membuat objek request
+            var request = new RestRequest(endpoint, Method.GET);
+
+            // kirim request ke server
+            var response = client.Execute<List<Dokter>>(request);
+
+            return response.Data;
         }
 
     }

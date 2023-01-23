@@ -62,8 +62,6 @@ namespace RSSumberWaras
                 MessageBox.Show(message, title);
             }
 
-
-
         }
 
         private void maximise(object sender, EventArgs e)

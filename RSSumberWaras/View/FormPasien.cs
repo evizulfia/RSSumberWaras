@@ -19,9 +19,10 @@ namespace RSSumberWaras.View
 
         private void selesaiPasienBtn_Click(object sender, EventArgs e)
         {
-            FormPasien form = new FormPasien();
+            this.Hide();
+            MenuForm form = new MenuForm();
             form.ShowDialog();
-            this.Close();
+            
         }
     }
 }

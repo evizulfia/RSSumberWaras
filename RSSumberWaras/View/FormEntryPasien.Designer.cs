@@ -42,12 +42,13 @@ namespace RSSumberWaras.View
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.genderPasienDropDown = new System.Windows.Forms.ComboBox();
+            this.EntryFormPasienSelesaiBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pasienSimpanBtn
             // 
             this.pasienSimpanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pasienSimpanBtn.Location = new System.Drawing.Point(746, 459);
+            this.pasienSimpanBtn.Location = new System.Drawing.Point(473, 458);
             this.pasienSimpanBtn.Name = "pasienSimpanBtn";
             this.pasienSimpanBtn.Size = new System.Drawing.Size(195, 53);
             this.pasienSimpanBtn.TabIndex = 17;
@@ -166,11 +167,23 @@ namespace RSSumberWaras.View
             this.genderPasienDropDown.Size = new System.Drawing.Size(538, 39);
             this.genderPasienDropDown.TabIndex = 22;
             // 
+            // EntryFormPasienSelesaiBtn
+            // 
+            this.EntryFormPasienSelesaiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EntryFormPasienSelesaiBtn.Location = new System.Drawing.Point(746, 458);
+            this.EntryFormPasienSelesaiBtn.Name = "EntryFormPasienSelesaiBtn";
+            this.EntryFormPasienSelesaiBtn.Size = new System.Drawing.Size(195, 53);
+            this.EntryFormPasienSelesaiBtn.TabIndex = 23;
+            this.EntryFormPasienSelesaiBtn.Text = "Selesai";
+            this.EntryFormPasienSelesaiBtn.UseVisualStyleBackColor = true;
+            this.EntryFormPasienSelesaiBtn.Click += new System.EventHandler(this.EntryFormPasienSelesaiBtn_Click);
+            // 
             // FormEntryPasien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 596);
+            this.Controls.Add(this.EntryFormPasienSelesaiBtn);
             this.Controls.Add(this.genderPasienDropDown);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -206,5 +219,6 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox genderPasienDropDown;
+        private System.Windows.Forms.Button EntryFormPasienSelesaiBtn;
     }
 }

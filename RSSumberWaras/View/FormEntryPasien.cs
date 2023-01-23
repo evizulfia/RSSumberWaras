@@ -16,5 +16,12 @@ namespace RSSumberWaras.View
         {
             InitializeComponent();
         }
+
+        private void EntryFormPasienSelesaiBtn_Click(object sender, EventArgs e)
+        {
+            FormPasien form = new FormPasien();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -75,5 +75,12 @@ namespace RSSumberWaras.View
         {
 
         }
+
+        private void selesaiPenjualanBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm form = new MenuForm();
+            form.ShowDialog();
+        }
     }
 }

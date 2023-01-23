@@ -44,6 +44,7 @@ namespace RSSumberWaras.View
             this.selesaiLaporanBtn.TabIndex = 10;
             this.selesaiLaporanBtn.Text = "Selesai";
             this.selesaiLaporanBtn.UseVisualStyleBackColor = true;
+            this.selesaiLaporanBtn.Click += new System.EventHandler(this.selesaiLaporanBtn_Click);
             // 
             // cariLaporanBtn
             // 

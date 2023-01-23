@@ -111,8 +111,8 @@ namespace RSSumberWaras.View
 
         private void EntryFormObatSelesaiBtn_Click(object sender, EventArgs e)
         {
-            FormDokter formDokter = new FormDokter();
-            formDokter.ShowDialog();
+            FormObat form = new FormObat();
+            form.ShowDialog();
             this.Close();
 
         }

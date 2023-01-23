@@ -23,5 +23,13 @@ namespace RSSumberWaras.View
             form.Show();
             this.Hide();
         }
+
+        private void selesaiRekamMedisBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuForm form = new MenuForm();
+            form.ShowDialog();
+            
+        }
     }
 }

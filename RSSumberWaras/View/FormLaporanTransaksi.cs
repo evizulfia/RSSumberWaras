@@ -16,5 +16,13 @@ namespace RSSumberWaras.View
         {
             InitializeComponent();
         }
+
+        private void selesaiLaporanBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MenuForm form = new MenuForm();
+            form.ShowDialog();
+            
+        }
     }
 }

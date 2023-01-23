@@ -47,6 +47,7 @@ namespace RSSumberWaras.View
             this.selesaiRekamMedisBtn.TabIndex = 31;
             this.selesaiRekamMedisBtn.Text = "Selesai";
             this.selesaiRekamMedisBtn.UseVisualStyleBackColor = true;
+            this.selesaiRekamMedisBtn.Click += new System.EventHandler(this.selesaiRekamMedisBtn_Click);
             // 
             // label1
             // 

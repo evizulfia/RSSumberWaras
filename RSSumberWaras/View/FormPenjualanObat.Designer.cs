@@ -38,6 +38,7 @@ namespace RSSumberWaras.View
             this.label3 = new System.Windows.Forms.Label();
             this.namaPasienPenjualanTxt = new System.Windows.Forms.TextBox();
             this.NamaObatPenjualanTxt = new System.Windows.Forms.TextBox();
+            this.selesaiPenjualanBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CheckoutBtn
@@ -126,11 +127,22 @@ namespace RSSumberWaras.View
             this.NamaObatPenjualanTxt.Size = new System.Drawing.Size(538, 38);
             this.NamaObatPenjualanTxt.TabIndex = 19;
             // 
+            // selesaiPenjualanBtn
+            // 
+            this.selesaiPenjualanBtn.Location = new System.Drawing.Point(699, 637);
+            this.selesaiPenjualanBtn.Name = "selesaiPenjualanBtn";
+            this.selesaiPenjualanBtn.Size = new System.Drawing.Size(161, 34);
+            this.selesaiPenjualanBtn.TabIndex = 20;
+            this.selesaiPenjualanBtn.Text = "Selesai";
+            this.selesaiPenjualanBtn.UseVisualStyleBackColor = true;
+            this.selesaiPenjualanBtn.Click += new System.EventHandler(this.selesaiPenjualanBtn_Click);
+            // 
             // FormPenjualanObat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1323, 735);
+            this.Controls.Add(this.selesaiPenjualanBtn);
             this.Controls.Add(this.NamaObatPenjualanTxt);
             this.Controls.Add(this.namaPasienPenjualanTxt);
             this.Controls.Add(this.label3);
@@ -158,5 +170,6 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox namaPasienPenjualanTxt;
         private System.Windows.Forms.TextBox NamaObatPenjualanTxt;
+        private System.Windows.Forms.Button selesaiPenjualanBtn;
     }
 }

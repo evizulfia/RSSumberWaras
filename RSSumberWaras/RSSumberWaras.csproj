@@ -233,6 +233,9 @@
     <EmbeddedResource Include="View\FormEntryRekamMedis.resx">
       <DependentUpon>FormEntryRekamMedis.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormLaporanTransaksi.resx">
+      <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormObat.resx">
       <DependentUpon>FormObat.cs</DependentUpon>
     </EmbeddedResource>

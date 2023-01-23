@@ -54,6 +54,7 @@ namespace RSSumberWaras.View
             this.EntryFormObatSelesaiBtn.TabIndex = 28;
             this.EntryFormObatSelesaiBtn.Text = "Selesai";
             this.EntryFormObatSelesaiBtn.UseVisualStyleBackColor = true;
+            this.EntryFormObatSelesaiBtn.Click += new System.EventHandler(this.EntryFormObatSelesaiBtn_Click);
             // 
             // obatSimpanBtn
             // 

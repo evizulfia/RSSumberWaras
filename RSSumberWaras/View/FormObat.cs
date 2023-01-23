@@ -29,7 +29,7 @@ namespace RSSumberWaras.View
             InisialisasiListView();
 
             // fungsi untuk load table obtter
-            LoadDataDokter();
+            LoadDataObat();
         }
 
         private void InisialisasiListView()
@@ -45,7 +45,7 @@ namespace RSSumberWaras.View
         }
 
         // method untuk menampilkan semua data mahasiswa
-        private void LoadDataDokter()
+        private void LoadDataObat()
         {
             // kosongkan listview
             listViewObat.Items.Clear();

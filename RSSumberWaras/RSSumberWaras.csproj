@@ -123,7 +123,6 @@
     <Compile Include="Controller\PasienController.cs" />
     <Compile Include="Controller\PenjualanObatController.cs" />
     <Compile Include="Controller\RekamMedisController.cs" />
-    <Compile Include="Controller\ResepController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Model\Context\DbContext.cs" />
     <Compile Include="Model\Entity\Dokter.cs" />
@@ -132,25 +131,17 @@
     <Compile Include="Model\Entity\Pasien.cs" />
     <Compile Include="Model\Entity\PenjualanObat.cs" />
     <Compile Include="Model\Entity\RekamMedis.cs" />
-    <Compile Include="Model\Entity\Resep.cs" />
     <Compile Include="Model\Entity\User.cs" />
     <Compile Include="Model\Repository\DokterRestApiRepository.cs" />
     <Compile Include="Model\Repository\ObatRestApiRepository.cs" />
     <Compile Include="Model\Repository\PasienRestApiRepository.cs" />
     <Compile Include="Model\Repository\RekamMedisRestApiRepository.cs" />
-    <Compile Include="Model\Repository\ResepRestApiRepository.cs" />
     <Compile Include="Model\Repository\UserRestApiRepository.cs" />
     <Compile Include="View\FormDokter.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormDokter.Designer.cs">
       <DependentUpon>FormDokter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormEntryResep.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormEntryResep.Designer.cs">
-      <DependentUpon>FormEntryResep.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormLaporanTransaksi.cs">
       <SubType>Form</SubType>
@@ -187,12 +178,6 @@
     </Compile>
     <Compile Include="View\FormRekamMedis.Designer.cs">
       <DependentUpon>FormRekamMedis.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormResep.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormResep.Designer.cs">
-      <DependentUpon>FormResep.cs</DependentUpon>
     </Compile>
     <Compile Include="View\JSONObject.cs" />
     <Compile Include="View\MenuForm.cs">
@@ -247,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormObat.resx">
       <DependentUpon>FormObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPasien.resx">
+      <DependentUpon>FormPasien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormPembayaran.resx">
       <DependentUpon>FormPembayaran.cs</DependentUpon>

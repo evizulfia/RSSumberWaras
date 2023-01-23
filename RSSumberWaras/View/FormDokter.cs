@@ -235,6 +235,24 @@ namespace RSSumberWaras.View
         {
 
         }
+
+        private void maximise(object sender, EventArgs e)
+        {
+
+            //normalises window
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.CenterToScreen();
+            }
+
+            //maximises window
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.CenterToScreen();
+            }
+        }
     }
     
 }

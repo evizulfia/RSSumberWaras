@@ -43,9 +43,9 @@ namespace RSSumberWaras.View
             // 
             this.listViewDokter.BackColor = System.Drawing.SystemColors.MenuBar;
             this.listViewDokter.HideSelection = false;
-            this.listViewDokter.Location = new System.Drawing.Point(30, 128);
+            this.listViewDokter.Location = new System.Drawing.Point(116, 159);
             this.listViewDokter.Name = "listViewDokter";
-            this.listViewDokter.Size = new System.Drawing.Size(986, 459);
+            this.listViewDokter.Size = new System.Drawing.Size(1711, 769);
             this.listViewDokter.TabIndex = 0;
             this.listViewDokter.UseCompatibleStateImageBehavior = false;
             this.listViewDokter.SelectedIndexChanged += new System.EventHandler(this.listViewDokter_SelectedIndexChanged);
@@ -53,14 +53,14 @@ namespace RSSumberWaras.View
             // cariDokterBox
             // 
             this.cariDokterBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cariDokterBox.Location = new System.Drawing.Point(30, 79);
+            this.cariDokterBox.Location = new System.Drawing.Point(116, 110);
             this.cariDokterBox.Name = "cariDokterBox";
-            this.cariDokterBox.Size = new System.Drawing.Size(542, 34);
+            this.cariDokterBox.Size = new System.Drawing.Size(1258, 34);
             this.cariDokterBox.TabIndex = 1;
             // 
             // cariDokterBtn
             // 
-            this.cariDokterBtn.Location = new System.Drawing.Point(588, 79);
+            this.cariDokterBtn.Location = new System.Drawing.Point(1395, 110);
             this.cariDokterBtn.Name = "cariDokterBtn";
             this.cariDokterBtn.Size = new System.Drawing.Size(91, 34);
             this.cariDokterBtn.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace RSSumberWaras.View
             // 
             // tmbhDokterBtn
             // 
-            this.tmbhDokterBtn.Location = new System.Drawing.Point(699, 79);
+            this.tmbhDokterBtn.Location = new System.Drawing.Point(1506, 110);
             this.tmbhDokterBtn.Name = "tmbhDokterBtn";
             this.tmbhDokterBtn.Size = new System.Drawing.Size(91, 34);
             this.tmbhDokterBtn.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace RSSumberWaras.View
             // 
             // editDokterBtn
             // 
-            this.editDokterBtn.Location = new System.Drawing.Point(812, 79);
+            this.editDokterBtn.Location = new System.Drawing.Point(1619, 110);
             this.editDokterBtn.Name = "editDokterBtn";
             this.editDokterBtn.Size = new System.Drawing.Size(91, 34);
             this.editDokterBtn.TabIndex = 4;
@@ -90,7 +90,7 @@ namespace RSSumberWaras.View
             // 
             // hapusDokterBtn
             // 
-            this.hapusDokterBtn.Location = new System.Drawing.Point(925, 79);
+            this.hapusDokterBtn.Location = new System.Drawing.Point(1732, 110);
             this.hapusDokterBtn.Name = "hapusDokterBtn";
             this.hapusDokterBtn.Size = new System.Drawing.Size(91, 34);
             this.hapusDokterBtn.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace RSSumberWaras.View
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 34);
+            this.label1.Location = new System.Drawing.Point(111, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(295, 25);
             this.label1.TabIndex = 6;
@@ -110,7 +110,7 @@ namespace RSSumberWaras.View
             // 
             // selesaiDokterBtn
             // 
-            this.selesaiDokterBtn.Location = new System.Drawing.Point(855, 618);
+            this.selesaiDokterBtn.Location = new System.Drawing.Point(1666, 970);
             this.selesaiDokterBtn.Name = "selesaiDokterBtn";
             this.selesaiDokterBtn.Size = new System.Drawing.Size(161, 34);
             this.selesaiDokterBtn.TabIndex = 7;
@@ -123,7 +123,7 @@ namespace RSSumberWaras.View
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1053, 681);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.selesaiDokterBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.hapusDokterBtn);
@@ -134,6 +134,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.listViewDokter);
             this.Name = "FormDokter";
             this.Text = "FormDokter";
+            this.Load += new System.EventHandler(this.maximise);
             this.ResumeLayout(false);
             this.PerformLayout();
 

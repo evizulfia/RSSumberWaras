@@ -13,6 +13,6 @@ namespace RSSumberWaras.Model.Entity
         public string Alamat { get; set; }
         public DateTime TglLahir { get; set; }
         public string JenisKelamin { get; set; }
-        public string NoHP { get; set; }
+        public string NoTelepon { get; set; }
     }
 }

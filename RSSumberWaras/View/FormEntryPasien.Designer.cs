@@ -54,6 +54,7 @@ namespace RSSumberWaras.View
             this.pasienSimpanBtn.TabIndex = 17;
             this.pasienSimpanBtn.Text = "Simpan";
             this.pasienSimpanBtn.UseVisualStyleBackColor = true;
+            this.pasienSimpanBtn.Click += new System.EventHandler(this.pasienSimpanBtn_Click);
             // 
             // noHpPasienBox
             // 

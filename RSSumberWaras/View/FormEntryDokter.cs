@@ -113,27 +113,6 @@ namespace RSSumberWaras.View
             }
 
 
-            //FormDokter formDokter = new FormDokter();
-            //formDokter.ShowDialog();
-            //this.Hide();
-
-            //result = response.Content.IndexOf("1") > 0 ? 1 : 0;
-
-            //if (result > 0) // tambah data berhasil
-            //{
-            //    OnCreate(dok); // panggil event OnCreate
-
-            //    // reset form input, utk persiapan input data berikutnya
-            //    idDokterBox.Clear();
-            //    namaDokterBox.Clear();
-            //    spesialisasiBox.Clear();
-            //    noHpDokBox.Clear();
-
-            //    idDokterBox.Focus();
-
-            //}
-
-
         }
 
         private void EntryFormDokterSelesaiBtn_Click(object sender, EventArgs e)

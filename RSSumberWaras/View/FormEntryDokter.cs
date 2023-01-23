@@ -116,9 +116,10 @@ namespace RSSumberWaras.View
 
         private void EntryFormDokterSelesaiBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormDokter formDokter = new FormDokter();
             formDokter.ShowDialog();
-            this.Close();
+            
         }
     }
     

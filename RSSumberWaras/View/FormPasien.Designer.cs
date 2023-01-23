@@ -67,6 +67,7 @@ namespace RSSumberWaras.View
             this.hapusPasienBtn.TabIndex = 21;
             this.hapusPasienBtn.Text = "Hapus";
             this.hapusPasienBtn.UseVisualStyleBackColor = true;
+            this.hapusPasienBtn.Click += new System.EventHandler(this.hapusPasienBtn_Click);
             // 
             // editPasienBtn
             // 
@@ -76,6 +77,7 @@ namespace RSSumberWaras.View
             this.editPasienBtn.TabIndex = 20;
             this.editPasienBtn.Text = "Edit";
             this.editPasienBtn.UseVisualStyleBackColor = true;
+            this.editPasienBtn.Click += new System.EventHandler(this.editPasienBtn_Click);
             // 
             // tmbhPasienBtn
             // 
@@ -85,6 +87,7 @@ namespace RSSumberWaras.View
             this.tmbhPasienBtn.TabIndex = 19;
             this.tmbhPasienBtn.Text = "Tambah";
             this.tmbhPasienBtn.UseVisualStyleBackColor = true;
+            this.tmbhPasienBtn.Click += new System.EventHandler(this.tmbhPasienBtn_Click);
             // 
             // cariPasienBtn
             // 
@@ -94,6 +97,7 @@ namespace RSSumberWaras.View
             this.cariPasienBtn.TabIndex = 18;
             this.cariPasienBtn.Text = "Cari";
             this.cariPasienBtn.UseVisualStyleBackColor = true;
+            this.cariPasienBtn.Click += new System.EventHandler(this.cariPasienBtn_Click);
             // 
             // cariPasienBox
             // 

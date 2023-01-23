@@ -112,7 +112,7 @@ namespace RSSumberWaras.View
             {
                 // ambil objek mhs yang mau diedit dari collection
                 Obat obt = listOfObat[listViewObat.SelectedIndices[0]];
-
+                this.Close();
                 // buat objek form entry data mahasiswa
                 FormEntryObat formEntry = new FormEntryObat("Edit Data Mahasiswa", obt, controller);
 
@@ -121,15 +121,16 @@ namespace RSSumberWaras.View
 
                 // tampilkan form entry mahasiswa
                 formEntry.ShowDialog();
-                this.Close();
+                
             }
             else // data belum dipilih
             {
+                this.Hide();
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
                 FormDokter formDokter = new FormDokter();
                 formDokter.Show();
-                this.Hide();
+                
             }
         }
 
@@ -159,10 +160,10 @@ namespace RSSumberWaras.View
 
                 if (result.status == "200")
                 {
-
+                    this.Hide();
                     MenuForm menuForm = new MenuForm();
                     menuForm.Show();
-                    this.Hide();
+                    
                 }
                 else
                 {

@@ -141,7 +141,7 @@ namespace RSSumberWaras.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1323, 735);
+            this.ClientSize = new System.Drawing.Size(1232, 735);
             this.Controls.Add(this.selesaiPenjualanBtn);
             this.Controls.Add(this.NamaObatPenjualanTxt);
             this.Controls.Add(this.namaPasienPenjualanTxt);

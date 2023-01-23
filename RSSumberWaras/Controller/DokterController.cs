@@ -41,28 +41,18 @@ namespace RSSumberWaras.Controller
             return list;
         }
 
-        public List<Dokter> ReadByNamaDokter(string namaDokter)
+        public List<Dokter> Search(string keyword)
         {
 
             List<Dokter> list = new List<Dokter>();
             try
             {
-                list = _repository.ReadByNamaDokter(namaDokter);
+                list = _repository.Search(keyword);
             }
             catch { }
             return list;
         }
 
-        public List<Dokter> ReadBySpesialisasi(string spesialis)
-        {
-            List<Dokter> list = new List<Dokter>();
-            try
-            {
-                list = _repository.ReadBySpesialisasi(spesialis);
-            }
-            catch { }
-            return list;
-        }
 
         // public List<Dokter> Read()
         // {

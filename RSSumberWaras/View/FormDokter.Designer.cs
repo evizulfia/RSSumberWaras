@@ -37,9 +37,7 @@ namespace RSSumberWaras.View
             this.hapusDokterBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.selesaiDokterBtn = new System.Windows.Forms.Button();
-            this.filterDokterDropDown = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -57,9 +55,9 @@ namespace RSSumberWaras.View
             // cariDokterBox
             // 
             this.cariDokterBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cariDokterBox.Location = new System.Drawing.Point(805, 110);
+            this.cariDokterBox.Location = new System.Drawing.Point(213, 110);
             this.cariDokterBox.Name = "cariDokterBox";
-            this.cariDokterBox.Size = new System.Drawing.Size(636, 34);
+            this.cariDokterBox.Size = new System.Drawing.Size(1228, 34);
             this.cariDokterBox.TabIndex = 1;
             // 
             // cariDokterBtn
@@ -122,19 +120,6 @@ namespace RSSumberWaras.View
             this.selesaiDokterBtn.UseVisualStyleBackColor = true;
             this.selesaiDokterBtn.Click += new System.EventHandler(this.selesaiDokterBtn_Click);
             // 
-            // filterDokterDropDown
-            // 
-            this.filterDokterDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.filterDokterDropDown.FormattingEnabled = true;
-            this.filterDokterDropDown.Items.AddRange(new object[] {
-            "All",
-            "Nama",
-            "Spesialisasi"});
-            this.filterDokterDropDown.Location = new System.Drawing.Point(194, 110);
-            this.filterDokterDropDown.Name = "filterDokterDropDown";
-            this.filterDokterDropDown.Size = new System.Drawing.Size(363, 39);
-            this.filterDokterDropDown.TabIndex = 8;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -143,21 +128,11 @@ namespace RSSumberWaras.View
             this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 9;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(111, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 25);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Filter";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(678, 116);
+            this.label4.Location = new System.Drawing.Point(118, 116);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 25);
             this.label4.TabIndex = 11;
@@ -170,9 +145,7 @@ namespace RSSumberWaras.View
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.filterDokterDropDown);
             this.Controls.Add(this.selesaiDokterBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.hapusDokterBtn);
@@ -199,9 +172,7 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.Button hapusDokterBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button selesaiDokterBtn;
-        private System.Windows.Forms.ComboBox filterDokterDropDown;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }
 }

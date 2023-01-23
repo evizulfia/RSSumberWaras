@@ -205,21 +205,13 @@ namespace RSSumberWaras.View
         {
             listViewDokter.Items.Clear();
             List<Dokter> listOfDokter = new List<Dokter>();
-
-            switch (filterDokterDropDown.SelectedIndex)
+            if(cariDokterBox.Text == "")
             {
-                case 0:
-                    listOfDokter = dokterController.ReadAll();
-                    break;
-                case 1:
-                    listOfDokter = dokterController.ReadByNamaDokter(cariDokterBox.Text);
-                    break;
-                case 2:
-                    listOfDokter = dokterController.ReadBySpesialisasi(cariDokterBox.Text);
-                    break;
-                    //case 3:
-                    //    listOfDokter = DokterController.ReadByCategory(txtKeyword.Text);
-                    //    break;
+                listOfDokter = dokterController.ReadAll();
+            }
+            else
+            {
+                listOfDokter = dokterController.Search(cariDokterBox.Text);
             }
 
             foreach (var obj in listOfDokter)
@@ -228,7 +220,7 @@ namespace RSSumberWaras.View
 
                 var item = new ListViewItem(obj.IdDokter.ToString());
                 //item.SubItems.Add(noUrut.ToString());
-                //item.SubItems.Add(dok.IdDokter.ToString());
+                item.SubItems.Add(obj.IdDokter.ToString());
                 item.SubItems.Add(obj.NamaDokter);
                 item.SubItems.Add(obj.Spesialisasi);
                 item.SubItems.Add(obj.NoTelepon);

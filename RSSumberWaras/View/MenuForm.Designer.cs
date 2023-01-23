@@ -35,22 +35,22 @@ namespace RSSumberWaras.View
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.LaporanMenuBtn = new System.Windows.Forms.PictureBox();
             this.RekamMedisBtn = new System.Windows.Forms.PictureBox();
             this.DokterBtn = new System.Windows.Forms.PictureBox();
             this.ObatBtn = new System.Windows.Forms.PictureBox();
             this.PasienBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.PenjualanMenuBtn = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LaporanMenuBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RekamMedisBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DokterBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ObatBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PasienBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PenjualanMenuBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // logoutMenuBtn
@@ -106,32 +106,37 @@ namespace RSSumberWaras.View
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(587, 172);
+            this.label6.Location = new System.Drawing.Point(505, 173);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(186, 17);
             this.label6.TabIndex = 14;
             this.label6.Text = "Rumah Sakit Sumber Waras";
             // 
-            // pictureBox2
+            // LaporanMenuBtn
             // 
-            this.pictureBox2.Image = global::RSSumberWaras.Properties.Resources.time_management;
-            this.pictureBox2.Location = new System.Drawing.Point(671, 447);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(102, 97);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            this.LaporanMenuBtn.Image = global::RSSumberWaras.Properties.Resources.time_management;
+            this.LaporanMenuBtn.Location = new System.Drawing.Point(666, 447);
+            this.LaporanMenuBtn.Name = "LaporanMenuBtn";
+            this.LaporanMenuBtn.Size = new System.Drawing.Size(118, 97);
+            this.LaporanMenuBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LaporanMenuBtn.TabIndex = 15;
+            this.LaporanMenuBtn.TabStop = false;
+            this.LaporanMenuBtn.Click += new System.EventHandler(this.LaporanMenuBtn_Click);
+            this.LaporanMenuBtn.MouseEnter += new System.EventHandler(this.LaporanMenuBtn_MouseEnter);
+            this.LaporanMenuBtn.MouseLeave += new System.EventHandler(this.RekamMedisBtn_MouseLeave);
             // 
             // RekamMedisBtn
             // 
             this.RekamMedisBtn.Image = global::RSSumberWaras.Properties.Resources.rekam_medis;
-            this.RekamMedisBtn.Location = new System.Drawing.Point(599, 215);
+            this.RekamMedisBtn.Location = new System.Drawing.Point(604, 207);
             this.RekamMedisBtn.Name = "RekamMedisBtn";
-            this.RekamMedisBtn.Size = new System.Drawing.Size(137, 104);
+            this.RekamMedisBtn.Size = new System.Drawing.Size(123, 112);
             this.RekamMedisBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RekamMedisBtn.TabIndex = 10;
             this.RekamMedisBtn.TabStop = false;
             this.RekamMedisBtn.Click += new System.EventHandler(this.RekamMedisBtn_Click);
+            this.RekamMedisBtn.MouseEnter += new System.EventHandler(this.RekamMedisBtn_MouseEnter);
+            this.RekamMedisBtn.MouseLeave += new System.EventHandler(this.RekamMedisBtn_MouseLeave);
             // 
             // DokterBtn
             // 
@@ -150,13 +155,15 @@ namespace RSSumberWaras.View
             // ObatBtn
             // 
             this.ObatBtn.Image = global::RSSumberWaras.Properties.Resources.pills__1_;
-            this.ObatBtn.Location = new System.Drawing.Point(790, 215);
+            this.ObatBtn.Location = new System.Drawing.Point(790, 207);
             this.ObatBtn.Name = "ObatBtn";
-            this.ObatBtn.Size = new System.Drawing.Size(109, 104);
+            this.ObatBtn.Size = new System.Drawing.Size(114, 112);
             this.ObatBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ObatBtn.TabIndex = 6;
             this.ObatBtn.TabStop = false;
             this.ObatBtn.Click += new System.EventHandler(this.ObatBtn_Click);
+            this.ObatBtn.MouseEnter += new System.EventHandler(this.ObatBtn_MouseEnter);
+            this.ObatBtn.MouseLeave += new System.EventHandler(this.ObatBtn_MouseLeave);
             // 
             // PasienBtn
             // 
@@ -182,15 +189,18 @@ namespace RSSumberWaras.View
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
+            // PenjualanMenuBtn
             // 
-            this.pictureBox3.Image = global::RSSumberWaras.Properties.Resources.trade;
-            this.pictureBox3.Location = new System.Drawing.Point(377, 447);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(125, 97);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
+            this.PenjualanMenuBtn.Image = global::RSSumberWaras.Properties.Resources.trade;
+            this.PenjualanMenuBtn.Location = new System.Drawing.Point(383, 441);
+            this.PenjualanMenuBtn.Name = "PenjualanMenuBtn";
+            this.PenjualanMenuBtn.Size = new System.Drawing.Size(106, 103);
+            this.PenjualanMenuBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PenjualanMenuBtn.TabIndex = 16;
+            this.PenjualanMenuBtn.TabStop = false;
+            this.PenjualanMenuBtn.Click += new System.EventHandler(this.PenjualanMenuBtn_Click);
+            this.PenjualanMenuBtn.MouseEnter += new System.EventHandler(this.PenjualanMenuBtn_MouseEnter);
+            this.PenjualanMenuBtn.MouseLeave += new System.EventHandler(this.PenjualanMenuBtn_MouseLeave);
             // 
             // label7
             // 
@@ -220,8 +230,8 @@ namespace RSSumberWaras.View
             this.ClientSize = new System.Drawing.Size(1220, 800);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.PenjualanMenuBtn);
+            this.Controls.Add(this.LaporanMenuBtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.RekamMedisBtn);
@@ -235,13 +245,13 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.logoutMenuBtn);
             this.Name = "MenuForm";
             this.Text = "FormMenu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LaporanMenuBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RekamMedisBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DokterBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ObatBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PasienBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PenjualanMenuBtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,8 +270,8 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.PictureBox RekamMedisBtn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox LaporanMenuBtn;
+        private System.Windows.Forms.PictureBox PenjualanMenuBtn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
     }

@@ -16,5 +16,12 @@ namespace RSSumberWaras.View
         {
             InitializeComponent();
         }
+
+        private void tmbhRekamMedisBtn_Click(object sender, EventArgs e)
+        {
+            FormEntryRekamMedis form = new FormEntryRekamMedis();
+            form.Show();
+            this.Hide();
+        }
     }
 }

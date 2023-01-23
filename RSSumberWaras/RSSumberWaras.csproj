@@ -230,6 +230,9 @@
     <EmbeddedResource Include="View\FormEntryPasien.resx">
       <DependentUpon>FormEntryPasien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormEntryRekamMedis.resx">
+      <DependentUpon>FormEntryRekamMedis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormObat.resx">
       <DependentUpon>FormObat.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormPenjualanObat.resx">
       <DependentUpon>FormPenjualanObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormRekamMedis.resx">
+      <DependentUpon>FormRekamMedis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>

@@ -60,11 +60,35 @@ namespace RSSumberWaras.View
             this.Hide();
         }
 
+        private void RekamMedisBtn_MouseEnter(object sender, EventArgs e)
+        {
+            RekamMedisBtn.SizeMode = PictureBoxSizeMode.StretchImage;
+            RekamMedisBtn.Cursor = Cursors.Hand;
+        }
+
+        private void RekamMedisBtn_MouseLeave(object sender, EventArgs e)
+        {
+            RekamMedisBtn.SizeMode = PictureBoxSizeMode.Zoom;
+            RekamMedisBtn.Cursor = Cursors.Default;
+        }
+
         private void RekamMedisBtn_Click(object sender, EventArgs e)
         {
             FormRekamMedis rekamMedisForm = new FormRekamMedis();
             rekamMedisForm.Show();
             this.Hide();
+        }
+
+        private void ObatBtn_MouseEnter(object sender, EventArgs e)
+        {
+            ObatBtn.SizeMode = PictureBoxSizeMode.StretchImage;
+            ObatBtn.Cursor = Cursors.Hand;
+        }
+
+        private void ObatBtn_MouseLeave(object sender, EventArgs e)
+        {
+            ObatBtn.SizeMode = PictureBoxSizeMode.Zoom;
+            ObatBtn.Cursor = Cursors.Default;
         }
 
         private void ObatBtn_Click(object sender, EventArgs e)
@@ -74,10 +98,40 @@ namespace RSSumberWaras.View
             this.Hide();
         }
 
-        private void ResepBtn_Click(object sender, EventArgs e)
+        private void PenjualanMenuBtn_MouseEnter(object sender, EventArgs e)
         {
-            FormResep resepForm = new FormResep();
-            resepForm.Show();
+            PenjualanMenuBtn.SizeMode = PictureBoxSizeMode.StretchImage;
+            PenjualanMenuBtn.Cursor = Cursors.Hand;
+        }
+
+        private void PenjualanMenuBtn_MouseLeave(object sender, EventArgs e)
+        {
+            PenjualanMenuBtn.SizeMode = PictureBoxSizeMode.Zoom;
+            PenjualanMenuBtn.Cursor = Cursors.Default;
+        }
+
+        private void PenjualanMenuBtn_Click(object sender, EventArgs e)
+        {
+            FormPenjualanObat form = new FormPenjualanObat();
+            form.Show();
+            this.Hide();
+        }
+
+        private void LaporanMenuBtn_MouseEnter(object sender, EventArgs e)
+        {
+            LaporanMenuBtn.SizeMode = PictureBoxSizeMode.StretchImage;
+            LaporanMenuBtn.Cursor = Cursors.Hand;
+        }
+
+        private void LaporanMenuBtn_MouseLeave(object sender, EventArgs e)
+        {
+            LaporanMenuBtn.SizeMode = PictureBoxSizeMode.Zoom;
+            LaporanMenuBtn.Cursor = Cursors.Default;
+        }
+        private void LaporanMenuBtn_Click(object sender, EventArgs e)
+        {
+            FormLaporanTransaksi form = new FormLaporanTransaksi();
+            form.Show();
             this.Hide();
         }
     }

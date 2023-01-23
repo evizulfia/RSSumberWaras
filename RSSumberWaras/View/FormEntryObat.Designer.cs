@@ -44,7 +44,7 @@ namespace RSSumberWaras.View
             // obatSimpanBtn
             // 
             this.obatSimpanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.obatSimpanBtn.Location = new System.Drawing.Point(348, 329);
+            this.obatSimpanBtn.Location = new System.Drawing.Point(394, 358);
             this.obatSimpanBtn.Name = "obatSimpanBtn";
             this.obatSimpanBtn.Size = new System.Drawing.Size(195, 53);
             this.obatSimpanBtn.TabIndex = 17;
@@ -55,7 +55,7 @@ namespace RSSumberWaras.View
             // satuanObatBox
             // 
             this.satuanObatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.satuanObatBox.Location = new System.Drawing.Point(254, 236);
+            this.satuanObatBox.Location = new System.Drawing.Point(300, 265);
             this.satuanObatBox.Name = "satuanObatBox";
             this.satuanObatBox.Size = new System.Drawing.Size(538, 38);
             this.satuanObatBox.TabIndex = 16;
@@ -63,7 +63,7 @@ namespace RSSumberWaras.View
             // hargaObatBox
             // 
             this.hargaObatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hargaObatBox.Location = new System.Drawing.Point(254, 178);
+            this.hargaObatBox.Location = new System.Drawing.Point(300, 207);
             this.hargaObatBox.Name = "hargaObatBox";
             this.hargaObatBox.Size = new System.Drawing.Size(538, 38);
             this.hargaObatBox.TabIndex = 15;
@@ -71,7 +71,7 @@ namespace RSSumberWaras.View
             // idObatBox
             // 
             this.idObatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idObatBox.Location = new System.Drawing.Point(254, 63);
+            this.idObatBox.Location = new System.Drawing.Point(300, 92);
             this.idObatBox.Name = "idObatBox";
             this.idObatBox.Size = new System.Drawing.Size(538, 38);
             this.idObatBox.TabIndex = 14;
@@ -80,7 +80,7 @@ namespace RSSumberWaras.View
             // 
             this.noHp.AutoSize = true;
             this.noHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noHp.Location = new System.Drawing.Point(8, 236);
+            this.noHp.Location = new System.Drawing.Point(54, 265);
             this.noHp.Name = "noHp";
             this.noHp.Size = new System.Drawing.Size(87, 29);
             this.noHp.TabIndex = 13;
@@ -90,7 +90,7 @@ namespace RSSumberWaras.View
             // 
             this.spesialisasi.AutoSize = true;
             this.spesialisasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spesialisasi.Location = new System.Drawing.Point(8, 178);
+            this.spesialisasi.Location = new System.Drawing.Point(54, 207);
             this.spesialisasi.Name = "spesialisasi";
             this.spesialisasi.Size = new System.Drawing.Size(78, 29);
             this.spesialisasi.TabIndex = 12;
@@ -100,7 +100,7 @@ namespace RSSumberWaras.View
             // 
             this.idDokter.AutoSize = true;
             this.idDokter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idDokter.Location = new System.Drawing.Point(8, 69);
+            this.idDokter.Location = new System.Drawing.Point(54, 98);
             this.idDokter.Name = "idDokter";
             this.idDokter.Size = new System.Drawing.Size(94, 29);
             this.idDokter.TabIndex = 11;
@@ -110,7 +110,7 @@ namespace RSSumberWaras.View
             // 
             this.namaDokter.AutoSize = true;
             this.namaDokter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namaDokter.Location = new System.Drawing.Point(8, 125);
+            this.namaDokter.Location = new System.Drawing.Point(54, 154);
             this.namaDokter.Name = "namaDokter";
             this.namaDokter.Size = new System.Drawing.Size(135, 29);
             this.namaDokter.TabIndex = 10;
@@ -119,7 +119,7 @@ namespace RSSumberWaras.View
             // namaObatBox
             // 
             this.namaObatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namaObatBox.Location = new System.Drawing.Point(254, 116);
+            this.namaObatBox.Location = new System.Drawing.Point(300, 145);
             this.namaObatBox.Name = "namaObatBox";
             this.namaObatBox.Size = new System.Drawing.Size(538, 38);
             this.namaObatBox.TabIndex = 9;
@@ -127,7 +127,7 @@ namespace RSSumberWaras.View
             // EntryFormObatSelesaiBtn
             // 
             this.EntryFormObatSelesaiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EntryFormObatSelesaiBtn.Location = new System.Drawing.Point(597, 329);
+            this.EntryFormObatSelesaiBtn.Location = new System.Drawing.Point(643, 358);
             this.EntryFormObatSelesaiBtn.Name = "EntryFormObatSelesaiBtn";
             this.EntryFormObatSelesaiBtn.Size = new System.Drawing.Size(195, 53);
             this.EntryFormObatSelesaiBtn.TabIndex = 18;

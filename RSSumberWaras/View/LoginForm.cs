@@ -66,6 +66,23 @@ namespace RSSumberWaras
 
         }
 
+        private void maximise(object sender, EventArgs e)
+        {
+
+            //normalises window
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.CenterToScreen();
+            }
+
+            //maximises window
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.CenterToScreen();
+            }
+        }
         private void passBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Return))

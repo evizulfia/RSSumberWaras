@@ -54,6 +54,7 @@ namespace RSSumberWaras.View
             this.EntryFormObatSelesaiBtn.TabIndex = 28;
             this.EntryFormObatSelesaiBtn.Text = "Selesai";
             this.EntryFormObatSelesaiBtn.UseVisualStyleBackColor = true;
+            this.EntryFormObatSelesaiBtn.Click += new System.EventHandler(this.EntryFormObatSelesaiBtn_Click);
             // 
             // obatSimpanBtn
             // 
@@ -64,6 +65,7 @@ namespace RSSumberWaras.View
             this.obatSimpanBtn.TabIndex = 27;
             this.obatSimpanBtn.Text = "Simpan";
             this.obatSimpanBtn.UseVisualStyleBackColor = true;
+            this.obatSimpanBtn.Click += new System.EventHandler(this.obatSimpanBtn_Click);
             // 
             // idDokterBox
             // 

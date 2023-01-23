@@ -16,5 +16,17 @@ namespace RSSumberWaras.View
         {
             InitializeComponent();
         }
+
+        private void obatSimpanBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EntryFormObatSelesaiBtn_Click(object sender, EventArgs e)
+        {
+            FormRekamMedis form = new FormRekamMedis();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

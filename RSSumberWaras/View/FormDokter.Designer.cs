@@ -45,7 +45,7 @@ namespace RSSumberWaras.View
             this.listViewDokter.HideSelection = false;
             this.listViewDokter.Location = new System.Drawing.Point(116, 159);
             this.listViewDokter.Name = "listViewDokter";
-            this.listViewDokter.Size = new System.Drawing.Size(1711, 769);
+            this.listViewDokter.Size = new System.Drawing.Size(1774, 783);
             this.listViewDokter.TabIndex = 0;
             this.listViewDokter.UseCompatibleStateImageBehavior = false;
             this.listViewDokter.SelectedIndexChanged += new System.EventHandler(this.listViewDokter_SelectedIndexChanged);
@@ -60,7 +60,7 @@ namespace RSSumberWaras.View
             // 
             // cariDokterBtn
             // 
-            this.cariDokterBtn.Location = new System.Drawing.Point(1395, 110);
+            this.cariDokterBtn.Location = new System.Drawing.Point(1462, 110);
             this.cariDokterBtn.Name = "cariDokterBtn";
             this.cariDokterBtn.Size = new System.Drawing.Size(91, 34);
             this.cariDokterBtn.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace RSSumberWaras.View
             // 
             // tmbhDokterBtn
             // 
-            this.tmbhDokterBtn.Location = new System.Drawing.Point(1506, 110);
+            this.tmbhDokterBtn.Location = new System.Drawing.Point(1573, 110);
             this.tmbhDokterBtn.Name = "tmbhDokterBtn";
             this.tmbhDokterBtn.Size = new System.Drawing.Size(91, 34);
             this.tmbhDokterBtn.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace RSSumberWaras.View
             // 
             // editDokterBtn
             // 
-            this.editDokterBtn.Location = new System.Drawing.Point(1619, 110);
+            this.editDokterBtn.Location = new System.Drawing.Point(1686, 110);
             this.editDokterBtn.Name = "editDokterBtn";
             this.editDokterBtn.Size = new System.Drawing.Size(91, 34);
             this.editDokterBtn.TabIndex = 4;
@@ -90,7 +90,7 @@ namespace RSSumberWaras.View
             // 
             // hapusDokterBtn
             // 
-            this.hapusDokterBtn.Location = new System.Drawing.Point(1732, 110);
+            this.hapusDokterBtn.Location = new System.Drawing.Point(1799, 110);
             this.hapusDokterBtn.Name = "hapusDokterBtn";
             this.hapusDokterBtn.Size = new System.Drawing.Size(91, 34);
             this.hapusDokterBtn.TabIndex = 5;

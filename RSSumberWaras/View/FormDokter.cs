@@ -42,11 +42,11 @@ namespace RSSumberWaras.View
             listViewDokter.FullRowSelect = true;
             listViewDokter.GridLines = true;
             //listViewDokter.Columns.Add("No Urut", 50, HorizontalAlignment.Center);
-            listViewDokter.Columns.Add("ID", 40, HorizontalAlignment.Center);
-            listViewDokter.Columns.Add("Nama", 250, HorizontalAlignment.Center);
-            listViewDokter.Columns.Add("Spesialisasi", 150, HorizontalAlignment.Left);
-            listViewDokter.Columns.Add("No. HP", 150, HorizontalAlignment.Center);
-            listViewDokter.Columns.Add("Status", 50, HorizontalAlignment.Center);
+            listViewDokter.Columns.Add("ID", 100, HorizontalAlignment.Center);
+            listViewDokter.Columns.Add("Nama", 600, HorizontalAlignment.Center);
+            listViewDokter.Columns.Add("Spesialisasi", 300, HorizontalAlignment.Left);
+            listViewDokter.Columns.Add("No. HP", 300, HorizontalAlignment.Center);
+            listViewDokter.Columns.Add("Status", 100, HorizontalAlignment.Center);
         }
 
         // method untuk menampilkan semua data mahasiswa

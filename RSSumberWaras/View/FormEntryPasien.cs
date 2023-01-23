@@ -21,10 +21,10 @@ namespace RSSumberWaras.View
         public delegate void CreateUpdateEventHandler(Pasien pas);
 
         // deklarasi event ketika terjadi proses input data baru
-        public event CreateUpdateEventHandler OnCreate;
+        //public event CreateUpdateEventHandler OnCreate;
 
         // deklarasi event ketika terjadi proses update data
-        public event CreateUpdateEventHandler OnUpdate;
+        //public event CreateUpdateEventHandler OnUpdate;
 
         // deklarasi objek controller
         private PasienController controller;
@@ -82,7 +82,7 @@ namespace RSSumberWaras.View
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
             string endpoint = "api/dokter-store";
 
-            int result = 0;
+            //int result = 0;
 
             //membuat objek rest client
             var client = new RestClient(baseUrl);
@@ -106,8 +106,6 @@ namespace RSSumberWaras.View
 
             if (resp.status == "200")
             {
-
-
 
                 string message = resp.message;
                 string title = "Proses berhasil";

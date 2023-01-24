@@ -23,7 +23,6 @@ namespace RSSumberWaras.View
         private TransaksiController transaksiController = new TransaksiController();
 
 
-
         public FormTransaksi()
         {
             InitializeComponent();
@@ -43,13 +42,14 @@ namespace RSSumberWaras.View
 
             listViewTransaksi.Columns.Add("ID Transaksi", 100, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("ID Pasien", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("ID Obat", 150, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("Nama Pasien", 150, HorizontalAlignment.Left);
             //listViewTransaksi.Columns.Add("ID Dokter Yang Memeriksa", 100, HorizontalAlignment.Center);
             //listViewTransaksi.Columns.Add("Nama Dokter", 150, HorizontalAlignment.Left);
             listViewTransaksi.Columns.Add("Invoice", 150, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("Tanggal Transaksi", 150, HorizontalAlignment.Left);
             listViewTransaksi.Columns.Add("Total", 150, HorizontalAlignment.Center);
-            //listViewTransaksi.Columns.Add("Status", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Status", 150, HorizontalAlignment.Center);
         }
 
         // method untuk menampilkan semua data mahasiswa
@@ -64,13 +64,14 @@ namespace RSSumberWaras.View
             {
                 var item = new ListViewItem(trans.IdTransaction.ToString());
                 item.SubItems.Add(trans.IdPasien.ToString());
+                item.SubItems.Add(trans.IdObat.ToString());
                 item.SubItems.Add(trans.namaPasien);
                 //item.SubItems.Add(trans.IdDokter.ToString());
                 item.SubItems.Add(trans.invoice);
                 item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
                 //item.SubItems.Add(trans.harga.ToString());
                 item.SubItems.Add(trans.total.ToString());
-                //item.SubItems.Add(trans.status);
+                item.SubItems.Add(trans.status);
 
                 // tampilkan data dok ke listview
                 listViewTransaksi.Items.Add(item);
@@ -79,19 +80,20 @@ namespace RSSumberWaras.View
 
         private void OnCreateEventHandler(Transaksi trans)
         {
-            // tambahkan objek mhs yang baru ke dalam collection
+            // tambahkan objek trans yang baru ke dalam collection
             listOfTransaksi.Add(trans);
 
             var item = new ListViewItem(trans.IdTransaction.ToString());
             item.SubItems.Add(trans.IdPasien.ToString());
+            item.SubItems.Add(trans.IdObat.ToString());
             item.SubItems.Add(trans.namaPasien);
             //item.SubItems.Add(trans.IdDokter.ToString());
             item.SubItems.Add(trans.invoice);
             item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
             item.SubItems.Add(trans.total.ToString());
-            //item.SubItems.Add(trans.status);
+            item.SubItems.Add(trans.status);
 
-            // tampilkan data dok ke listview
+            // tampilkan data trans ke listview
             listViewTransaksi.Items.Add(item);
         }
 
@@ -105,9 +107,10 @@ namespace RSSumberWaras.View
 
         private void selesaiTransaksiBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MenuForm form = new MenuForm();
             form.ShowDialog();
-            this.Hide();
+            
         }
         private void maximise(object sender, EventArgs e)
         {
@@ -145,12 +148,13 @@ namespace RSSumberWaras.View
             {
                 var item = new ListViewItem(trans.IdTransaction.ToString());
                 item.SubItems.Add(trans.IdPasien.ToString());
+                item.SubItems.Add(trans.IdObat.ToString());
                 item.SubItems.Add(trans.namaPasien);
                 item.SubItems.Add(trans.invoice);
                 item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
                 //item.SubItems.Add(trans.harga.ToString());
                 item.SubItems.Add(trans.total.ToString());
-                //item.SubItems.Add(trans.status);
+                item.SubItems.Add(trans.status);
 
                 // tampilkan data dok ke listview
                 listViewTransaksi.Items.Add(item);

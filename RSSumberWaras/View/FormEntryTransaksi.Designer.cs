@@ -37,29 +37,33 @@ namespace RSSumberWaras.View
             this.noHp = new System.Windows.Forms.Label();
             this.namaDokter = new System.Windows.Forms.Label();
             this.idPasienBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.idTransaksiBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.idObatBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tglTransaksiPicker
             // 
             this.tglTransaksiPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.tglTransaksiPicker.Location = new System.Drawing.Point(321, 257);
+            this.tglTransaksiPicker.Location = new System.Drawing.Point(321, 356);
             this.tglTransaksiPicker.Name = "tglTransaksiPicker";
-            this.tglTransaksiPicker.Size = new System.Drawing.Size(299, 38);
+            this.tglTransaksiPicker.Size = new System.Drawing.Size(458, 38);
             this.tglTransaksiPicker.TabIndex = 47;
             // 
             // totalBox
             // 
             this.totalBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalBox.Location = new System.Drawing.Point(321, 331);
+            this.totalBox.Location = new System.Drawing.Point(321, 430);
             this.totalBox.Name = "totalBox";
-            this.totalBox.Size = new System.Drawing.Size(301, 38);
+            this.totalBox.Size = new System.Drawing.Size(460, 38);
             this.totalBox.TabIndex = 46;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 331);
+            this.label2.Location = new System.Drawing.Point(75, 430);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 29);
             this.label2.TabIndex = 45;
@@ -91,7 +95,7 @@ namespace RSSumberWaras.View
             // 
             this.noHp.AutoSize = true;
             this.noHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noHp.Location = new System.Drawing.Point(74, 263);
+            this.noHp.Location = new System.Drawing.Point(74, 362);
             this.noHp.Name = "noHp";
             this.noHp.Size = new System.Drawing.Size(213, 29);
             this.noHp.TabIndex = 38;
@@ -101,7 +105,7 @@ namespace RSSumberWaras.View
             // 
             this.namaDokter.AutoSize = true;
             this.namaDokter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namaDokter.Location = new System.Drawing.Point(75, 189);
+            this.namaDokter.Location = new System.Drawing.Point(75, 187);
             this.namaDokter.Name = "namaDokter";
             this.namaDokter.Size = new System.Drawing.Size(116, 29);
             this.namaDokter.TabIndex = 35;
@@ -110,16 +114,56 @@ namespace RSSumberWaras.View
             // idPasienBox
             // 
             this.idPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idPasienBox.Location = new System.Drawing.Point(321, 183);
+            this.idPasienBox.Location = new System.Drawing.Point(321, 181);
             this.idPasienBox.Name = "idPasienBox";
-            this.idPasienBox.Size = new System.Drawing.Size(301, 38);
+            this.idPasienBox.Size = new System.Drawing.Size(460, 38);
             this.idPasienBox.TabIndex = 34;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(75, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 29);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "ID Transaksi";
+            // 
+            // idTransaksiBox
+            // 
+            this.idTransaksiBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idTransaksiBox.Location = new System.Drawing.Point(321, 113);
+            this.idTransaksiBox.Name = "idTransaksiBox";
+            this.idTransaksiBox.Size = new System.Drawing.Size(460, 38);
+            this.idTransaksiBox.TabIndex = 48;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(75, 266);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 29);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "ID Obat";
+            // 
+            // idObatBox
+            // 
+            this.idObatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idObatBox.Location = new System.Drawing.Point(321, 260);
+            this.idObatBox.Name = "idObatBox";
+            this.idObatBox.Size = new System.Drawing.Size(460, 38);
+            this.idObatBox.TabIndex = 50;
             // 
             // FormEntryTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 731);
+            this.ClientSize = new System.Drawing.Size(899, 731);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.idObatBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.idTransaksiBox);
             this.Controls.Add(this.tglTransaksiPicker);
             this.Controls.Add(this.totalBox);
             this.Controls.Add(this.label2);
@@ -130,6 +174,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.idPasienBox);
             this.Name = "FormEntryTransaksi";
             this.Text = "FormEntryTransaksi";
+            this.Load += new System.EventHandler(this.FormEntryTransaksi_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,5 +190,9 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.Label noHp;
         private System.Windows.Forms.Label namaDokter;
         private System.Windows.Forms.TextBox idPasienBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox idTransaksiBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox idObatBox;
     }
 }

@@ -90,7 +90,7 @@ namespace RSSumberWaras.View
             this.filterDropdown.FormattingEnabled = true;
             this.filterDropdown.Items.AddRange(new object[] {
             "Semua",
-            "ID Pasien",
+            "ID Transaksi",
             "Nama pasien"});
             this.filterDropdown.Location = new System.Drawing.Point(49, 159);
             this.filterDropdown.Name = "filterDropdown";

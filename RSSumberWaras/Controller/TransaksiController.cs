@@ -38,15 +38,27 @@ namespace RSSumberWaras.Controller
             return list;
         }
 
-        public Transaksi SearchById(string pasienId)
+        public Transaksi SearchById(string transID)
         {
             Transaksi trans = new Transaksi();
             try
             {
-                trans = _repository.SearchById(pasienId);
+                trans = _repository.SearchById(transID);
             }
             catch { }
             return trans;
+        }
+
+        public List<Transaksi> SearchByNama(string nama)
+        {
+
+            List<Transaksi> name = new List<Transaksi>();
+            try
+            {
+                name = _repository.SearchByNama(nama);
+            }
+            catch { }
+            return name;
         }
 
     }

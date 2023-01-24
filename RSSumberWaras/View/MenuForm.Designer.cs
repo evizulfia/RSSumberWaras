@@ -55,7 +55,7 @@ namespace RSSumberWaras.View
             // 
             // logoutMenuBtn
             // 
-            this.logoutMenuBtn.Location = new System.Drawing.Point(1169, 689);
+            this.logoutMenuBtn.Location = new System.Drawing.Point(1271, 907);
             this.logoutMenuBtn.Name = "logoutMenuBtn";
             this.logoutMenuBtn.Size = new System.Drawing.Size(181, 41);
             this.logoutMenuBtn.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace RSSumberWaras.View
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(692, 343);
+            this.label1.Location = new System.Drawing.Point(794, 561);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 4;
@@ -77,7 +77,7 @@ namespace RSSumberWaras.View
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(544, 343);
+            this.label3.Location = new System.Drawing.Point(646, 561);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 20);
             this.label3.TabIndex = 8;
@@ -87,7 +87,7 @@ namespace RSSumberWaras.View
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1029, 343);
+            this.label4.Location = new System.Drawing.Point(1131, 561);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 20);
             this.label4.TabIndex = 9;
@@ -97,7 +97,7 @@ namespace RSSumberWaras.View
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(835, 343);
+            this.label5.Location = new System.Drawing.Point(937, 561);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 20);
             this.label5.TabIndex = 11;
@@ -106,7 +106,7 @@ namespace RSSumberWaras.View
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(721, 93);
+            this.label6.Location = new System.Drawing.Point(823, 311);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(186, 17);
             this.label6.TabIndex = 14;
@@ -115,7 +115,7 @@ namespace RSSumberWaras.View
             // LaporanMenuBtn
             // 
             this.LaporanMenuBtn.Image = global::RSSumberWaras.Properties.Resources.time_management;
-            this.LaporanMenuBtn.Location = new System.Drawing.Point(885, 456);
+            this.LaporanMenuBtn.Location = new System.Drawing.Point(987, 674);
             this.LaporanMenuBtn.Name = "LaporanMenuBtn";
             this.LaporanMenuBtn.Size = new System.Drawing.Size(118, 97);
             this.LaporanMenuBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,7 +128,7 @@ namespace RSSumberWaras.View
             // RekamMedisBtn
             // 
             this.RekamMedisBtn.Image = global::RSSumberWaras.Properties.Resources.rekam_medis;
-            this.RekamMedisBtn.Location = new System.Drawing.Point(823, 216);
+            this.RekamMedisBtn.Location = new System.Drawing.Point(925, 434);
             this.RekamMedisBtn.Name = "RekamMedisBtn";
             this.RekamMedisBtn.Size = new System.Drawing.Size(123, 112);
             this.RekamMedisBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,7 +141,7 @@ namespace RSSumberWaras.View
             // DokterBtn
             // 
             this.DokterBtn.Image = global::RSSumberWaras.Properties.Resources.medical_team;
-            this.DokterBtn.Location = new System.Drawing.Point(667, 224);
+            this.DokterBtn.Location = new System.Drawing.Point(769, 442);
             this.DokterBtn.Name = "DokterBtn";
             this.DokterBtn.Size = new System.Drawing.Size(109, 104);
             this.DokterBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -155,7 +155,7 @@ namespace RSSumberWaras.View
             // ObatBtn
             // 
             this.ObatBtn.Image = global::RSSumberWaras.Properties.Resources.pills__1_;
-            this.ObatBtn.Location = new System.Drawing.Point(1009, 216);
+            this.ObatBtn.Location = new System.Drawing.Point(1111, 434);
             this.ObatBtn.Name = "ObatBtn";
             this.ObatBtn.Size = new System.Drawing.Size(114, 112);
             this.ObatBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -168,7 +168,7 @@ namespace RSSumberWaras.View
             // PasienBtn
             // 
             this.PasienBtn.Image = global::RSSumberWaras.Properties.Resources.pasien1;
-            this.PasienBtn.Location = new System.Drawing.Point(519, 224);
+            this.PasienBtn.Location = new System.Drawing.Point(621, 442);
             this.PasienBtn.Name = "PasienBtn";
             this.PasienBtn.Size = new System.Drawing.Size(108, 104);
             this.PasienBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,7 +182,7 @@ namespace RSSumberWaras.View
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RSSumberWaras.Properties.Resources.hospital_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(724, -68);
+            this.pictureBox1.Location = new System.Drawing.Point(826, 150);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(172, 158);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +192,7 @@ namespace RSSumberWaras.View
             // PenjualanMenuBtn
             // 
             this.PenjualanMenuBtn.Image = global::RSSumberWaras.Properties.Resources.trade;
-            this.PenjualanMenuBtn.Location = new System.Drawing.Point(602, 450);
+            this.PenjualanMenuBtn.Location = new System.Drawing.Point(704, 668);
             this.PenjualanMenuBtn.Name = "PenjualanMenuBtn";
             this.PenjualanMenuBtn.Size = new System.Drawing.Size(106, 103);
             this.PenjualanMenuBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +206,7 @@ namespace RSSumberWaras.View
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(598, 573);
+            this.label7.Location = new System.Drawing.Point(700, 791);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 20);
             this.label7.TabIndex = 17;
@@ -216,7 +216,7 @@ namespace RSSumberWaras.View
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(867, 573);
+            this.label8.Location = new System.Drawing.Point(969, 791);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(148, 20);
             this.label8.TabIndex = 18;

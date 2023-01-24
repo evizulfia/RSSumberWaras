@@ -9,7 +9,7 @@ namespace RSSumberWaras.Model.Entity
     public class Transaksi
     {
         public int IdTransaction { get; set; }
-        public int IdDokter { set; get; }
+        public int IdObat { set; get; }
         public int IdPasien { set; get; }
 
         public string namaPasien { set; get; }

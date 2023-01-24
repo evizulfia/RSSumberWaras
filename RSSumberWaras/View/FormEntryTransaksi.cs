@@ -47,7 +47,7 @@ namespace RSSumberWaras.View
             this.Text = title;
             this.controller = controller;
         }
-        /*
+        
         public FormEntryTransaksi(string title, Transaksi obj, TransaksiController controller)
             : this()
         {
@@ -60,8 +60,8 @@ namespace RSSumberWaras.View
 
 
             // untuk edit data, tampilkan data lama
-            //idTransaksiBox.Text = trans.IdTransaction.ToString();
-            //idDokterBox.Text = trans.IdDokter.ToString();
+            idTransaksiBox.Text = trans.IdTransaction.ToString();
+            idObatBox.Text = trans.IdObat.ToString();
             idPasienBox.Text = trans.IdPasien.ToString();
             //namaPasienBox.Text = trans.namaPasien;
             //invoiceBox.Text = trans.invoice;
@@ -69,7 +69,7 @@ namespace RSSumberWaras.View
             //hargaBox.Text = trans.harga.ToString();
             totalBox.Text = trans.total.ToString();
             //StatusBox.Text = trans.status;
-        }*/
+        }
 
       
 
@@ -86,9 +86,9 @@ namespace RSSumberWaras.View
             var request = new RestRequest(endpoint, Method.POST);
 
 
-           // request.AddParameter("id_transaction", idPasienBox.Text.ToString());
+            request.AddParameter("id_transaction", idTransaksiBox.Text.ToString());
             request.AddParameter("id_pasien", idPasienBox.Text.ToString());
-            //request.AddParameter("id_dokter", idDokterBox.Text.ToString());
+            request.AddParameter("id_obat", idObatBox.Text.ToString());
             //request.AddParameter("nama_pasien", namaPasienBox.Text);
             //request.AddParameter("invoice", invoiceBox.Text);
             request.AddParameter("tanggal_transaksi", tglTransaksiPicker.Value.Date.ToString("yyyy-MM-dd"));
@@ -99,6 +99,7 @@ namespace RSSumberWaras.View
             var response = client.Execute(request);
 
             dynamic resp = JObject.Parse(response.Content);
+            Console.WriteLine(response.Content);
 
             if (resp.status == "200")
             {
@@ -107,6 +108,8 @@ namespace RSSumberWaras.View
                 MessageBox.Show(message, title);
                 this.Hide();
                 FormTransaksi form = new FormTransaksi();
+                //FormEntryTransaksi form = new FormEntryTransaksi();
+                //MenuForm form = new MenuForm();
                 form.Show();
             }
             else
@@ -121,10 +124,13 @@ namespace RSSumberWaras.View
         {
             this.Hide();
             FormTransaksi form = new FormTransaksi();
+            //MenuForm form = new MenuForm();
             form.Show();
         }
 
-        
-      
+        private void FormEntryTransaksi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

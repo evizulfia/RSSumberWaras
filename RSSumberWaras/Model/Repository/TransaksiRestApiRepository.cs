@@ -46,10 +46,10 @@ namespace RSSumberWaras.Model.Repository
             throw new NotImplementedException();
         }
 
-        public Transaksi SearchById(string pasienId)
+        public Transaksi SearchById(string transID)
         {
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
-            string endpoint = "api/laporan-search?search=" + pasienId;
+            string endpoint = "api/laporan-search-byid?search=" + transID;
 
             // membuat objek rest client
             var client = new RestClient(baseUrl);
@@ -61,6 +61,23 @@ namespace RSSumberWaras.Model.Repository
             var response = client.Execute<List<Transaksi>>(request);
 
             return response.Data[0];
+        }
+
+        public List<Transaksi> SearchByNama(string nama)
+        {
+            string baseUrl = "http://rssumberwaras.evizulfia.com/";
+            string endpoint = "api/laporan-search-bynama?search=" + nama;
+
+            // membuat objek rest client
+            var client = new RestClient(baseUrl);
+
+            // membuat objek request
+            var request = new RestRequest(endpoint, Method.GET);
+
+            // kirim request ke server
+            var response = client.Execute<List<Transaksi>>(request);
+
+            return response.Data;
         }
     }
 }

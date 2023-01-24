@@ -113,6 +113,7 @@ namespace RSSumberWaras.View
         private void PenjualanMenuBtn_Click(object sender, EventArgs e)
         {
             FormTransaksi form = new FormTransaksi();
+            //FormEntryTransaksi form = new FormEntryTransaksi();
             form.Show();
             this.Hide();
         }

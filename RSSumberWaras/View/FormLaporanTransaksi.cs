@@ -39,15 +39,16 @@ namespace RSSumberWaras.View
             listViewLaporan.FullRowSelect = true;
             listViewLaporan.GridLines = true;
             //listViewObat.Columns.Add("No Urut", 50, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("ID Transaksi", 40, HorizontalAlignment.Center);
+            listViewLaporan.Columns.Add("ID Transaksi", 100, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("ID Pasien", 250, HorizontalAlignment.Center);
+            listViewLaporan.Columns.Add("ID Obat", 250, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Nama Pasien", 150, HorizontalAlignment.Left);
             listViewLaporan.Columns.Add("Invoice", 150, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Tanggal Transaksi", 150, HorizontalAlignment.Center);
             //listViewLaporan.Columns.Add("Harga", 150, HorizontalAlignment.Center);
             //listViewLaporan.Columns.Add("Diskon", 150, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Total", 150, HorizontalAlignment.Center);
-            //listViewLaporan.Columns.Add("Status", 150, HorizontalAlignment.Center);
+            listViewLaporan.Columns.Add("Status", 150, HorizontalAlignment.Center);
 
         }
 
@@ -63,12 +64,13 @@ namespace RSSumberWaras.View
             {
                 var item = new ListViewItem(trans.IdTransaction.ToString());
                 item.SubItems.Add(trans.IdPasien.ToString());
+                item.SubItems.Add(trans.IdObat.ToString());
                 item.SubItems.Add(trans.namaPasien);
                 item.SubItems.Add(trans.invoice);
                 item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
                 //item.SubItems.Add(trans.harga.ToString());
                 item.SubItems.Add(trans.total.ToString());
-                //item.SubItems.Add(trans.status);
+                item.SubItems.Add(trans.status);
 
                 // tampilkan data dok ke listview
                 listViewLaporan.Items.Add(item);
@@ -96,22 +98,24 @@ namespace RSSumberWaras.View
                     listOfTransaksi.Add(transaksiController.SearchById(laporanCariBox.Text));
                     //listOfTransaksi = transaksiController.Search(laporanCariBox.Text);
                     break;
-                //case 2:
-                //    listOfProduct = productController.ReadByProductName(txtKeyword.Text);
-                //    break;
-                
+                case 2:
+                    //listOfTransaksi.Add(transaksiController.SearchByNama(laporanCariBox.Text));
+                    listOfTransaksi = transaksiController.SearchByNama(laporanCariBox.Text);
+                    break;
+
             }
 
             foreach (var trans in listOfTransaksi)
             {
                 var item = new ListViewItem(trans.IdTransaction.ToString());
                 item.SubItems.Add(trans.IdPasien.ToString());
+                item.SubItems.Add(trans.IdObat.ToString());
                 item.SubItems.Add(trans.namaPasien);
                 item.SubItems.Add(trans.invoice);
                 item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
                 //item.SubItems.Add(trans.harga.ToString());
                 item.SubItems.Add(trans.total.ToString());
-                //item.SubItems.Add(trans.status);
+                item.SubItems.Add(trans.status);
 
                 // tampilkan data dok ke listview
                 listViewLaporan.Items.Add(item);

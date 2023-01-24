@@ -208,9 +208,9 @@ namespace RSSumberWaras.View
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(755, 751);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 20);
+            this.label7.Size = new System.Drawing.Size(82, 20);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Transaksi Obat";
+            this.label7.Text = "Transaksi";
             // 
             // label8
             // 

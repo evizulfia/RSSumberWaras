@@ -172,17 +172,17 @@
     <Compile Include="View\FormPembayaran.Designer.cs">
       <DependentUpon>FormPembayaran.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormTransaksi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormTransaksi.Designer.cs">
-      <DependentUpon>FormTransaksi.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\FormRekamMedis.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormRekamMedis.Designer.cs">
       <DependentUpon>FormRekamMedis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormTransaksi.Designer.cs">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="View\JSONObject.cs" />
     <Compile Include="View\MenuForm.cs">
@@ -253,11 +253,11 @@
     <EmbeddedResource Include="View\FormPembayaran.resx">
       <DependentUpon>FormPembayaran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormTransaksi.resx">
-      <DependentUpon>FormTransaksi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\FormRekamMedis.resx">
       <DependentUpon>FormRekamMedis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormTransaksi.resx">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>

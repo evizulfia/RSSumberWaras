@@ -8,16 +8,16 @@ namespace RSSumberWaras.Model.Entity
 {
     public class Transaksi
     {
-        int IdTransaction { set; get; }
-        int IdDokter { set; get; }
-        int IdPasien { set; get; }
+        public int IdTransaction { get; set; }
+        public int IdDokter { set; get; }
+        public int IdPasien { set; get; }
 
-        string namaPasien { set; get; }
-        string invoice { set; get; }
-        DateTime tanggalTransaksi { set; get; }
-        double harga { set; get; }
-        double total { set; get; }
-        string status { set; get; }
+        public string namaPasien { set; get; }
+        public string invoice { set; get; }
+        public DateTime tanggalTransaksi { set; get; }
+        public double harga { set; get; }
+        public double total { set; get; }
+        public string status { set; get; }
     }
 
 }

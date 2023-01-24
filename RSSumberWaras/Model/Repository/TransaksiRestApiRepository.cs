@@ -45,5 +45,22 @@ namespace RSSumberWaras.Model.Repository
 
             throw new NotImplementedException();
         }
+
+        public Transaksi SearchById(string pasienId)
+        {
+            string baseUrl = "http://rssumberwaras.evizulfia.com/";
+            string endpoint = "api/laporan-search?search=" + pasienId;
+
+            // membuat objek rest client
+            var client = new RestClient(baseUrl);
+
+            // membuat objek request
+            var request = new RestRequest(endpoint, Method.GET);
+
+            // kirim request ke server
+            var response = client.Execute<List<Transaksi>>(request);
+
+            return response.Data[0];
+        }
     }
 }

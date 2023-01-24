@@ -10,6 +10,7 @@ namespace RSSumberWaras.Controller
 {
     public class TransaksiController
     {
+       
         private TransaksiRestApiRepository _repository;
 
         public TransaksiController()
@@ -36,5 +37,17 @@ namespace RSSumberWaras.Controller
             catch { }
             return list;
         }
+
+        public Transaksi SearchById(string pasienId)
+        {
+            Transaksi trans = new Transaksi();
+            try
+            {
+                trans = _repository.SearchById(pasienId);
+            }
+            catch { }
+            return trans;
+        }
+
     }
 }

@@ -74,7 +74,7 @@ namespace RSSumberWaras.View
             // tambahkan objek mhs yang baru ke dalam collection
             listOfObat.Add(obt);
 
-            int noUrut = listViewObat.Items.Count + 1;
+            //int noUrut = listViewObat.Items.Count + 1;
 
             // tampilkan data mhs yg baru ke list view
             var item = new ListViewItem(obt.IdObat.ToString());
@@ -165,8 +165,8 @@ namespace RSSumberWaras.View
                 if (result.status == "200")
                 {
                     this.Hide();
-                    MenuForm menuForm = new MenuForm();
-                    menuForm.Show();
+                    FormObat form = new FormObat();
+                    form.Show();
                     
                 }
                 else

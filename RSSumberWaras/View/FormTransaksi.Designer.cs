@@ -39,7 +39,7 @@ namespace RSSumberWaras.View
             // 
             // selesaiTransaksiBtn
             // 
-            this.selesaiTransaksiBtn.Location = new System.Drawing.Point(965, 653);
+            this.selesaiTransaksiBtn.Location = new System.Drawing.Point(1670, 948);
             this.selesaiTransaksiBtn.Name = "selesaiTransaksiBtn";
             this.selesaiTransaksiBtn.Size = new System.Drawing.Size(161, 34);
             this.selesaiTransaksiBtn.TabIndex = 39;
@@ -59,7 +59,7 @@ namespace RSSumberWaras.View
             // 
             // tmbhTransaksiBtn
             // 
-            this.tmbhTransaksiBtn.Location = new System.Drawing.Point(1035, 114);
+            this.tmbhTransaksiBtn.Location = new System.Drawing.Point(1740, 114);
             this.tmbhTransaksiBtn.Name = "tmbhTransaksiBtn";
             this.tmbhTransaksiBtn.Size = new System.Drawing.Size(91, 34);
             this.tmbhTransaksiBtn.TabIndex = 35;
@@ -73,13 +73,13 @@ namespace RSSumberWaras.View
             this.listViewTransaksi.HideSelection = false;
             this.listViewTransaksi.Location = new System.Drawing.Point(140, 163);
             this.listViewTransaksi.Name = "listViewTransaksi";
-            this.listViewTransaksi.Size = new System.Drawing.Size(986, 459);
+            this.listViewTransaksi.Size = new System.Drawing.Size(1691, 744);
             this.listViewTransaksi.TabIndex = 32;
             this.listViewTransaksi.UseCompatibleStateImageBehavior = false;
             // 
             // cariTransaksiBtn
             // 
-            this.cariTransaksiBtn.Location = new System.Drawing.Point(913, 114);
+            this.cariTransaksiBtn.Location = new System.Drawing.Point(1618, 114);
             this.cariTransaksiBtn.Name = "cariTransaksiBtn";
             this.cariTransaksiBtn.Size = new System.Drawing.Size(91, 34);
             this.cariTransaksiBtn.TabIndex = 34;
@@ -91,14 +91,16 @@ namespace RSSumberWaras.View
             this.cariRekamMedisBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cariRekamMedisBox.Location = new System.Drawing.Point(140, 114);
             this.cariRekamMedisBox.Name = "cariRekamMedisBox";
-            this.cariRekamMedisBox.Size = new System.Drawing.Size(731, 34);
+            this.cariRekamMedisBox.Size = new System.Drawing.Size(1428, 34);
             this.cariRekamMedisBox.TabIndex = 33;
             // 
             // FormTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1261, 756);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.selesaiTransaksiBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tmbhTransaksiBtn);
@@ -107,6 +109,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.listViewTransaksi);
             this.Name = "FormTransaksi";
             this.Text = "FormTransaksi";
+            this.Load += new System.EventHandler(this.maximise);
             this.ResumeLayout(false);
             this.PerformLayout();
 

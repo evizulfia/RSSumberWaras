@@ -39,7 +39,7 @@ namespace RSSumberWaras.View
             // 
             // selesaiLaporanBtn
             // 
-            this.selesaiLaporanBtn.Location = new System.Drawing.Point(1106, 697);
+            this.selesaiLaporanBtn.Location = new System.Drawing.Point(1695, 956);
             this.selesaiLaporanBtn.Name = "selesaiLaporanBtn";
             this.selesaiLaporanBtn.Size = new System.Drawing.Size(135, 48);
             this.selesaiLaporanBtn.TabIndex = 10;
@@ -49,7 +49,7 @@ namespace RSSumberWaras.View
             // 
             // cariLaporanBtn
             // 
-            this.cariLaporanBtn.Location = new System.Drawing.Point(1055, 154);
+            this.cariLaporanBtn.Location = new System.Drawing.Point(1661, 157);
             this.cariLaporanBtn.Name = "cariLaporanBtn";
             this.cariLaporanBtn.Size = new System.Drawing.Size(169, 53);
             this.cariLaporanBtn.TabIndex = 9;
@@ -62,7 +62,7 @@ namespace RSSumberWaras.View
             this.laporanCariBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F);
             this.laporanCariBox.Location = new System.Drawing.Point(445, 159);
             this.laporanCariBox.Name = "laporanCariBox";
-            this.laporanCariBox.Size = new System.Drawing.Size(553, 39);
+            this.laporanCariBox.Size = new System.Drawing.Size(1187, 39);
             this.laporanCariBox.TabIndex = 8;
             // 
             // listViewLaporan
@@ -70,7 +70,7 @@ namespace RSSumberWaras.View
             this.listViewLaporan.HideSelection = false;
             this.listViewLaporan.Location = new System.Drawing.Point(49, 233);
             this.listViewLaporan.Name = "listViewLaporan";
-            this.listViewLaporan.Size = new System.Drawing.Size(1192, 446);
+            this.listViewLaporan.Size = new System.Drawing.Size(1781, 717);
             this.listViewLaporan.TabIndex = 7;
             this.listViewLaporan.UseCompatibleStateImageBehavior = false;
             // 
@@ -101,7 +101,8 @@ namespace RSSumberWaras.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1296, 782);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.filterDropdown);
             this.Controls.Add(this.selesaiLaporanBtn);
             this.Controls.Add(this.cariLaporanBtn);
@@ -110,6 +111,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.label1);
             this.Name = "FormLaporanTransaksi";
             this.Text = "FormLaporanTransaksi";
+            this.Load += new System.EventHandler(this.maximise);
             this.ResumeLayout(false);
             this.PerformLayout();
 

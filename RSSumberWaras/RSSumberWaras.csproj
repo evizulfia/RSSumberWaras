@@ -118,7 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\DokterController.cs" />
-    <Compile Include="Controller\LaporanController.cs" />
     <Compile Include="Controller\ObatController.cs" />
     <Compile Include="Controller\PasienController.cs" />
     <Compile Include="Controller\TransaksiController.cs" />

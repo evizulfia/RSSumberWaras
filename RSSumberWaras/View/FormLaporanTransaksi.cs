@@ -29,9 +29,8 @@ namespace RSSumberWaras.View
             //membuat objek controller
             controller = new TransaksiController();
             InisialisasiListView();
-
-            // fungsi untuk load table obtter
             LoadDataTransaksi();
+            filterDropdown.SelectedIndex = 0;
         }
 
         private void InisialisasiListView()
@@ -101,9 +100,7 @@ namespace RSSumberWaras.View
                 //case 2:
                 //    listOfProduct = productController.ReadByProductName(txtKeyword.Text);
                 //    break;
-                //case 3:
-                //    listOfProduct = productController.ReadByCategory(txtKeyword.Text);
-                //    break;
+                
             }
 
             foreach (var trans in listOfTransaksi)

@@ -144,7 +144,7 @@ namespace RSSumberWaras.View
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
                 this.Hide();
-                FormEntryPasien form = new FormEntryPasien();
+                FormPasien form = new FormPasien();
                 form.ShowDialog();
             }
             

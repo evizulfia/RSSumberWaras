@@ -126,5 +126,35 @@ namespace RSSumberWaras.View
                 this.CenterToScreen();
             }
         }
+
+        private void cariTransaksiBtn_Click(object sender, EventArgs e)
+        {
+            listViewTransaksi.Items.Clear();
+            List<Transaksi> listOfTransaksi = new List<Transaksi>();
+
+            if (cariTransaksiBox.Text == "")
+            {
+                listOfTransaksi = transaksiController.ReadAll();
+            }
+            else
+            {
+                listOfTransaksi = transaksiController.Search(cariTransaksiBox.Text);
+            }
+
+            foreach (var trans in listOfTransaksi)
+            {
+                var item = new ListViewItem(trans.IdTransaction.ToString());
+                item.SubItems.Add(trans.IdPasien.ToString());
+                item.SubItems.Add(trans.namaPasien);
+                item.SubItems.Add(trans.invoice);
+                item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
+                //item.SubItems.Add(trans.harga.ToString());
+                item.SubItems.Add(trans.total.ToString());
+                //item.SubItems.Add(trans.status);
+
+                // tampilkan data dok ke listview
+                listViewTransaksi.Items.Add(item);
+            }
+        }
     }
 }

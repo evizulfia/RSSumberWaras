@@ -34,7 +34,7 @@ namespace RSSumberWaras.View
             this.tmbhTransaksiBtn = new System.Windows.Forms.Button();
             this.listViewTransaksi = new System.Windows.Forms.ListView();
             this.cariTransaksiBtn = new System.Windows.Forms.Button();
-            this.cariRekamMedisBox = new System.Windows.Forms.TextBox();
+            this.cariTransaksiBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // selesaiTransaksiBtn
@@ -85,14 +85,15 @@ namespace RSSumberWaras.View
             this.cariTransaksiBtn.TabIndex = 34;
             this.cariTransaksiBtn.Text = "Cari";
             this.cariTransaksiBtn.UseVisualStyleBackColor = true;
+            this.cariTransaksiBtn.Click += new System.EventHandler(this.cariTransaksiBtn_Click);
             // 
-            // cariRekamMedisBox
+            // cariTransaksiBox
             // 
-            this.cariRekamMedisBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cariRekamMedisBox.Location = new System.Drawing.Point(140, 114);
-            this.cariRekamMedisBox.Name = "cariRekamMedisBox";
-            this.cariRekamMedisBox.Size = new System.Drawing.Size(1428, 34);
-            this.cariRekamMedisBox.TabIndex = 33;
+            this.cariTransaksiBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cariTransaksiBox.Location = new System.Drawing.Point(140, 114);
+            this.cariTransaksiBox.Name = "cariTransaksiBox";
+            this.cariTransaksiBox.Size = new System.Drawing.Size(1428, 34);
+            this.cariTransaksiBox.TabIndex = 33;
             // 
             // FormTransaksi
             // 
@@ -105,7 +106,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tmbhTransaksiBtn);
             this.Controls.Add(this.cariTransaksiBtn);
-            this.Controls.Add(this.cariRekamMedisBox);
+            this.Controls.Add(this.cariTransaksiBox);
             this.Controls.Add(this.listViewTransaksi);
             this.Name = "FormTransaksi";
             this.Text = "FormTransaksi";
@@ -122,6 +123,6 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.Button tmbhTransaksiBtn;
         private System.Windows.Forms.ListView listViewTransaksi;
         private System.Windows.Forms.Button cariTransaksiBtn;
-        private System.Windows.Forms.TextBox cariRekamMedisBox;
+        private System.Windows.Forms.TextBox cariTransaksiBox;
     }
 }

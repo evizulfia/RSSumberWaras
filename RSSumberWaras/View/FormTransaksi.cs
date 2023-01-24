@@ -12,18 +12,20 @@ using System.Windows.Forms;
 
 namespace RSSumberWaras.View
 {
-    public partial class FormLaporanTransaksi : Form
+    public partial class FormTransaksi : Form
     {
+
+
         private List<Transaksi> listOfTransaksi = new List<Transaksi>();
 
         //deklarasi objek controller
         private TransaksiController controller;
 
-        private TransaksiController transaksiObatController = new TransaksiController();
+        private TransaksiController transaksiController = new TransaksiController();
 
 
 
-        public FormLaporanTransaksi()
+        public FormTransaksi()
         {
             InitializeComponent();
             //membuat objek controller
@@ -36,40 +38,38 @@ namespace RSSumberWaras.View
 
         private void InisialisasiListView()
         {
-            listViewLaporan.View = System.Windows.Forms.View.Details;
-            listViewLaporan.FullRowSelect = true;
-            listViewLaporan.GridLines = true;
-            //listViewObat.Columns.Add("No Urut", 50, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("ID Transaksi", 40, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("ID Pasien", 250, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("Nama Pasien", 150, HorizontalAlignment.Left);
-            listViewLaporan.Columns.Add("Invoice", 150, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("Tanggal Transaksi", 150, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("Harga", 150, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("Diskon", 150, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("Total", 150, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("Status", 150, HorizontalAlignment.Center);
-
+            listViewTransaksi.View = System.Windows.Forms.View.Details;
+            listViewTransaksi.FullRowSelect = true;
+            listViewTransaksi.GridLines = true;
+            listViewTransaksi.Columns.Add("ID Transaksi", 40, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("ID Pasien", 250, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Nama Pasien", 150, HorizontalAlignment.Left);
+            listViewTransaksi.Columns.Add("Invoice", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Tanggal Transaksi", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Harga", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Diskon", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Total", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Status", 150, HorizontalAlignment.Center);
         }
 
         // method untuk menampilkan semua data mahasiswa
         private void LoadDataTransaksi()
         {
             // kosongkan listview
-            listViewLaporan.Items.Clear();
+            listViewTransaksi.Items.Clear();
             // panggil method ReadAll dan tampung datanya ke dalam collection
             listOfTransaksi = controller.ReadAll();
             // ekstrak objek obt dari collection
             foreach (var trans in listOfTransaksi)
             {
                 //var noUrut = listViewObat.Items.Count + 1;
-                var item = new ListViewItem(trans.IdTransaksi.toString());
+                var item = new ListViewItem(trans;
                 item.SubItems.Add(obt.NamaObat);
                 item.SubItems.Add(obt.Harga.ToString());
                 item.SubItems.Add(obt.Satuan);
 
                 // tampilkan data dok ke listview
-                listViewLaporan.Items.Add(item);
+                listOfTransaksi.Items.Add(item);
             }
         }
 
@@ -104,12 +104,28 @@ namespace RSSumberWaras.View
 
         }
 
-        private void selesaiLaporanBtn_Click(object sender, EventArgs e)
+        private void tmbhPenjualanBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void hapusPenjualanBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selesaiPenjualanBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
             MenuForm form = new MenuForm();
             form.ShowDialog();
-            
+        }
+
+        private void CheckoutBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPembayaran form = new FormPembayaran();
+            form.ShowDialog();
         }
     }
 }

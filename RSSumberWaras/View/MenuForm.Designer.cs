@@ -210,7 +210,7 @@ namespace RSSumberWaras.View
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 20);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Penjualan Obat";
+            this.label7.Text = "Transaksi Obat";
             // 
             // label8
             // 

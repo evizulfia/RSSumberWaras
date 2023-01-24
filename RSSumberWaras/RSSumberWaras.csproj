@@ -121,26 +121,32 @@
     <Compile Include="Controller\LaporanController.cs" />
     <Compile Include="Controller\ObatController.cs" />
     <Compile Include="Controller\PasienController.cs" />
-    <Compile Include="Controller\PenjualanObatController.cs" />
+    <Compile Include="Controller\TransaksiController.cs" />
     <Compile Include="Controller\RekamMedisController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Model\Entity\Dokter.cs" />
-    <Compile Include="Model\Entity\Laporan.cs" />
     <Compile Include="Model\Entity\Obat.cs" />
     <Compile Include="Model\Entity\Pasien.cs" />
-    <Compile Include="Model\Entity\PenjualanObat.cs" />
+    <Compile Include="Model\Entity\Transaksi.cs" />
     <Compile Include="Model\Entity\RekamMedis.cs" />
     <Compile Include="Model\Entity\User.cs" />
     <Compile Include="Model\Repository\DokterRestApiRepository.cs" />
     <Compile Include="Model\Repository\ObatRestApiRepository.cs" />
     <Compile Include="Model\Repository\PasienRestApiRepository.cs" />
     <Compile Include="Model\Repository\RekamMedisRestApiRepository.cs" />
+    <Compile Include="Model\Repository\TransaksiRestApiRepository.cs" />
     <Compile Include="Model\Repository\UserRestApiRepository.cs" />
     <Compile Include="View\FormDokter.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormDokter.Designer.cs">
       <DependentUpon>FormDokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormEntryTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormEntryTransaksi.Designer.cs">
+      <DependentUpon>FormEntryTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormLaporanTransaksi.cs">
       <SubType>Form</SubType>
@@ -166,11 +172,11 @@
     <Compile Include="View\FormPembayaran.Designer.cs">
       <DependentUpon>FormPembayaran.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormPenjualanObat.cs">
+    <Compile Include="View\FormTransaksi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormPenjualanObat.Designer.cs">
-      <DependentUpon>FormPenjualanObat.cs</DependentUpon>
+    <Compile Include="View\FormTransaksi.Designer.cs">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormRekamMedis.cs">
       <SubType>Form</SubType>
@@ -232,6 +238,9 @@
     <EmbeddedResource Include="View\FormEntryRekamMedis.resx">
       <DependentUpon>FormEntryRekamMedis.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormEntryTransaksi.resx">
+      <DependentUpon>FormEntryTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormLaporanTransaksi.resx">
       <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,8 +253,8 @@
     <EmbeddedResource Include="View\FormPembayaran.resx">
       <DependentUpon>FormPembayaran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormPenjualanObat.resx">
-      <DependentUpon>FormPenjualanObat.cs</DependentUpon>
+    <EmbeddedResource Include="View\FormTransaksi.resx">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormRekamMedis.resx">
       <DependentUpon>FormRekamMedis.cs</DependentUpon>

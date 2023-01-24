@@ -112,7 +112,7 @@ namespace RSSumberWaras.View
 
         private void PenjualanMenuBtn_Click(object sender, EventArgs e)
         {
-            FormPenjualanObat form = new FormPenjualanObat();
+            FormTransaksi form = new FormTransaksi();
             form.Show();
             this.Hide();
         }

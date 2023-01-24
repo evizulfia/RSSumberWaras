@@ -116,7 +116,6 @@ namespace RSSumberWaras.View
 
         private void tmbhPasienBtn_Click(object sender, EventArgs e)
         {
-            
             this.Hide();
             FormEntryPasien form = new FormEntryPasien("Tambah Data Pasien", controller);
             form.OnCreate += OnCreateEventHandler;

@@ -116,7 +116,7 @@ namespace RSSumberWaras.View
             {
                 // ambil objek mhs yang mau diedit dari collection
                 Obat obt = listOfObat[listViewObat.SelectedIndices[0]];
-                this.Close();
+                //this.Close();
                 // buat objek form entry data mahasiswa
                 FormEntryObat formEntry = new FormEntryObat("Edit Data Mahasiswa", obt, controller);
 
@@ -215,6 +215,23 @@ namespace RSSumberWaras.View
             MenuForm menuForm = new MenuForm();
             menuForm.Show();
             
+        }
+        private void maximise(object sender, EventArgs e)
+        {
+
+            //normalises window
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.CenterToScreen();
+            }
+
+            //maximises window
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.CenterToScreen();
+            }
         }
     }
 }

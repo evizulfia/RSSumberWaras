@@ -105,6 +105,7 @@ namespace RSSumberWaras.View
                 string title = "process Failed";
                 MessageBox.Show(message, title);
             }
+            this.Hide();
             FormDokter formDokter = new FormDokter();
             formDokter.ShowDialog();
 

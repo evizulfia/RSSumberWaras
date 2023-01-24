@@ -142,8 +142,8 @@ namespace RSSumberWaras.View
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
                 this.Hide();
-                FormEntryRekamMedis form = new FormEntryRekamMedis();
-                form.ShowDialog();
+                FormRekamMedis form = new FormRekamMedis();
+                form.Show();
             }
 
         }
@@ -219,6 +219,9 @@ namespace RSSumberWaras.View
             {
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
+                this.Hide();
+                FormRekamMedis form = new FormRekamMedis();
+                form.Show();
             }
         }
 

@@ -41,7 +41,7 @@ namespace RSSumberWaras.View
             // 
             // selesaiObatBtn
             // 
-            this.selesaiObatBtn.Location = new System.Drawing.Point(897, 630);
+            this.selesaiObatBtn.Location = new System.Drawing.Point(1654, 949);
             this.selesaiObatBtn.Name = "selesaiObatBtn";
             this.selesaiObatBtn.Size = new System.Drawing.Size(161, 34);
             this.selesaiObatBtn.TabIndex = 15;
@@ -61,7 +61,7 @@ namespace RSSumberWaras.View
             // 
             // hapusObatBtn
             // 
-            this.hapusObatBtn.Location = new System.Drawing.Point(967, 91);
+            this.hapusObatBtn.Location = new System.Drawing.Point(1724, 91);
             this.hapusObatBtn.Name = "hapusObatBtn";
             this.hapusObatBtn.Size = new System.Drawing.Size(91, 34);
             this.hapusObatBtn.TabIndex = 13;
@@ -71,7 +71,7 @@ namespace RSSumberWaras.View
             // 
             // editObatBtn
             // 
-            this.editObatBtn.Location = new System.Drawing.Point(854, 91);
+            this.editObatBtn.Location = new System.Drawing.Point(1611, 91);
             this.editObatBtn.Name = "editObatBtn";
             this.editObatBtn.Size = new System.Drawing.Size(91, 34);
             this.editObatBtn.TabIndex = 12;
@@ -81,7 +81,7 @@ namespace RSSumberWaras.View
             // 
             // tmbhObatBtn
             // 
-            this.tmbhObatBtn.Location = new System.Drawing.Point(741, 91);
+            this.tmbhObatBtn.Location = new System.Drawing.Point(1498, 91);
             this.tmbhObatBtn.Name = "tmbhObatBtn";
             this.tmbhObatBtn.Size = new System.Drawing.Size(91, 34);
             this.tmbhObatBtn.TabIndex = 11;
@@ -91,7 +91,7 @@ namespace RSSumberWaras.View
             // 
             // cariObatBtn
             // 
-            this.cariObatBtn.Location = new System.Drawing.Point(630, 91);
+            this.cariObatBtn.Location = new System.Drawing.Point(1387, 91);
             this.cariObatBtn.Name = "cariObatBtn";
             this.cariObatBtn.Size = new System.Drawing.Size(91, 34);
             this.cariObatBtn.TabIndex = 10;
@@ -104,7 +104,7 @@ namespace RSSumberWaras.View
             this.cariObatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cariObatBox.Location = new System.Drawing.Point(72, 91);
             this.cariObatBox.Name = "cariObatBox";
-            this.cariObatBox.Size = new System.Drawing.Size(542, 34);
+            this.cariObatBox.Size = new System.Drawing.Size(1274, 34);
             this.cariObatBox.TabIndex = 9;
             // 
             // listViewObat
@@ -113,7 +113,7 @@ namespace RSSumberWaras.View
             this.listViewObat.HideSelection = false;
             this.listViewObat.Location = new System.Drawing.Point(72, 140);
             this.listViewObat.Name = "listViewObat";
-            this.listViewObat.Size = new System.Drawing.Size(986, 459);
+            this.listViewObat.Size = new System.Drawing.Size(1743, 792);
             this.listViewObat.TabIndex = 8;
             this.listViewObat.UseCompatibleStateImageBehavior = false;
             // 
@@ -121,7 +121,8 @@ namespace RSSumberWaras.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 710);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.selesaiObatBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.hapusObatBtn);
@@ -132,6 +133,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.listViewObat);
             this.Name = "FormObat";
             this.Text = "FormObat";
+            this.Load += new System.EventHandler(this.maximise);
             this.ResumeLayout(false);
             this.PerformLayout();
 

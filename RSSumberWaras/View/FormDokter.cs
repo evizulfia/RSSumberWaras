@@ -117,7 +117,7 @@ namespace RSSumberWaras.View
             FormEntryDokter formEntry = new FormEntryDokter("Tambah Data Dokter", controller);
             formEntry.OnCreate += OnCreateEventHandler;
             formEntry.ShowDialog();
-            this.Hide();
+            //this.Hide();
         }
 
         private void editDokterBtn_Click(object sender, EventArgs e)
@@ -141,9 +141,10 @@ namespace RSSumberWaras.View
             {
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
+                this.Hide();
                 FormDokter formDokter = new FormDokter();
                 formDokter.Show();
-                this.Hide();
+                
             }
             //FormEntryDokter formEntryDokter = new FormEntryDokter();
             //formEntryDokter.Show();
@@ -198,6 +199,9 @@ namespace RSSumberWaras.View
             {
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
+                this.Hide();
+                FormDokter formDokter = new FormDokter();
+                formDokter.Show();
             }
         }
 

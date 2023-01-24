@@ -30,7 +30,7 @@ namespace RSSumberWaras.View
         private void InitializeComponent()
         {
             this.EntryFormObatSelesaiBtn = new System.Windows.Forms.Button();
-            this.obatSimpanBtn = new System.Windows.Forms.Button();
+            this.rekamMedisSimpanBtn = new System.Windows.Forms.Button();
             this.idDokterBox = new System.Windows.Forms.TextBox();
             this.idRekamMedisBox = new System.Windows.Forms.TextBox();
             this.noHp = new System.Windows.Forms.Label();
@@ -38,11 +38,11 @@ namespace RSSumberWaras.View
             this.idDokter = new System.Windows.Forms.Label();
             this.namaDokter = new System.Windows.Forms.Label();
             this.idPasienBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.diagnosaBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tindakanBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tglPeriksaRekamMedis = new System.Windows.Forms.DateTimePicker();
+            this.tglPeriksaRekamMedisPicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // EntryFormObatSelesaiBtn
@@ -56,15 +56,16 @@ namespace RSSumberWaras.View
             this.EntryFormObatSelesaiBtn.UseVisualStyleBackColor = true;
             this.EntryFormObatSelesaiBtn.Click += new System.EventHandler(this.EntryFormObatSelesaiBtn_Click);
             // 
-            // obatSimpanBtn
+            // rekamMedisSimpanBtn
             // 
-            this.obatSimpanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.obatSimpanBtn.Location = new System.Drawing.Point(556, 555);
-            this.obatSimpanBtn.Name = "obatSimpanBtn";
-            this.obatSimpanBtn.Size = new System.Drawing.Size(195, 53);
-            this.obatSimpanBtn.TabIndex = 27;
-            this.obatSimpanBtn.Text = "Simpan";
-            this.obatSimpanBtn.UseVisualStyleBackColor = true;
+            this.rekamMedisSimpanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rekamMedisSimpanBtn.Location = new System.Drawing.Point(556, 555);
+            this.rekamMedisSimpanBtn.Name = "rekamMedisSimpanBtn";
+            this.rekamMedisSimpanBtn.Size = new System.Drawing.Size(195, 53);
+            this.rekamMedisSimpanBtn.TabIndex = 27;
+            this.rekamMedisSimpanBtn.Text = "Simpan";
+            this.rekamMedisSimpanBtn.UseVisualStyleBackColor = true;
+            this.rekamMedisSimpanBtn.Click += new System.EventHandler(this.rekamMedisSimpanBtn_Click);
             // 
             // idDokterBox
             // 
@@ -130,13 +131,13 @@ namespace RSSumberWaras.View
             this.idPasienBox.Size = new System.Drawing.Size(538, 38);
             this.idPasienBox.TabIndex = 19;
             // 
-            // textBox1
+            // diagnosaBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(462, 344);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(538, 38);
-            this.textBox1.TabIndex = 30;
+            this.diagnosaBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diagnosaBox.Location = new System.Drawing.Point(462, 344);
+            this.diagnosaBox.Name = "diagnosaBox";
+            this.diagnosaBox.Size = new System.Drawing.Size(538, 38);
+            this.diagnosaBox.TabIndex = 30;
             // 
             // label1
             // 
@@ -148,13 +149,13 @@ namespace RSSumberWaras.View
             this.label1.TabIndex = 29;
             this.label1.Text = "Diagnosa";
             // 
-            // textBox2
+            // tindakanBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(462, 408);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(538, 38);
-            this.textBox2.TabIndex = 32;
+            this.tindakanBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tindakanBox.Location = new System.Drawing.Point(462, 408);
+            this.tindakanBox.Name = "tindakanBox";
+            this.tindakanBox.Size = new System.Drawing.Size(538, 38);
+            this.tindakanBox.TabIndex = 32;
             // 
             // label2
             // 
@@ -166,26 +167,26 @@ namespace RSSumberWaras.View
             this.label2.TabIndex = 31;
             this.label2.Text = "Tindakan";
             // 
-            // tglPeriksaRekamMedis
+            // tglPeriksaRekamMedisPicker
             // 
-            this.tglPeriksaRekamMedis.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.tglPeriksaRekamMedis.Location = new System.Drawing.Point(463, 289);
-            this.tglPeriksaRekamMedis.Name = "tglPeriksaRekamMedis";
-            this.tglPeriksaRekamMedis.Size = new System.Drawing.Size(536, 38);
-            this.tglPeriksaRekamMedis.TabIndex = 33;
+            this.tglPeriksaRekamMedisPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.tglPeriksaRekamMedisPicker.Location = new System.Drawing.Point(463, 289);
+            this.tglPeriksaRekamMedisPicker.Name = "tglPeriksaRekamMedisPicker";
+            this.tglPeriksaRekamMedisPicker.Size = new System.Drawing.Size(536, 38);
+            this.tglPeriksaRekamMedisPicker.TabIndex = 33;
             // 
             // FormEntryRekamMedis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1216, 777);
-            this.Controls.Add(this.tglPeriksaRekamMedis);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tglPeriksaRekamMedisPicker);
+            this.Controls.Add(this.tindakanBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.diagnosaBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.EntryFormObatSelesaiBtn);
-            this.Controls.Add(this.obatSimpanBtn);
+            this.Controls.Add(this.rekamMedisSimpanBtn);
             this.Controls.Add(this.idDokterBox);
             this.Controls.Add(this.idRekamMedisBox);
             this.Controls.Add(this.noHp);
@@ -203,7 +204,7 @@ namespace RSSumberWaras.View
         #endregion
 
         private System.Windows.Forms.Button EntryFormObatSelesaiBtn;
-        private System.Windows.Forms.Button obatSimpanBtn;
+        private System.Windows.Forms.Button rekamMedisSimpanBtn;
         private System.Windows.Forms.TextBox idDokterBox;
         private System.Windows.Forms.TextBox idRekamMedisBox;
         private System.Windows.Forms.Label noHp;
@@ -211,10 +212,10 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.Label idDokter;
         private System.Windows.Forms.Label namaDokter;
         private System.Windows.Forms.TextBox idPasienBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox diagnosaBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tindakanBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker tglPeriksaRekamMedis;
+        private System.Windows.Forms.DateTimePicker tglPeriksaRekamMedisPicker;
     }
 }

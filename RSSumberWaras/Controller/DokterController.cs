@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 using RSSumberWaras.Model.Entity;
 using RSSumberWaras.Model.Repository;
-using RSSumberWaras.Model.Context;
 using System.Windows.Forms;
 
 namespace RSSumberWaras.Controller

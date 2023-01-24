@@ -124,7 +124,6 @@
     <Compile Include="Controller\PenjualanObatController.cs" />
     <Compile Include="Controller\RekamMedisController.cs" />
     <Compile Include="Controller\UserController.cs" />
-    <Compile Include="Model\Context\DbContext.cs" />
     <Compile Include="Model\Entity\Dokter.cs" />
     <Compile Include="Model\Entity\Laporan.cs" />
     <Compile Include="Model\Entity\Obat.cs" />

@@ -67,6 +67,7 @@ namespace RSSumberWaras.View
             this.hapusRekamMedisBtn.TabIndex = 29;
             this.hapusRekamMedisBtn.Text = "Hapus";
             this.hapusRekamMedisBtn.UseVisualStyleBackColor = true;
+            this.hapusRekamMedisBtn.Click += new System.EventHandler(this.hapusRekamMedisBtn_Click);
             // 
             // editRekamMedisBtn
             // 
@@ -76,6 +77,7 @@ namespace RSSumberWaras.View
             this.editRekamMedisBtn.TabIndex = 28;
             this.editRekamMedisBtn.Text = "Edit";
             this.editRekamMedisBtn.UseVisualStyleBackColor = true;
+            this.editRekamMedisBtn.Click += new System.EventHandler(this.editRekamMedisBtn_Click);
             // 
             // tmbhRekamMedisBtn
             // 
@@ -95,6 +97,7 @@ namespace RSSumberWaras.View
             this.cariRekamMedisBtn.TabIndex = 26;
             this.cariRekamMedisBtn.Text = "Cari";
             this.cariRekamMedisBtn.UseVisualStyleBackColor = true;
+            this.cariRekamMedisBtn.Click += new System.EventHandler(this.cariRekamMedisBtn_Click);
             // 
             // cariRekamMedisBox
             // 

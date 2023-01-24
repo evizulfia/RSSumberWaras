@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace RSSumberWaras.Model.Entity
 {
-    class PenjualanObat
+    public class PenjualanObat
     {
+        int harga { set; get; }
+        int totalHarga { set; get; }
     }
 }

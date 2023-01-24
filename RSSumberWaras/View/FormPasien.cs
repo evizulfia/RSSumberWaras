@@ -46,6 +46,7 @@ namespace RSSumberWaras.View
             listViewPasien.Columns.Add("ID", 100, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("Nama", 600, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("Alamat", 300, HorizontalAlignment.Left);
+            listViewPasien.Columns.Add("Jenis Kelamin", 300, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("Tanggal Lahir", 300, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("No HP", 100, HorizontalAlignment.Center);
         }
@@ -176,7 +177,9 @@ namespace RSSumberWaras.View
 
                 if (result.status == "200")
                 {
-
+                    string message = result.message;
+                    string title = "Delete Success";
+                    MessageBox.Show(message, title);
                     FormPasien form = new FormPasien();
                     form.Show();
                     this.Hide();

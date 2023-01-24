@@ -82,5 +82,12 @@ namespace RSSumberWaras.View
             MenuForm form = new MenuForm();
             form.ShowDialog();
         }
+
+        private void CheckoutBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPembayaran form = new FormPembayaran();
+            form.ShowDialog();
+        }
     }
 }

@@ -50,6 +50,7 @@ namespace RSSumberWaras.View
             this.CheckoutBtn.TabIndex = 15;
             this.CheckoutBtn.Text = "Checkout";
             this.CheckoutBtn.UseVisualStyleBackColor = true;
+            this.CheckoutBtn.Click += new System.EventHandler(this.CheckoutBtn_Click);
             // 
             // label1
             // 

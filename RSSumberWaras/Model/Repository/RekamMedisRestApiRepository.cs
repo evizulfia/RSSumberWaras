@@ -32,7 +32,7 @@ namespace RSSumberWaras.Model.Repository
         {
             //string keyword = cariObatBox.Text;
             string baseUrl = "http://rssumberwaras.evizulfia.com/";
-            string endpoint = "api/rekam_medis-search?search=" + keyword;
+            string endpoint = "api/rekammedis-search?search=" + keyword;
 
             //membuat objek rest client
             var client = new RestClient(baseUrl);

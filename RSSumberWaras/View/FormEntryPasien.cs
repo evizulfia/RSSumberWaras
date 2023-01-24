@@ -73,7 +73,7 @@ namespace RSSumberWaras.View
         {
             this.Hide();
             FormPasien form = new FormPasien();
-            form.Show();
+            form.ShowDialog();
             
         }
 

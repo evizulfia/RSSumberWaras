@@ -41,7 +41,7 @@ namespace RSSumberWaras.View
             // 
             // selesaiRekamMedisBtn
             // 
-            this.selesaiRekamMedisBtn.Location = new System.Drawing.Point(948, 669);
+            this.selesaiRekamMedisBtn.Location = new System.Drawing.Point(1683, 863);
             this.selesaiRekamMedisBtn.Name = "selesaiRekamMedisBtn";
             this.selesaiRekamMedisBtn.Size = new System.Drawing.Size(161, 34);
             this.selesaiRekamMedisBtn.TabIndex = 31;
@@ -61,7 +61,7 @@ namespace RSSumberWaras.View
             // 
             // hapusRekamMedisBtn
             // 
-            this.hapusRekamMedisBtn.Location = new System.Drawing.Point(1018, 130);
+            this.hapusRekamMedisBtn.Location = new System.Drawing.Point(1745, 130);
             this.hapusRekamMedisBtn.Name = "hapusRekamMedisBtn";
             this.hapusRekamMedisBtn.Size = new System.Drawing.Size(91, 34);
             this.hapusRekamMedisBtn.TabIndex = 29;
@@ -71,7 +71,7 @@ namespace RSSumberWaras.View
             // 
             // editRekamMedisBtn
             // 
-            this.editRekamMedisBtn.Location = new System.Drawing.Point(905, 130);
+            this.editRekamMedisBtn.Location = new System.Drawing.Point(1632, 130);
             this.editRekamMedisBtn.Name = "editRekamMedisBtn";
             this.editRekamMedisBtn.Size = new System.Drawing.Size(91, 34);
             this.editRekamMedisBtn.TabIndex = 28;
@@ -81,7 +81,7 @@ namespace RSSumberWaras.View
             // 
             // tmbhRekamMedisBtn
             // 
-            this.tmbhRekamMedisBtn.Location = new System.Drawing.Point(792, 130);
+            this.tmbhRekamMedisBtn.Location = new System.Drawing.Point(1519, 130);
             this.tmbhRekamMedisBtn.Name = "tmbhRekamMedisBtn";
             this.tmbhRekamMedisBtn.Size = new System.Drawing.Size(91, 34);
             this.tmbhRekamMedisBtn.TabIndex = 27;
@@ -91,7 +91,7 @@ namespace RSSumberWaras.View
             // 
             // cariRekamMedisBtn
             // 
-            this.cariRekamMedisBtn.Location = new System.Drawing.Point(681, 130);
+            this.cariRekamMedisBtn.Location = new System.Drawing.Point(1408, 130);
             this.cariRekamMedisBtn.Name = "cariRekamMedisBtn";
             this.cariRekamMedisBtn.Size = new System.Drawing.Size(91, 34);
             this.cariRekamMedisBtn.TabIndex = 26;
@@ -104,7 +104,7 @@ namespace RSSumberWaras.View
             this.cariRekamMedisBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cariRekamMedisBox.Location = new System.Drawing.Point(123, 130);
             this.cariRekamMedisBox.Name = "cariRekamMedisBox";
-            this.cariRekamMedisBox.Size = new System.Drawing.Size(542, 34);
+            this.cariRekamMedisBox.Size = new System.Drawing.Size(1255, 34);
             this.cariRekamMedisBox.TabIndex = 25;
             // 
             // listViewRekamMedis
@@ -113,7 +113,7 @@ namespace RSSumberWaras.View
             this.listViewRekamMedis.HideSelection = false;
             this.listViewRekamMedis.Location = new System.Drawing.Point(123, 179);
             this.listViewRekamMedis.Name = "listViewRekamMedis";
-            this.listViewRekamMedis.Size = new System.Drawing.Size(986, 459);
+            this.listViewRekamMedis.Size = new System.Drawing.Size(1721, 650);
             this.listViewRekamMedis.TabIndex = 24;
             this.listViewRekamMedis.UseCompatibleStateImageBehavior = false;
             // 
@@ -121,7 +121,8 @@ namespace RSSumberWaras.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 788);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.selesaiRekamMedisBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.hapusRekamMedisBtn);
@@ -132,6 +133,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.listViewRekamMedis);
             this.Name = "FormRekamMedis";
             this.Text = "FormRekamMedis";
+            this.Load += new System.EventHandler(this.maximise);
             this.ResumeLayout(false);
             this.PerformLayout();
 

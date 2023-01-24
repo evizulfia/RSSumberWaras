@@ -44,7 +44,7 @@ namespace RSSumberWaras.View
             listViewRekamMedis.GridLines = true;
 
             listViewRekamMedis.Columns.Add("ID Rekam Medis", 100, HorizontalAlignment.Center);
-            listViewRekamMedis.Columns.Add("ID Pasien ", 600, HorizontalAlignment.Center);
+            listViewRekamMedis.Columns.Add("ID Pasien ", 200, HorizontalAlignment.Center);
             listViewRekamMedis.Columns.Add("ID Dokter", 300, HorizontalAlignment.Center);
             listViewRekamMedis.Columns.Add("Tanggal Periksa", 300, HorizontalAlignment.Center);
             listViewRekamMedis.Columns.Add("Diagnosa", 300, HorizontalAlignment.Center);
@@ -219,6 +219,24 @@ namespace RSSumberWaras.View
             {
                 MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void maximise(object sender, EventArgs e)
+        {
+
+            //normalises window
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.CenterToScreen();
+            }
+
+            //maximises window
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.CenterToScreen();
             }
         }
     }

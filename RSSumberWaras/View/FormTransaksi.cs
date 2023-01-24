@@ -105,7 +105,7 @@ namespace RSSumberWaras.View
 
         private void selesaiTransaksiBtn_Click(object sender, EventArgs e)
         {
-            FormTransaksi form = new FormTransaksi();
+            MenuForm form = new MenuForm();
             form.ShowDialog();
             this.Hide();
         }

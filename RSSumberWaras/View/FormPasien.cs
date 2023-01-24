@@ -44,10 +44,10 @@ namespace RSSumberWaras.View
             listViewPasien.GridLines = true;
             //listViewPasien.Columns.Add("No Urut", 50, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("ID", 100, HorizontalAlignment.Center);
-            listViewPasien.Columns.Add("Nama", 600, HorizontalAlignment.Center);
+            listViewPasien.Columns.Add("Nama", 300, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("Alamat", 300, HorizontalAlignment.Left);
-            listViewPasien.Columns.Add("Jenis Kelamin", 300, HorizontalAlignment.Center);
-            listViewPasien.Columns.Add("Tanggal Lahir", 300, HorizontalAlignment.Center);
+            listViewPasien.Columns.Add("Tanggal Lahir", 200, HorizontalAlignment.Center);
+            listViewPasien.Columns.Add("Jenis Kelamin", 200, HorizontalAlignment.Center);
             listViewPasien.Columns.Add("No HP", 100, HorizontalAlignment.Center);
         }
 
@@ -116,10 +116,11 @@ namespace RSSumberWaras.View
 
         private void tmbhPasienBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             FormEntryPasien form = new FormEntryPasien("Tambah Data Pasien", controller);
             form.OnCreate += OnCreateEventHandler;
             form.ShowDialog();
+            this.Hide();
         }
 
         private void editPasienBtn_Click(object sender, EventArgs e)
@@ -224,6 +225,24 @@ namespace RSSumberWaras.View
                 item.SubItems.Add(pasien.NoTelepon);
                 // tampilkan data dok ke listview
                 listViewPasien.Items.Add(item);
+            }
+        }
+
+        private void maximise(object sender, EventArgs e)
+        {
+
+            //normalises window
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.CenterToScreen();
+            }
+
+            //maximises window
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.CenterToScreen();
             }
         }
     }

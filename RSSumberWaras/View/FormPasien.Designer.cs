@@ -41,7 +41,7 @@ namespace RSSumberWaras.View
             // 
             // selesaiPasienBtn
             // 
-            this.selesaiPasienBtn.Location = new System.Drawing.Point(924, 645);
+            this.selesaiPasienBtn.Location = new System.Drawing.Point(1654, 923);
             this.selesaiPasienBtn.Name = "selesaiPasienBtn";
             this.selesaiPasienBtn.Size = new System.Drawing.Size(161, 34);
             this.selesaiPasienBtn.TabIndex = 23;
@@ -53,7 +53,7 @@ namespace RSSumberWaras.View
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 61);
+            this.label1.Location = new System.Drawing.Point(101, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(298, 25);
             this.label1.TabIndex = 22;
@@ -61,7 +61,7 @@ namespace RSSumberWaras.View
             // 
             // hapusPasienBtn
             // 
-            this.hapusPasienBtn.Location = new System.Drawing.Point(994, 106);
+            this.hapusPasienBtn.Location = new System.Drawing.Point(1724, 116);
             this.hapusPasienBtn.Name = "hapusPasienBtn";
             this.hapusPasienBtn.Size = new System.Drawing.Size(91, 34);
             this.hapusPasienBtn.TabIndex = 21;
@@ -71,7 +71,7 @@ namespace RSSumberWaras.View
             // 
             // editPasienBtn
             // 
-            this.editPasienBtn.Location = new System.Drawing.Point(881, 106);
+            this.editPasienBtn.Location = new System.Drawing.Point(1611, 116);
             this.editPasienBtn.Name = "editPasienBtn";
             this.editPasienBtn.Size = new System.Drawing.Size(91, 34);
             this.editPasienBtn.TabIndex = 20;
@@ -81,7 +81,7 @@ namespace RSSumberWaras.View
             // 
             // tmbhPasienBtn
             // 
-            this.tmbhPasienBtn.Location = new System.Drawing.Point(768, 106);
+            this.tmbhPasienBtn.Location = new System.Drawing.Point(1498, 116);
             this.tmbhPasienBtn.Name = "tmbhPasienBtn";
             this.tmbhPasienBtn.Size = new System.Drawing.Size(91, 34);
             this.tmbhPasienBtn.TabIndex = 19;
@@ -91,7 +91,7 @@ namespace RSSumberWaras.View
             // 
             // cariPasienBtn
             // 
-            this.cariPasienBtn.Location = new System.Drawing.Point(657, 106);
+            this.cariPasienBtn.Location = new System.Drawing.Point(1387, 116);
             this.cariPasienBtn.Name = "cariPasienBtn";
             this.cariPasienBtn.Size = new System.Drawing.Size(91, 34);
             this.cariPasienBtn.TabIndex = 18;
@@ -102,18 +102,18 @@ namespace RSSumberWaras.View
             // cariPasienBox
             // 
             this.cariPasienBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cariPasienBox.Location = new System.Drawing.Point(99, 106);
+            this.cariPasienBox.Location = new System.Drawing.Point(106, 116);
             this.cariPasienBox.Name = "cariPasienBox";
-            this.cariPasienBox.Size = new System.Drawing.Size(542, 34);
+            this.cariPasienBox.Size = new System.Drawing.Size(1263, 34);
             this.cariPasienBox.TabIndex = 17;
             // 
             // listViewPasien
             // 
             this.listViewPasien.BackColor = System.Drawing.SystemColors.MenuBar;
             this.listViewPasien.HideSelection = false;
-            this.listViewPasien.Location = new System.Drawing.Point(99, 155);
+            this.listViewPasien.Location = new System.Drawing.Point(106, 165);
             this.listViewPasien.Name = "listViewPasien";
-            this.listViewPasien.Size = new System.Drawing.Size(986, 459);
+            this.listViewPasien.Size = new System.Drawing.Size(1709, 725);
             this.listViewPasien.TabIndex = 16;
             this.listViewPasien.UseCompatibleStateImageBehavior = false;
             // 
@@ -121,7 +121,8 @@ namespace RSSumberWaras.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 740);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.selesaiPasienBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.hapusPasienBtn);
@@ -132,6 +133,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.listViewPasien);
             this.Name = "FormPasien";
             this.Text = "FormPasien";
+            this.Load += new System.EventHandler(this.maximise);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -80,7 +80,6 @@ namespace RSSumberWaras.View
             this.Close();
             MenuForm form = new MenuForm();
             form.ShowDialog();
-            
         }
 
         private void cariLaporanBtn_Click(object sender, EventArgs e)
@@ -94,8 +93,8 @@ namespace RSSumberWaras.View
                     listOfTransaksi = transaksiController.ReadAll();
                     break;
                 case 1:
-                    //listOfTransaksi.Add(transaksiController.Search(laporanCariBox.Text));
-                    listOfTransaksi = transaksiController.Search(laporanCariBox.Text);
+                    listOfTransaksi.Add(transaksiController.SearchById(laporanCariBox.Text));
+                    //listOfTransaksi = transaksiController.Search(laporanCariBox.Text);
                     break;
                 //case 2:
                 //    listOfProduct = productController.ReadByProductName(txtKeyword.Text);

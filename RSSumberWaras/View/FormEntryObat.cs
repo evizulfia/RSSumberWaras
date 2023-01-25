@@ -93,9 +93,9 @@ namespace RSSumberWaras.View
                 string message = resp.message;
                 string title = "Proses berhasil";
                 MessageBox.Show(message, title);
-                this.Hide();
-                FormObat formObt = new FormObat();
-                formObt.ShowDialog();
+                this.Close();
+                //FormObat formObt = new FormObat();
+                //formObt.ShowDialog();
 
             }
             else
@@ -104,7 +104,9 @@ namespace RSSumberWaras.View
                 string title = "process Failed";
                 MessageBox.Show(message, title);
             }
-
+            this.Hide();
+            FormObat formObt = new FormObat();
+            formObt.ShowDialog();
         }
 
         private void EntryFormObatSelesaiBtn_Click(object sender, EventArgs e)

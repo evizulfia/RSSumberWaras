@@ -67,7 +67,7 @@ namespace RSSumberWaras.View
 
         private void EntryFormObatSelesaiBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             FormRekamMedis form = new FormRekamMedis();
             form.ShowDialog();
             

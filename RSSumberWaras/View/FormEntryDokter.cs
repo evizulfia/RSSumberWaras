@@ -95,7 +95,7 @@ namespace RSSumberWaras.View
                 string message = resp.message;
                 string title = "Proses berhasil";
                 MessageBox.Show(message, title);
-                this.Hide();
+                this.Close();
                 
 
             }

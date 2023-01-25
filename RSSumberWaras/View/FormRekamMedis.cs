@@ -106,7 +106,7 @@ namespace RSSumberWaras.View
 
         private void tmbhRekamMedisBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             FormEntryRekamMedis form = new FormEntryRekamMedis("Tambah Data Rekam Medis", controller);
             form.OnCreate += OnCreateEventHandler;
             form.Show();

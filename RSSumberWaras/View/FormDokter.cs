@@ -118,7 +118,7 @@ namespace RSSumberWaras.View
             FormEntryDokter formEntry = new FormEntryDokter("Tambah Data Dokter", controller);
             formEntry.OnCreate += OnCreateEventHandler;
             formEntry.ShowDialog();
-            //this.Hide();
+            this.Hide();
         }
 
         private void editDokterBtn_Click(object sender, EventArgs e)

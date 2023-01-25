@@ -39,7 +39,7 @@ namespace RSSumberWaras.View
             // 
             // selesaiTransaksiBtn
             // 
-            this.selesaiTransaksiBtn.Location = new System.Drawing.Point(1670, 948);
+            this.selesaiTransaksiBtn.Location = new System.Drawing.Point(1702, 963);
             this.selesaiTransaksiBtn.Name = "selesaiTransaksiBtn";
             this.selesaiTransaksiBtn.Size = new System.Drawing.Size(161, 34);
             this.selesaiTransaksiBtn.TabIndex = 39;
@@ -59,7 +59,7 @@ namespace RSSumberWaras.View
             // 
             // tmbhTransaksiBtn
             // 
-            this.tmbhTransaksiBtn.Location = new System.Drawing.Point(1628, 114);
+            this.tmbhTransaksiBtn.Location = new System.Drawing.Point(1660, 114);
             this.tmbhTransaksiBtn.Name = "tmbhTransaksiBtn";
             this.tmbhTransaksiBtn.Size = new System.Drawing.Size(203, 34);
             this.tmbhTransaksiBtn.TabIndex = 35;
@@ -73,13 +73,13 @@ namespace RSSumberWaras.View
             this.listViewTransaksi.HideSelection = false;
             this.listViewTransaksi.Location = new System.Drawing.Point(140, 163);
             this.listViewTransaksi.Name = "listViewTransaksi";
-            this.listViewTransaksi.Size = new System.Drawing.Size(1691, 744);
+            this.listViewTransaksi.Size = new System.Drawing.Size(1723, 779);
             this.listViewTransaksi.TabIndex = 32;
             this.listViewTransaksi.UseCompatibleStateImageBehavior = false;
             // 
             // cariTransaksiBtn
             // 
-            this.cariTransaksiBtn.Location = new System.Drawing.Point(1506, 114);
+            this.cariTransaksiBtn.Location = new System.Drawing.Point(1538, 114);
             this.cariTransaksiBtn.Name = "cariTransaksiBtn";
             this.cariTransaksiBtn.Size = new System.Drawing.Size(91, 34);
             this.cariTransaksiBtn.TabIndex = 34;

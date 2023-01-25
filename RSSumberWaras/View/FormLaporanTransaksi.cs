@@ -38,15 +38,15 @@ namespace RSSumberWaras.View
             listViewLaporan.GridLines = true;
             //listViewObat.Columns.Add("No Urut", 50, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("ID Transaksi", 100, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("ID Pasien", 150, HorizontalAlignment.Center);
-            listViewLaporan.Columns.Add("ID Obat", 150, HorizontalAlignment.Center);
+            listViewLaporan.Columns.Add("ID Pasien", 80, HorizontalAlignment.Center);
+            listViewLaporan.Columns.Add("ID Obat", 50, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Nama Obat", 100, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Nama Pasien", 150, HorizontalAlignment.Left);
             //listViewTransaksi.Columns.Add("ID Dokter Yang Memeriksa", 100, HorizontalAlignment.Center);
             //listViewTransaksi.Columns.Add("Nama Dokter", 150, HorizontalAlignment.Left);
             listViewLaporan.Columns.Add("Invoice", 150, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Tanggal Transaksi", 150, HorizontalAlignment.Left);
-            listViewLaporan.Columns.Add("Jumlah", 150, HorizontalAlignment.Center);
+            listViewLaporan.Columns.Add("Jumlah", 50, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Harga", 150, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Total", 150, HorizontalAlignment.Center);
             listViewLaporan.Columns.Add("Status", 150, HorizontalAlignment.Center);

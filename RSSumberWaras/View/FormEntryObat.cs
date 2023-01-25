@@ -93,9 +93,9 @@ namespace RSSumberWaras.View
                 string message = resp.message;
                 string title = "Proses berhasil";
                 MessageBox.Show(message, title);
-                this.Close();
-                //FormObat formObt = new FormObat();
-                //formObt.ShowDialog();
+                this.Hide();
+                FormObat formObt = new FormObat();
+                formObt.Show();
 
             }
             else
@@ -105,15 +105,15 @@ namespace RSSumberWaras.View
                 MessageBox.Show(message, title);
             }
             this.Hide();
-            FormObat formObt = new FormObat();
-            formObt.ShowDialog();
+            //FormObat formObt = new FormObat();
+            //formObt.ShowDialog();
         }
 
         private void EntryFormObatSelesaiBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormObat form = new FormObat();
-            form.ShowDialog();
+            form.Show();
             
 
         }

@@ -110,11 +110,12 @@ namespace RSSumberWaras.View
             FormEntryRekamMedis form = new FormEntryRekamMedis("Tambah Data Rekam Medis", controller);
             form.OnCreate += OnCreateEventHandler;
             form.Show();
+            this.Hide();
         }
 
         private void selesaiRekamMedisBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             MenuForm form = new MenuForm();
             form.ShowDialog();
 

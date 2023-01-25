@@ -116,7 +116,7 @@ namespace RSSumberWaras.View
             {
                 // ambil objek mhs yang mau diedit dari collection
                 Obat obt = listOfObat[listViewObat.SelectedIndices[0]];
-                //this.Close();
+                //this.Hide();
                 // buat objek form entry data mahasiswa
                 FormEntryObat formEntry = new FormEntryObat("Edit Data Mahasiswa", obt, controller);
 
@@ -125,7 +125,8 @@ namespace RSSumberWaras.View
 
                 // tampilkan form entry mahasiswa
                 formEntry.ShowDialog();
-                
+                this.Hide();
+
             }
             else // data belum dipilih
             {

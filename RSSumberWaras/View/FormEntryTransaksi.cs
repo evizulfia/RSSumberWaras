@@ -62,13 +62,14 @@ namespace RSSumberWaras.View
             // untuk edit data, tampilkan data lama
             idTransaksiBox.Text = trans.IdTransaction.ToString();
             idObatBox.Text = trans.IdObat.ToString();
+            //nama.Text = trans.namaObat;
             idPasienBox.Text = trans.IdPasien.ToString();
             //namaPasienBox.Text = trans.namaPasien;
             //invoiceBox.Text = trans.invoice;
             tglTransaksiPicker.Format = DateTimePickerFormat.Short;
             //hargaBox.Text = trans.harga.ToString();
-            totalBox.Text = trans.total.ToString();
-            //StatusBox.Text = trans.status;
+            qtyBox.Text = trans.qty.ToString();
+            statusPembayaranDropDown.Text = trans.status;
         }
 
       
@@ -92,8 +93,8 @@ namespace RSSumberWaras.View
             //request.AddParameter("nama_pasien", namaPasienBox.Text);
             //request.AddParameter("invoice", invoiceBox.Text);
             request.AddParameter("tanggal_transaksi", tglTransaksiPicker.Value.Date.ToString("yyyy-MM-dd"));
-            //request.AddParameter("harga", hargaBox.Text.ToString());
-            request.AddParameter("total", totalBox.Text.ToString());
+            request.AddParameter("qty", qtyBox.Text.ToString());
+            //request.AddParameter("total", qtyBox.Text.ToString());
             request.AddParameter("status", statusPembayaranDropDown.Text);
 
             var response = client.Execute(request);

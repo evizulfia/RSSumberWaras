@@ -43,11 +43,14 @@ namespace RSSumberWaras.View
             listViewTransaksi.Columns.Add("ID Transaksi", 100, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("ID Pasien", 150, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("ID Obat", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Nama Obat", 100, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("Nama Pasien", 150, HorizontalAlignment.Left);
             //listViewTransaksi.Columns.Add("ID Dokter Yang Memeriksa", 100, HorizontalAlignment.Center);
             //listViewTransaksi.Columns.Add("Nama Dokter", 150, HorizontalAlignment.Left);
             listViewTransaksi.Columns.Add("Invoice", 150, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("Tanggal Transaksi", 150, HorizontalAlignment.Left);
+            listViewTransaksi.Columns.Add("Jumlah", 150, HorizontalAlignment.Center);
+            listViewTransaksi.Columns.Add("Harga", 150, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("Total", 150, HorizontalAlignment.Center);
             listViewTransaksi.Columns.Add("Status", 150, HorizontalAlignment.Center);
         }
@@ -65,11 +68,13 @@ namespace RSSumberWaras.View
                 var item = new ListViewItem(trans.IdTransaction.ToString());
                 item.SubItems.Add(trans.IdPasien.ToString());
                 item.SubItems.Add(trans.IdObat.ToString());
+                item.SubItems.Add(trans.namaObat);
                 item.SubItems.Add(trans.namaPasien);
                 //item.SubItems.Add(trans.IdDokter.ToString());
                 item.SubItems.Add(trans.invoice);
                 item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
-                //item.SubItems.Add(trans.harga.ToString());
+                item.SubItems.Add(trans.qty.ToString());
+                item.SubItems.Add(trans.harga.ToString());
                 item.SubItems.Add(trans.total.ToString());
                 item.SubItems.Add(trans.status);
 
@@ -86,10 +91,13 @@ namespace RSSumberWaras.View
             var item = new ListViewItem(trans.IdTransaction.ToString());
             item.SubItems.Add(trans.IdPasien.ToString());
             item.SubItems.Add(trans.IdObat.ToString());
+            item.SubItems.Add(trans.namaObat);
             item.SubItems.Add(trans.namaPasien);
             //item.SubItems.Add(trans.IdDokter.ToString());
             item.SubItems.Add(trans.invoice);
             item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
+            item.SubItems.Add(trans.qty.ToString());
+            item.SubItems.Add(trans.harga.ToString());
             item.SubItems.Add(trans.total.ToString());
             item.SubItems.Add(trans.status);
 
@@ -149,10 +157,13 @@ namespace RSSumberWaras.View
                 var item = new ListViewItem(trans.IdTransaction.ToString());
                 item.SubItems.Add(trans.IdPasien.ToString());
                 item.SubItems.Add(trans.IdObat.ToString());
+                item.SubItems.Add(trans.namaObat);
                 item.SubItems.Add(trans.namaPasien);
+                //item.SubItems.Add(trans.IdDokter.ToString());
                 item.SubItems.Add(trans.invoice);
                 item.SubItems.Add(trans.tanggalTransaksi.ToShortDateString());
-                //item.SubItems.Add(trans.harga.ToString());
+                item.SubItems.Add(trans.qty.ToString());
+                item.SubItems.Add(trans.harga.ToString());
                 item.SubItems.Add(trans.total.ToString());
                 item.SubItems.Add(trans.status);
 

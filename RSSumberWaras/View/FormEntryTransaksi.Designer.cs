@@ -30,7 +30,7 @@ namespace RSSumberWaras.View
         private void InitializeComponent()
         {
             this.tglTransaksiPicker = new System.Windows.Forms.DateTimePicker();
-            this.totalBox = new System.Windows.Forms.TextBox();
+            this.qtyBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SelesaiEntryTransBtn = new System.Windows.Forms.Button();
             this.entryTransaksiSimpanBtn = new System.Windows.Forms.Button();
@@ -53,13 +53,13 @@ namespace RSSumberWaras.View
             this.tglTransaksiPicker.Size = new System.Drawing.Size(458, 38);
             this.tglTransaksiPicker.TabIndex = 47;
             // 
-            // totalBox
+            // qtyBox
             // 
-            this.totalBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalBox.Location = new System.Drawing.Point(321, 407);
-            this.totalBox.Name = "totalBox";
-            this.totalBox.Size = new System.Drawing.Size(460, 38);
-            this.totalBox.TabIndex = 46;
+            this.qtyBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtyBox.Location = new System.Drawing.Point(321, 407);
+            this.qtyBox.Name = "qtyBox";
+            this.qtyBox.Size = new System.Drawing.Size(460, 38);
+            this.qtyBox.TabIndex = 46;
             // 
             // label2
             // 
@@ -67,9 +67,9 @@ namespace RSSumberWaras.View
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(75, 407);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 29);
+            this.label2.Size = new System.Drawing.Size(90, 29);
             this.label2.TabIndex = 45;
-            this.label2.Text = "Total";
+            this.label2.Text = "Jumlah";
             // 
             // SelesaiEntryTransBtn
             // 
@@ -191,7 +191,7 @@ namespace RSSumberWaras.View
             this.Controls.Add(this.label1);
             this.Controls.Add(this.idTransaksiBox);
             this.Controls.Add(this.tglTransaksiPicker);
-            this.Controls.Add(this.totalBox);
+            this.Controls.Add(this.qtyBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.SelesaiEntryTransBtn);
             this.Controls.Add(this.entryTransaksiSimpanBtn);
@@ -209,7 +209,7 @@ namespace RSSumberWaras.View
         #endregion
 
         private System.Windows.Forms.DateTimePicker tglTransaksiPicker;
-        private System.Windows.Forms.TextBox totalBox;
+        private System.Windows.Forms.TextBox qtyBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button SelesaiEntryTransBtn;
         private System.Windows.Forms.Button entryTransaksiSimpanBtn;

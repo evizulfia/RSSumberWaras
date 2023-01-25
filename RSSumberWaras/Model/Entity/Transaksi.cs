@@ -10,11 +10,13 @@ namespace RSSumberWaras.Model.Entity
     {
         public int IdTransaction { get; set; }
         public int IdObat { set; get; }
+        public string namaObat { set; get; }
         public int IdPasien { set; get; }
 
         public string namaPasien { set; get; }
         public string invoice { set; get; }
         public DateTime tanggalTransaksi { set; get; }
+        public double qty { set; get; }
         public double harga { set; get; }
         public double total { set; get; }
         public string status { set; get; }

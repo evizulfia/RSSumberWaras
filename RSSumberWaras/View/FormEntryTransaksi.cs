@@ -94,7 +94,7 @@ namespace RSSumberWaras.View
             request.AddParameter("tanggal_transaksi", tglTransaksiPicker.Value.Date.ToString("yyyy-MM-dd"));
             //request.AddParameter("harga", hargaBox.Text.ToString());
             request.AddParameter("total", totalBox.Text.ToString());
-            //request.AddParameter("status", StatusBox.Text);
+            request.AddParameter("status", statusPembayaranDropDown.Text);
 
             var response = client.Execute(request);
 

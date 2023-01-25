@@ -21,8 +21,6 @@ namespace RSSumberWaras.View
 
         private TransaksiController transaksiController = new TransaksiController();
 
-
-
         public FormLaporanTransaksi()
         {
             InitializeComponent();

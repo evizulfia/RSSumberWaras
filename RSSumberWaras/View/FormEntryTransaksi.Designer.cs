@@ -41,12 +41,14 @@ namespace RSSumberWaras.View
             this.idTransaksiBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.idObatBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.statusPembayaranDropDown = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // tglTransaksiPicker
             // 
             this.tglTransaksiPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.tglTransaksiPicker.Location = new System.Drawing.Point(321, 356);
+            this.tglTransaksiPicker.Location = new System.Drawing.Point(321, 333);
             this.tglTransaksiPicker.Name = "tglTransaksiPicker";
             this.tglTransaksiPicker.Size = new System.Drawing.Size(458, 38);
             this.tglTransaksiPicker.TabIndex = 47;
@@ -54,7 +56,7 @@ namespace RSSumberWaras.View
             // totalBox
             // 
             this.totalBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalBox.Location = new System.Drawing.Point(321, 430);
+            this.totalBox.Location = new System.Drawing.Point(321, 407);
             this.totalBox.Name = "totalBox";
             this.totalBox.Size = new System.Drawing.Size(460, 38);
             this.totalBox.TabIndex = 46;
@@ -63,7 +65,7 @@ namespace RSSumberWaras.View
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 430);
+            this.label2.Location = new System.Drawing.Point(75, 407);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 29);
             this.label2.TabIndex = 45;
@@ -72,7 +74,7 @@ namespace RSSumberWaras.View
             // SelesaiEntryTransBtn
             // 
             this.SelesaiEntryTransBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelesaiEntryTransBtn.Location = new System.Drawing.Point(465, 560);
+            this.SelesaiEntryTransBtn.Location = new System.Drawing.Point(611, 636);
             this.SelesaiEntryTransBtn.Name = "SelesaiEntryTransBtn";
             this.SelesaiEntryTransBtn.Size = new System.Drawing.Size(157, 53);
             this.SelesaiEntryTransBtn.TabIndex = 42;
@@ -83,7 +85,7 @@ namespace RSSumberWaras.View
             // entryTransaksiSimpanBtn
             // 
             this.entryTransaksiSimpanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.entryTransaksiSimpanBtn.Location = new System.Drawing.Point(270, 560);
+            this.entryTransaksiSimpanBtn.Location = new System.Drawing.Point(416, 636);
             this.entryTransaksiSimpanBtn.Name = "entryTransaksiSimpanBtn";
             this.entryTransaksiSimpanBtn.Size = new System.Drawing.Size(156, 53);
             this.entryTransaksiSimpanBtn.TabIndex = 41;
@@ -95,7 +97,7 @@ namespace RSSumberWaras.View
             // 
             this.noHp.AutoSize = true;
             this.noHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noHp.Location = new System.Drawing.Point(74, 362);
+            this.noHp.Location = new System.Drawing.Point(74, 339);
             this.noHp.Name = "noHp";
             this.noHp.Size = new System.Drawing.Size(213, 29);
             this.noHp.TabIndex = 38;
@@ -155,11 +157,35 @@ namespace RSSumberWaras.View
             this.idObatBox.Size = new System.Drawing.Size(460, 38);
             this.idObatBox.TabIndex = 50;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(74, 475);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 29);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "Status";
+            // 
+            // statusPembayaranDropDown
+            // 
+            this.statusPembayaranDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F);
+            this.statusPembayaranDropDown.FormattingEnabled = true;
+            this.statusPembayaranDropDown.Items.AddRange(new object[] {
+            "Lunas",
+            "Belum Lunas"});
+            this.statusPembayaranDropDown.Location = new System.Drawing.Point(321, 475);
+            this.statusPembayaranDropDown.Name = "statusPembayaranDropDown";
+            this.statusPembayaranDropDown.Size = new System.Drawing.Size(458, 40);
+            this.statusPembayaranDropDown.TabIndex = 53;
+            // 
             // FormEntryTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 731);
+            this.Controls.Add(this.statusPembayaranDropDown);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.idObatBox);
             this.Controls.Add(this.label1);
@@ -194,5 +220,7 @@ namespace RSSumberWaras.View
         private System.Windows.Forms.TextBox idTransaksiBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox idObatBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox statusPembayaranDropDown;
     }
 }

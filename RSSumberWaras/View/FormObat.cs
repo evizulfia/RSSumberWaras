@@ -164,9 +164,12 @@ namespace RSSumberWaras.View
 
                 if (result.status == "200")
                 {
+                    string message = result.message;
+                    string title = "Delete Success";
+                    MessageBox.Show(message, title);
                     this.Hide();
                     FormObat form = new FormObat();
-                    form.Show();
+                    form.ShowDialog();
                     
                 }
                 else
@@ -213,7 +216,7 @@ namespace RSSumberWaras.View
         {
             this.Hide();
             MenuForm menuForm = new MenuForm();
-            menuForm.Show();
+            menuForm.ShowDialog();
             
         }
         private void maximise(object sender, EventArgs e)

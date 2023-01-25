@@ -82,7 +82,7 @@ namespace RSSumberWaras.View
 
             var response = client.Execute(request);
 
-            //Console.WriteLine(response.Content);
+            Console.WriteLine(response.Content);
             //Console.WriteLine(response.Content);
 
             dynamic resp = JObject.Parse(response.Content);
@@ -95,7 +95,7 @@ namespace RSSumberWaras.View
                 MessageBox.Show(message, title);
                 this.Hide();
                 FormObat formObt = new FormObat();
-                formObt.Show();
+                formObt.ShowDialog();
 
             }
             else

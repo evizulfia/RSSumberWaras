@@ -106,9 +106,10 @@ namespace RSSumberWaras.View
 
         private void selesaiDokterBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MenuForm menuForm = new MenuForm();
             menuForm.Show();
-            this.Hide();
+            
         }
 
         private void tmbhDokterBtn_Click(object sender, EventArgs e)
